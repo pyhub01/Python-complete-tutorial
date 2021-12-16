@@ -18,3 +18,15 @@ public class HelloWorld {
     }
 }
 ```
+
+The following is the programming method of Hello World in C++
+
+```
+#include <iostream>
+
+int main() 
+{
+    std::cout << "Hello World!" << endl;
+    return 0;
+}
+```
