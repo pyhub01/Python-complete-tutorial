@@ -5,4 +5,4 @@
 
 ## Try python for the first time
 
-* [Hello world!](try-python-for-the-first-time/hello-world.md)
+* [1 Hello world!](try-python-for-the-first-time/hello-world.md)
