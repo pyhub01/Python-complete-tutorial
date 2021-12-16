@@ -44,3 +44,5 @@ int main()
     return 0;
 }
 ```
+
+After comparison, you will find the simplicity of python. In the next chapter, we will continue to explore the python method of Hello World.
