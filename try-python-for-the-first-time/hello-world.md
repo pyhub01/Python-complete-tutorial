@@ -12,8 +12,10 @@ We know that python is a scripting language. The code that outputs Hello World c
 The following is the programming method of Hello World in java
 
 ```
-public class HelloWorld {
-    public static void main(String[] args) {
+public class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
         System.out.println("hello world");
     }
 }
@@ -26,7 +28,19 @@ The following is the programming method of Hello World in C++
 
 int main() 
 {
-    std::cout << "Hello World!" << endl;
+    std::cout << "hello world" << endl;
+    return 0;
+}
+```
+
+The following is the programming method of Hello World in C
+
+```
+#include <stdio.h>
+
+int main() 
+{
+    printf("hello world");
     return 0;
 }
 ```
