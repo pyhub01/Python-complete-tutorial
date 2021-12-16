@@ -6,3 +6,4 @@
 ## Try python for the first time
 
 * [1 Hello world!](try-python-for-the-first-time/hello-world.md)
+* [1 Hello world in a nutshell](try-python-for-the-first-time/hello-world-in-a-nutshell.md)
