@@ -24,3 +24,9 @@ The most important thing in programming is thinking. You must have a clear idea 
 I will also try some leetcode topics, I hope these will be helpful to your programming, scientific research and job hunting.
 
 Okay, that's all I want to say, let's start our python programming!
+
+## Statistics
+
+Start time of this page: December 17, 2021
+
+Completion time of this page: December 17, 2021
