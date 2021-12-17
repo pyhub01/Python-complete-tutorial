@@ -19,6 +19,10 @@ This book follows the GNU General Public License v3.0 agreement
 
 ## Statistics
 
-Start writing time: December 17, 2021
+Start writing time of this book: December 17, 2021
+
+
+
+Start time of this page: December 17, 2021
 
 Completion time of this page: December 17, 2021
