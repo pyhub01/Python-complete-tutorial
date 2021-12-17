@@ -42,7 +42,13 @@ The above is the way to install the simplest version of the python3 graphical in
 
 ## (Optional) Install pycharm
 
+The basic interpreter is very useful, but if you write a deep learning program and want to watch the progress bar scroll, then the basic interpreter does not support the backspace, which will become your nightmare, but if you use pycharm, backspace is no longer a problem. If you want to run two programs that require different versions of libraries, then if you use a basic interpreter, then when you run the first program, you need to install the libraries required by the first program. If you run the first program In the case of two programs, you need to uninstall the dependent library of the first program, and then install the dependent library of the second program. This is quite troublesome. If you have pycharm, you can directly create two different virtual environments, which Contains different libraries.
 
+{% embed url="https://www.jetbrains.com/pycharm" %}
+pycharm
+{% endembed %}
+
+Installing pycharm is a simple matter. You need to click on the above website, and then choose Professional version or Community version. The former requires a fee and the latter is free. I recommend using the Community version, because Community basically includes all you need, and the volume consuming on disk is relatively small.
 
 ## Statistics
 
