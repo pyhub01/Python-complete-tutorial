@@ -15,3 +15,5 @@ Use GitBook to read
 {% endembed %}
 
 This book follows the GNU General Public License v3.0 agreement
+
+Start writing time: December 17, 2021
