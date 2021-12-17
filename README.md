@@ -3,7 +3,7 @@ description: Read me the document
 coverY: 0
 ---
 
-# 😎 Python complete tutorial
+# 😎 Python Complete Tutorial
 
 Read the book here with fancy format:
 
@@ -16,6 +16,8 @@ Use GitBook to read
 {% endembed %}
 
 This book follows the GNU General Public License v3.0 agreement
+
+## Statistics
 
 Start writing time: December 17, 2021
 
