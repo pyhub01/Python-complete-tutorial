@@ -44,6 +44,9 @@ The above is the way to install the simplest version of the python3 graphical in
 
 
 
-\
+## Statistics
 
+Start time of this page: December 17, 2021
+
+Completion time of this page: December 17, 2021
 
