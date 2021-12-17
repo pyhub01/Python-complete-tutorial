@@ -41,7 +41,7 @@ There are two things to pay attention to when installing:
 The above is the way to install the simplest version of the python3 graphical interpreter.
 
 {% hint style="danger" %}
-It is worth mentioning that the native interpreter interface is not very friendly to the input method. When you type in languages other than English, some shortcut keys may be triggered by mistake, which is quite annoying. The following software There will be no such problem.
+Warning that the native interpreter interface is not very friendly to the input method. When you type in languages other than English, some shortcut keys may be triggered by mistake, which is quite annoying. The following software There will be no such problem.
 {% endhint %}
 
 ## (Optional) Install pycharm
