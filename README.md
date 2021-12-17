@@ -6,6 +6,10 @@ description: Read me the document
 
 Read the book here:
 
+Url: [https://pyhub01.gitbook.io/python-complete-tutorial/](https://pyhub01.gitbook.io/python-complete-tutorial/)
+
+Embed:
+
 {% embed url="https://pyhub01.gitbook.io/python-complete-tutorial" %}
 Use GitBook to read
 {% endembed %}
