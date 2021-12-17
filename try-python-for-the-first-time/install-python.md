@@ -50,6 +50,26 @@ pycharm
 
 Installing pycharm is a simple matter. You need to click on the above website, and then choose Professional version or Community version. The former requires a fee and the latter is free. I recommend using the Community version, because Community basically includes all you need, and the volume consuming on disk is relatively small.
 
+## (Optional) Install anaconda
+
+Anaconda supports virtual environments. This is the reason why I strongly recommend you to install anaconda. Another reason why I strongly recommend you to install anaconda is that if you want to program artificial intelligence and deep learning programs, then you will most likely use a graphics card (Nvidia) as Your computing device, and the graphics card need to install cuda and cudnn drivers, if you manually install these drivers will be a very troublesome thing(Especially setting environment variables), but if you have anaconda, you only need two lines of command, you can complete cuda and cudnn Install.
+
+If you want to use jupyter notebook, anaconda is also a good choice.
+
+Installing anaconda is also an easy task, you just need to keep clicking next after downloading. It should be noted that if you want to program deep learning, anaconda may occupy a considerable amount of disk space (10G), then I suggest you install anaconda on a mechanical hard drive(HDD) instead of a solid state drive(SSD).
+
+{% embed url="https://www.anaconda.com" %}
+anaconda
+{% endembed %}
+
+## (Optional) Install vscode
+
+In my opinion, vscode is a very easy-to-use software. First of all, it is much lighter than visual studio. You no longer need dozens of gigabytes of disk space to accommodate various libraries you don't need. The plug-ins in vscode can be installed by clicking install, which is very convenient. Vscode supports languages other than English well, and there will be no problems such as false triggering of shortcut keys caused by input methods. The bad news is that vscode programming python may need to install external libraries, which will be more troublesome. The download link of vscode is as follows:
+
+{% embed url="https://code.visualstudio.com" %}
+vscode
+{% endembed %}
+
 ## Statistics
 
 Start time of this page: December 17, 2021
