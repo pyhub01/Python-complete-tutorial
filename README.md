@@ -18,3 +18,5 @@ Use GitBook to read
 This book follows the GNU General Public License v3.0 agreement
 
 Start writing time: December 17, 2021
+
+Completion time of this page: December 17, 2021
