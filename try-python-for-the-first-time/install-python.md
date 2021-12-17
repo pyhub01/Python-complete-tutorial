@@ -19,6 +19,8 @@ python official website
 
 Before starting to install python3, I suggest you take a look at the official python website.
 
+## Install the most basic graphical python3 interpreter
+
 When I wrote this tutorial, python has been updated to version 3.10, but I strongly recommend that you do not use the latest version of python because there are still many package compatibility issues that need to be resolved in this version. So I suggest that you use the last version of 3.8, which is python3.8.10.
 
 {% embed url="https://www.python.org/downloads/release/python-3810" %}
@@ -38,17 +40,9 @@ There are two things to pay attention to when installing:
 
 The above is the way to install the simplest version of the python3 graphical interpreter
 
+## (Optional) Install pycharm
 
 
-```
-border-bottom: 1px solid  #dedede;
-```
-
-
-
-```
-border-bottom: 1px solid  #dedede;
-```
 
 \
 

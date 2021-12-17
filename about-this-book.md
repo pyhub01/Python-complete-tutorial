@@ -1,5 +1,6 @@
 ---
 description: Preface to this book
+coverY: 0
 ---
 
 # 0 About this book

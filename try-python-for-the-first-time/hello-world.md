@@ -1,5 +1,6 @@
 ---
 description: Your first line of python code
+coverY: 0
 ---
 
 # 1 Hello world!
