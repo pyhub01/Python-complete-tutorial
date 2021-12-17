@@ -2,8 +2,12 @@
 description: Read me the document
 ---
 
-# Python complete tutorial
+# 😎 Python complete tutorial
 
 Read the book here:
 
-[https://pyhub01.gitbook.io/python-complete-tutorial/](https://pyhub01.gitbook.io/python-complete-tutorial/)
+{% embed url="https://pyhub01.gitbook.io/python-complete-tutorial" %}
+Use GitBook to read
+{% endembed %}
+
+This book follows the GNU General Public License v3.0 agreement
