@@ -1,5 +1,6 @@
 ---
 description: Install python3 tutorial
+coverY: 0
 ---
 
 # 1 Install python
@@ -39,9 +40,16 @@ The above is the way to install the simplest version of the python3 graphical in
 
 
 
-\---
+```
+border-bottom: 1px solid  #dedede;
+```
 
 
 
+```
+border-bottom: 1px solid  #dedede;
+```
+
+\
 
 
