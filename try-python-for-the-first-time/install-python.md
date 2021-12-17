@@ -82,13 +82,15 @@ Ranking of programming languages in the world
 
 The above link is the world's programming language ranking, including the number of users and popularity. You can open the web page to observe the current programming language ranking. Sometimes it will change.
 
-In the next chapter, we will also mention why we choose python. You can feel the simplicity of python by installing the python basic compiler. If you have used c and c++, you will find that c and c++ programming is quite troublesome, all You need to write the data structure yourself, and installing the g++ compiler is also a troublesome thing. If you have written R language or MATLAB, you will find that the subscripts of these two languages start from 1, which does not match The feeling of computer programming, and if you use a different version of R language or MATLAB, various errors will drive you crazy. MATLAB is still a fee-based software. In addition to the large-scale use in schools, you will find that in the company It is rarely used in, if you have used go, you will find it quite troublesome to install and run the code. According to my observation, the reasons for choosing python are divided into the following:
+In the next chapter, we will also mention why we choose python. You can feel the simplicity of python by installing the python basic compiler. If you have used c and c++, you will find that c and c++ programming is quite troublesome, all You need to write the data structure yourself, and installing the g++ compiler is also a troublesome thing. If you have written R language or MATLAB, you will find that the subscripts of these two languages start from 1, which does not match The feeling of computer programming, and if you use a different version of R language or MATLAB, various errors will drive you crazy. MATLAB is still a fee-based software. In addition to the large-scale use in schools, you will find that in the company It is rarely used, if you have used go, you will find it quite troublesome to install and run the code. According to my observation, the reasons for choosing python are divided into the following:
 
-
-
-
-
-
+1. Python programming is simple and does not require superb programming skills
+2. The python code is very concise, a few lines of content can solve a troublesome problem
+3. Open source software has fewer bugs and does not require licensing fees, Many companies use it
+4. The current world economy is not good these years, so using python will be more economical than using c++ or java. (Fewer employees, higher efficiency)
+5. The code efficiency of python is improving year by year, and the performance of the computer is improving year by year, so the criticism of python's low efficiency is gradually weakening.
+6. The code development cycle is getting shorter and shorter, which is suitable for programming languages that can be developed quickly.
+7. Many emerging fields, such as image recognition (deep learning) or text mining (deep learning) can only be processed with python
 
 ## Statistics
 
