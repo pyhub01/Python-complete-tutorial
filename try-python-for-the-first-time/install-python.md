@@ -37,5 +37,5 @@ There are two things to pay attention to when installing:
 
 The above is the way to install the simplest version of the python3 graphical interpreter
 
-\*\*\*
+\*\*\*\*\*
 
