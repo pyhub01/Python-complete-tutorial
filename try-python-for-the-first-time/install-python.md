@@ -38,7 +38,11 @@ There are two things to pay attention to when installing:
 1. You should check Add python3 to the windows environment variable (system PATH), so you don't need to manually add environment variables (a rather troublesome thing).
 2. You should choose to lift the system's longest string (256 bytes) limit at the end of the installation, so that you will have no problem installing any packages in the future.
 
-The above is the way to install the simplest version of the python3 graphical interpreter
+The above is the way to install the simplest version of the python3 graphical interpreter.
+
+{% hint style="danger" %}
+It is worth mentioning that the native interpreter interface is not very friendly to the input method. When you type in languages other than English, some shortcut keys may be triggered by mistake, which is quite annoying. The following software There will be no such problem.
+{% endhint %}
 
 ## (Optional) Install pycharm
 
