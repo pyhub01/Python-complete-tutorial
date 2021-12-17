@@ -4,7 +4,7 @@ description: Read me the document
 
 # 😎 Python complete tutorial
 
-Read the book here:
+Read the book here with fancy format:
 
 Url: [https://pyhub01.gitbook.io/python-complete-tutorial/](https://pyhub01.gitbook.io/python-complete-tutorial/)
 
