@@ -51,3 +51,9 @@ int main()
 ```
 
 After comparison, you will find the simplicity of python. In the next chapter, we will continue to explore the python method of Hello World.
+
+## Statistics
+
+Start time of this page: December 17, 2021
+
+Completion time of this page: December 17, 2021
