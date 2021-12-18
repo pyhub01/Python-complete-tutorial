@@ -46,6 +46,7 @@ When the soil moisture detector finds that the soil moisture is insufficient, th
 The following code can complete this process.
 
 ```
+python
 # Continuously monitor the soil moisture
 while True:
 
