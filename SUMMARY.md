@@ -12,4 +12,4 @@
 
 ## 2⃣ Data structure and basic operations
 
-* [Page 1](data-structure-and-basic-operations/page-1.md)
+* [2 Python data structure](data-structure-and-basic-operations/python-data-structure.md)
