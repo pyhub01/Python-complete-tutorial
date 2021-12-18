@@ -321,15 +321,46 @@ ax.plot_surface( x_2d, y_2d, z,
 plt.show()
 ```
 
+![Low resolution](<../.gitbook/assets/002 低分辨率合成.PNG>)
 
+```python
+# Introduce necessary packages (library functions)
+from matplotlib import pyplot as plt
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
 
+# Create a 3D canvas
+fig = plt.figure()
+ax = Axes3D( fig, auto_add_to_figure = False )
+fig.add_axes(ax)
 
+# Create xy axis
+x = np.arange( -4, 4, 0.5 )
+y = np.arange( -4, 4, 0.5 )
 
+# Create xy plane
+x_2d, y_2d = np.meshgrid( x, y )
+# Create the data for the z coordinate
+z = x_2d**2 + y_2d**2
 
+# Draw the lattice plane
+ax.scatter(x_2d, y_2d, np.zeros( (len(x_2d), len(x_2d)) ))
 
+# Draw three-dimensional graphics
+ax.plot_surface( x_2d, y_2d, z,
+                 rstride = 1, cstride = 1,
+                 cmap = 'rainbow',
+                 )
 
+# Project the graphics in the internal memory and video memory onto the screen.
+plt.show()
+```
 
+![High resolution](<../.gitbook/assets/002 高分辨率合成.PNG>)
 
+So the way to draw points in matplotlib is to enumerate all possible points, and then calculate and draw them one by one. Is that mysterious? Absolutely not!
+
+## Python program debugging method
 
 
 
