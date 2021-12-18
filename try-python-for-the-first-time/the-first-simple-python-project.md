@@ -129,17 +129,23 @@ ax.plot_surface( x_2d, y_2d, z,
 plt.show()
 ```
 
+If we want to see what the following sentence accomplish, then what should we do?
 
+```python
+x = np.arange( -4, 4, 0.1 )
+```
 
+We close the graphical interface that pops up before, so that the interpreter script can input content. At this time, the interpreter script should output the following content:
 
+```python
+>>>
+```
 
+Enter in:
 
-
-
-
-
-
-
+```python
+>>> x
+```
 
 
 
