@@ -263,7 +263,28 @@ We will find that x\_2d and y\_2d form a plane. If we draw this plane, it looks 
 
 ![2D figure drawn out](<../.gitbook/assets/002 二维.PNG>)
 
-So we have created a lattice, and after z = x\_2d**2 + y\_2d**2, we calculate z equal to the square of x plus the square of y, thereby obtaining a three-dimensional quadratic function.
+So we have created a lattice, and after:
+
+```python
+z = x_2d**2 + y_2d**2
+```
+
+we calculate z equal to the square of x plus the square of y, thereby obtaining a three-dimensional quadratic function.
+
+Let's take a look at what is happening with z:
+
+```python
+>>> z
+array([[32, 25, 20, 17, 16, 17, 20, 25],
+       [25, 18, 13, 10,  9, 10, 13, 18],
+       [20, 13,  8,  5,  4,  5,  8, 13],
+       [17, 10,  5,  2,  1,  2,  5, 10],
+       [16,  9,  4,  1,  0,  1,  4,  9],
+       [17, 10,  5,  2,  1,  2,  5, 10],
+       [20, 13,  8,  5,  4,  5,  8, 13],
+       [25, 18, 13, 10,  9, 10, 13, 18]], dtype=int32)
+>>> 
+```
 
 
 
