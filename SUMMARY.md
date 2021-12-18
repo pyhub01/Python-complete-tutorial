@@ -13,3 +13,7 @@
 ## 2⃣ Data structure and basic operations
 
 * [2 Python data structure](data-structure-and-basic-operations/python-data-structure.md)
+
+## 3⃣ Data mining
+
+* [3 What is data mining](data-mining/what-is-data-mining.md)
