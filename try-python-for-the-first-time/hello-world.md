@@ -7,7 +7,7 @@ coverY: 0
 
 In the programming world, a new language always uses hello world for testing, so today we will use python to test hello world.
 
-```
+```python
 >>> print('hello world')
 hello world
 ```
@@ -16,7 +16,7 @@ We know that python is a scripting language. The code that outputs Hello World c
 
 The following is the programming method of Hello World in java
 
-```
+```java
 public class HelloWorld 
 {
     public static void main(String[] args) 
@@ -28,7 +28,7 @@ public class HelloWorld
 
 The following is the programming method of Hello World in C++
 
-```
+```cpp
 #include <iostream>
 
 int main() 
@@ -40,7 +40,7 @@ int main()
 
 The following is the programming method of Hello World in C
 
-```
+```c
 #include <stdio.h>
 
 int main() 

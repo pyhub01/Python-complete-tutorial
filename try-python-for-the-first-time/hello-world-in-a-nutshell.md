@@ -13,7 +13,7 @@ We can divide programming languages ​​into three categories. One is assembly
 
 Process-oriented languages appeared earlier and simpler. For example, the following piece of code is a process-oriented language:
 
-```python
+```
 a = 3
 b = 5
 
@@ -26,10 +26,10 @@ print( a + b )
 
 The result of the above program is:
 
-```python
+```
 3 
 hello world 
-5
+5 
 8
 ```
 
@@ -45,7 +45,7 @@ When the soil moisture detector finds that the soil moisture is insufficient, th
 
 The following code can complete this process.
 
-```python
+```
 # Continuously monitor the soil moisture
 while True:
 
