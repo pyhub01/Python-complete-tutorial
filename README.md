@@ -5,6 +5,8 @@ coverY: 0
 
 # 😎 Python Complete Tutorial
 
+## GitHub
+
 The GitHub link of this project:
 
 Url: [https://github.com/pyhub01/Python-complete-tutorial](https://github.com/pyhub01/Python-complete-tutorial)
@@ -12,6 +14,8 @@ Url: [https://github.com/pyhub01/Python-complete-tutorial](https://github.com/py
 Embed:
 
 {% embed url="https://github.com/pyhub01/Python-complete-tutorial" %}
+
+## GitBook
 
 Read the book here with fancy format:
 
