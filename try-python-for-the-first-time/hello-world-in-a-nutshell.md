@@ -43,7 +43,23 @@ This circuit consists of a soil moisture sensor, a microcontroller and a relay (
 
 When the soil moisture detector finds that the soil moisture is insufficient, the microcontroller will order the water pump to supply water. When the water is supplied, the soil moisture detector will continue to monitor the soil moisture. If the soil is already moist, stop the water pump and continue to detect whether the soil is moist. If the soil dries out again, continue to supply water. This continues to be tested again and again. We can complete the task of automatic watering.
 
+The following code can complete this process.
 
+```
+# Continuously monitor the soil moisture
+while True:
+
+    # Get soil moisture
+    soil_status = get_humidity_sensor_result()
+
+    # Stop the water pump if it gets wet
+    if soil_status == 'wet':
+        water_pump('halt')
+
+    # Turn on the pump if it gets dry
+    if soil_status == 'dry':
+        water_pump('start')
+```
 
 
 
