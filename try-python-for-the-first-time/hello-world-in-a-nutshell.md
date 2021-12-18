@@ -263,3 +263,9 @@ hello world
 ```
 
 After so many examples, do you feel the power of python?
+
+## Statistics
+
+Start time of this page: December 17, 2021
+
+Completion time of this page: December 17, 2021
