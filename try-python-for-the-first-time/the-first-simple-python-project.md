@@ -362,21 +362,14 @@ So the way to draw points in matplotlib is to enumerate all possible points, and
 
 ## Python program debugging method
 
+What should you do when your python is wrong or you encounter a python program that you can't understand?
 
+It's very simple, just like we did step by step debugging, and soon we will be able to figure out the meaning of each variable.
 
+When we encounter a huge array, we try to reduce it, and when we encounter a mathematical problem that is difficult to understand, we try to visualize it. If we encounter a function, we try to disassemble it, and the problem will be solved!
 
+## Statistics
 
+Start time of this page: December 18, 2021
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Completion time of this page: December 18, 2021
