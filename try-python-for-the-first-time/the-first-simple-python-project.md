@@ -147,78 +147,21 @@ Enter in:
 >>> x
 ```
 
-Then press the Enter key, the interface should output the following content:
 
-```python
->>> x
-array([-4.00000000e+00, -3.90000000e+00, -3.80000000e+00, -3.70000000e+00,
-       -3.60000000e+00, -3.50000000e+00, -3.40000000e+00, -3.30000000e+00,
-       -3.20000000e+00, -3.10000000e+00, -3.00000000e+00, -2.90000000e+00,
-       -2.80000000e+00, -2.70000000e+00, -2.60000000e+00, -2.50000000e+00,
-       -2.40000000e+00, -2.30000000e+00, -2.20000000e+00, -2.10000000e+00,
-       -2.00000000e+00, -1.90000000e+00, -1.80000000e+00, -1.70000000e+00,
-       -1.60000000e+00, -1.50000000e+00, -1.40000000e+00, -1.30000000e+00,
-       -1.20000000e+00, -1.10000000e+00, -1.00000000e+00, -9.00000000e-01,
-       -8.00000000e-01, -7.00000000e-01, -6.00000000e-01, -5.00000000e-01,
-       -4.00000000e-01, -3.00000000e-01, -2.00000000e-01, -1.00000000e-01,
-        3.55271368e-15,  1.00000000e-01,  2.00000000e-01,  3.00000000e-01,
-        4.00000000e-01,  5.00000000e-01,  6.00000000e-01,  7.00000000e-01,
-        8.00000000e-01,  9.00000000e-01,  1.00000000e+00,  1.10000000e+00,
-        1.20000000e+00,  1.30000000e+00,  1.40000000e+00,  1.50000000e+00,
-        1.60000000e+00,  1.70000000e+00,  1.80000000e+00,  1.90000000e+00,
-        2.00000000e+00,  2.10000000e+00,  2.20000000e+00,  2.30000000e+00,
-        2.40000000e+00,  2.50000000e+00,  2.60000000e+00,  2.70000000e+00,
-        2.80000000e+00,  2.90000000e+00,  3.00000000e+00,  3.10000000e+00,
-        3.20000000e+00,  3.30000000e+00,  3.40000000e+00,  3.50000000e+00,
-        3.60000000e+00,  3.70000000e+00,  3.80000000e+00,  3.90000000e+00])
->>> 
-```
 
-So we can see the content of the variable x.
 
-In the previous program, the step size I set was too small, so you will see a dense pile of content. In order to avoid flashing the screen, I changed the previous program. You need to copy and paste the following program into the script file (delete all previous program codes first), then run (or press F5 shortcut key to run):
 
-```python
-# Introduce necessary packages (library functions)
-from matplotlib import pyplot as plt
-import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
 
-# Create a 3D canvas
-fig = plt.figure()
-ax = Axes3D( fig, auto_add_to_figure = False )
-fig.add_axes(ax)
 
-# Create xy axis
-x = np.arange( -4, 4, 1 )
-y = np.arange( -4, 4, 1 )
 
-# Create xy plane
-x_2d, y_2d = np.meshgrid( x, y )
-# Create the data for the z coordinate
-z = x_2d**2 + y_2d**2
 
-# Draw three-dimensional graphics
-ax.plot_surface( x_2d, y_2d, z,
-                 rstride = 1, cstride = 1,
-                 cmap = 'rainbow',
-                 )
 
-# Project the graphics in the internal memory and video memory onto the screen.
-plt.show()
-```
 
-![A low-precision three-dimensional figure](<../.gitbook/assets/002 三维 1.PNG>)
 
-Then close this interface, and then enter the variables you want to observe in the interpreter window:
 
-```python
->>> x
-array([-4, -3, -2, -1,  0,  1,  2,  3])
->>> 
-```
 
-You will find: x = np.arange( -4, 4, 1) means to create an arithmetic sequence from -4 to 4 (not including 4), with a step length of 1.
+
+
 
 
 
