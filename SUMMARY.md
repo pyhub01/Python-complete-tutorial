@@ -1,7 +1,7 @@
 # Table of contents
 
 * [😎 Python Complete Tutorial](README.md)
-* [0 0 About this book](about-this-book.md)
+* [0 About this book](about-this-book.md)
 
 ## Try python for the first time
 
