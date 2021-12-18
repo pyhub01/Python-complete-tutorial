@@ -252,11 +252,18 @@ array([[-4, -4, -4, -4, -4, -4, -4, -4],
 >>> 
 ```
 
+We will find that x\_2d and y\_2d form a plane. If we draw this plane, it looks like this (code attached):
 
+```python
+>>> plt.scatter(x_2d, y_2d)
+<matplotlib.collections.PathCollection object at 0x00000166CF0D2760>
+>>> plt.show()
+>>>
+```
 
+![2D figure drawn out](<../.gitbook/assets/002 二维.PNG>)
 
-
-
+So we have created a lattice, and after z = x\_2d**2 + y\_2d**2, we calculate z equal to the square of x plus the square of y, thereby obtaining a three-dimensional quadratic function.
 
 
 
