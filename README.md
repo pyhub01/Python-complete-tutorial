@@ -27,6 +27,8 @@ Embed:
 Use GitBook to read
 {% endembed %}
 
+## Book Agreement & License
+
 This book follows the GNU General Public License v3.0
 
 ## Statistics
