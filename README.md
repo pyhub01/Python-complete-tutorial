@@ -5,7 +5,7 @@ coverY: 0
 
 # 😎 Python Complete Tutorial
 
-The GitHub link of the project:
+The GitHub link of this project:
 
 Url: [https://github.com/pyhub01/Python-complete-tutorial](https://github.com/pyhub01/Python-complete-tutorial)
 
