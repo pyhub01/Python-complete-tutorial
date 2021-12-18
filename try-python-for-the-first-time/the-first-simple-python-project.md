@@ -7,7 +7,7 @@ coverY: 0
 
 In this chapter, I will talk about how to learn python and teach you how to do a simple small project.
 
-Linux founder Linus once said: Read The Fucking Source Code
+Linux founder Linus once said: Read The Fucking Source Code!
 
 ![Linux founder Linus](<../.gitbook/assets/002 linus.jpg>)
 
@@ -97,7 +97,37 @@ plt.show()
 
 ![Running result figure](<../.gitbook/assets/002 三维.PNG>)
 
+Let's take a look at what is being done at each step of this program:
 
+```python
+# Introduce necessary packages (library functions)
+from matplotlib import pyplot as plt
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+
+# Create a 3D canvas
+fig = plt.figure()
+ax = Axes3D( fig, auto_add_to_figure = False )
+fig.add_axes(ax)
+
+# Create xy axis
+x = np.arange( -4, 4, 0.1 )
+y = np.arange( -4, 4, 0.1 )
+
+# Create xy plane
+x_2d, y_2d = np.meshgrid( x, y )
+# Create the data for the z coordinate
+z = x_2d**2 + y_2d**2
+
+# Draw three-dimensional graphics
+ax.plot_surface( x_2d, y_2d, z,
+                 rstride = 1, cstride = 1,
+                 cmap = 'rainbow',
+                 )
+
+# Project the graphics in the internal memory and video memory onto the screen.
+plt.show()
+```
 
 
 
