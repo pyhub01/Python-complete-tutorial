@@ -15,7 +15,7 @@ What is learning?
 
 We sometimes feel that artificial intelligence is very mentally retarded. Why do we feel that way? Because the artificial intelligence which you use can't learn.
 
-Learning is to acquire knowledge from the world, acquire knowledge autonomously and spontaneously.&#x20;
+Learning is to acquire knowledge from the world, acquire knowledge autonomously and spontaneously.
 
 If you have a question today, it is:
 
@@ -68,6 +68,8 @@ pip install matplotlib
 How to install matplotlib and instructions
 {% endembed %}
 
+The program to be tried today is a program for drawing a three-dimensional quadratic function. The code is as follows. You can create a new python script called 3D drawing.py, and then paste the following code and run it to see how it works:
+
 ```python
 from matplotlib import pyplot as plt
 import numpy as np
@@ -90,3 +92,46 @@ ax.plot_surface( x, y, z,
 
 plt.show()
 ```
+
+![](<../.gitbook/assets/002 三维.PNG>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
