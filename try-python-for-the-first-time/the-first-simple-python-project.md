@@ -176,15 +176,49 @@ array([-4.00000000e+00, -3.90000000e+00, -3.80000000e+00, -3.70000000e+00,
 
 So we can see the content of the variable x.
 
+In the previous program, the step size I set was too small, so you will see a dense pile of content. In order to avoid flashing the screen, I changed the previous program. You need to copy and paste the following program into the script file (delete all previous program codes first), then run (or press F5 shortcut key to run):
 
+```python
+# Introduce necessary packages (library functions)
+from matplotlib import pyplot as plt
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
 
+# Create a 3D canvas
+fig = plt.figure()
+ax = Axes3D( fig, auto_add_to_figure = False )
+fig.add_axes(ax)
 
+# Create xy axis
+x = np.arange( -4, 4, 1 )
+y = np.arange( -4, 4, 1 )
 
+# Create xy plane
+x_2d, y_2d = np.meshgrid( x, y )
+# Create the data for the z coordinate
+z = x_2d**2 + y_2d**2
 
+# Draw three-dimensional graphics
+ax.plot_surface( x_2d, y_2d, z,
+                 rstride = 1, cstride = 1,
+                 cmap = 'rainbow',
+                 )
 
+# Project the graphics in the internal memory and video memory onto the screen.
+plt.show()
+```
 
+![A low-precision three-dimensional figure](<../.gitbook/assets/002 三维 1.PNG>)
 
+Then close this interface, and then enter the variables you want to observe in the interpreter window:
 
+```python
+>>> x
+array([-4, -3, -2, -1,  0,  1,  2,  3])
+>>> 
+```
+
+You will find: x = np.arange( -4, 4, 1) means to create an arithmetic sequence from -4 to 4 (not including 4), with a step length of 1.
 
 
 
