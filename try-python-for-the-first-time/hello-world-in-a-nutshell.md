@@ -176,13 +176,90 @@ public class HelloWorld
 }
 ```
 
+You will find that there must be classes to write java. If there are no classes, then you cannot write java programs. In other words, Java was born to write large programs and cooperate with multiple people, which is destined to not be suitable for all occasions.
 
+## Several ways of writing Hello World in Python
 
+We have just talked about some knowledge about programming languages, so let's use this knowledge of programming languages.
 
+Python has been a good language from the beginning of its design, because you can use python to write process-oriented programs or you can use python to write object-oriented programs. Python is also scriptable, so you can run python commands in real time. The flexibility of python is destined to be used in various occasions.
 
+### Interactive
 
+For example, you can run Hello World in the python interpreter in real time:
 
+```python
+>>> print('hello world')
+hello world
+```
 
+### Scripted
 
+You can create a file called hello\_world.py to run hello world, Type in:
 
+```python
+print('hello world')
+```
 
+The output result is:
+
+```python
+hello world
+```
+
+### Using Main function
+
+There is also a main function similar to the C language in python, you can write it like this, which will make the code very concise and easy to understand:
+
+```python
+if __name__ == '__main__':
+    print('hello world')
+```
+
+The output result is:
+
+```python
+hello world
+```
+
+### Functional
+
+You can create a function to print Hello World:
+
+```python
+def fancy_print(string): 
+    print(string)
+    
+fancy_print('hello world')
+```
+
+The output result is also:
+
+```python
+hello world
+```
+
+### Object-oriented
+
+You can use the object-oriented method to print Hello World (it's overkill):
+
+```python
+class print_str:
+ 
+   def __init__(self, string):
+      self.string = string
+   
+   def display(self):
+       print(self.string)
+
+py_object = print_str('hello world')
+py_object.display()
+```
+
+The output result is also:
+
+```python
+hello world
+```
+
+After so many examples, do you feel the power of python?
