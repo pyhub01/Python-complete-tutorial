@@ -286,7 +286,40 @@ array([[32, 25, 20, 17, 16, 17, 20, 25],
 >>> 
 ```
 
+If we put the previous two figures together, you will find how python's matplotlib package draws three-dimensional function images:
 
+```python
+# Introduce necessary packages (library functions)
+from matplotlib import pyplot as plt
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+
+# Create a 3D canvas
+fig = plt.figure()
+ax = Axes3D( fig, auto_add_to_figure = False )
+fig.add_axes(ax)
+
+# Create xy axis
+x = np.arange( -4, 4, 1 )
+y = np.arange( -4, 4, 1 )
+
+# Create xy plane
+x_2d, y_2d = np.meshgrid( x, y )
+# Create the data for the z coordinate
+z = x_2d**2 + y_2d**2
+
+# Draw the lattice plane
+ax.scatter(x_2d, y_2d, np.zeros( (len(x_2d), len(x_2d)) ))
+
+# Draw three-dimensional graphics
+ax.plot_surface( x_2d, y_2d, z,
+                 rstride = 1, cstride = 1,
+                 cmap = 'rainbow',
+                 )
+
+# Project the graphics in the internal memory and video memory onto the screen.
+plt.show()
+```
 
 
 
