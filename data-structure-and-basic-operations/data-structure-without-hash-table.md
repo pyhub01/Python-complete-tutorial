@@ -371,7 +371,32 @@ The step length can be a negative number, then the sequence is a decreasing sequ
 <mark style="color:green;">**Forced type conversion**</mark>
 {% endhint %}
 
-<mark style="color:green;">****</mark>
+**Forced type conversion **<mark style="color:green;">****</mark> can convert a data structure of one type into a data structure of another type.&#x20;
+
+For example, **list(...)** can convert the data type in parentheses to list.
+
+The type(...) function can return the type of a variable.
+
+```python
+>>> a = 2
+>>> a
+2
+>>> type(a)
+<class 'int'>
+
+>>> a = str(a)
+>>> type(a)
+<class 'str'>
+>>> a
+'2'
+
+>>> a = list(a)
+>>> type(a)
+<class 'list'>
+>>> a
+['2']
+>>> 
+```
 
 
 
