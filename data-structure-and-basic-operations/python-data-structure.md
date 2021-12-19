@@ -159,9 +159,15 @@ The number types are divided into the following categories:
 
 ## <mark style="color:purple;">string</mark>
 
+```python
+>>> 'hello world'
+'hello world'
+>>> type('hello world')
+<class 'str'>
+>>> 
+```
 
-
-
+The string can use single quotation marks ('...') or double quotation marks ("...") to indicate, a multi-line string uses three single quotation marks ("'...''') or three Multiple quotation marks ("""...""") to indicate.
 
 
 
