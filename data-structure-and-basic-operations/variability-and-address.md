@@ -213,5 +213,66 @@ There are many ways to deep copy, for example, we can write a loop.
 >>> 
 ```
 
+You may find it a bit troublesome to do so, so we can complete the deep copy through list construction.
+
+```python
+>>> a = list(range(10))
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> b = [i for i in a]
+>>> b
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> id(a)
+1777019294592
+>>> id(b)
+1777019369024
+>>> 
+```
+
+**b = \[i for i in a]** This is a very simple deep copy scheme. No need to introduce any libraries.
+
+
+
+Of course, the problem is that we sometimes use high-dimensional data. If we still need to nest multiple loops in this way, it would be a little troublesome.&#x20;
+
+So we can use python library to complete deep copy.
+
+```python
+>>> import copy
+>>> a = list(range(10))
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> b = copy.deepcopy(a)
+>>> b
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> id(a)
+1777019283520
+>>> id(b)
+1777019368832
+>>> 
+```
+
+**b = copy.deepcopy(a)**&#x20;
+
+This is a deep copy done using a copy library. If your data is high-dimensional data, then this is a good choice (this library python is already installed by default, and you don’t need to install it yourself)
+
+{% hint style="danger" %}
+<mark style="color:red;">**Tuples are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
+{% endhint %}
+
+
+
+
+
+
+
+
+
+
+
 
 
