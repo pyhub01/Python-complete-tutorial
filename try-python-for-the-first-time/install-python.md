@@ -5,7 +5,7 @@ coverY: 0
 
 # 1 Install python
 
-Python is divided into python2 and python3. Python2 uses an older programming language design scheme, which is no longer suitable for the current high-level programming language design ideas. Therefore, in order to remove the burden from old version, python3 did not consider backward compatibility when designing.&#x20;
+Python is divided into python2 and python3. Python2 uses an older programming language design scheme, which is no longer suitable for the current high-level programming language design ideas. Therefore, in order to remove the burden from old version, python3 did not consider backward compatibility when designing.
 
 Python workshop officially announced that on January 1, 2020, the update of Python 2 will be discontinued.
 
@@ -91,10 +91,11 @@ In the next chapter, we will also mention why we choose python. You can feel the
 5. The code efficiency of python is improving year by year, and the performance of the computer is improving year by year, so the criticism of python's low efficiency is gradually weakening.
 6. The code development cycle is getting shorter and shorter, which is suitable for programming languages that can be developed quickly.
 7. Many emerging fields, such as image recognition (deep learning) or text mining (deep learning) can only be processed with python
+8. Many well-known websites and software are written in python today.
+9. The python code structure is very similar to c, c++, java, so these programmers can easily transfer to the python field.
 
 ## Statistics
 
 Start time of this page: December 17, 2021
 
 Completion time of this page: December 17, 2021
-
