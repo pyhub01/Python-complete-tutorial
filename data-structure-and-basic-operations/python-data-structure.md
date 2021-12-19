@@ -195,17 +195,39 @@ To explain the fourth item, if the variable name is the same as the reserved wor
 >>> 
 ```
 
+{% hint style="success" %}
+<mark style="color:green;">**About '='**</mark>
+{% endhint %}
+
+In programming languages, **=** means assignment, not equality in mathematics.
 
 
 
+For example, a=3 means to assign 3 to a.&#x20;
+
+b=a means to assign a to b.&#x20;
+
+a=a+1 means to assign a+1 to a, that is, to increase a by 1.
 
 <mark style="color:purple;"></mark>
 
-<mark style="color:purple;"></mark>
+The demonstration program is as follows:
 
-<mark style="color:purple;"></mark>
-
-<mark style="color:purple;"></mark>
+```python
+>>> a = 3
+>>> a
+3
+>>> a = a + 1
+>>> a
+4
+>>> b = 5
+>>> b
+5
+>>> b = a
+>>> b
+4
+>>> 
+```
 
 ## <mark style="color:purple;">string</mark>
 
