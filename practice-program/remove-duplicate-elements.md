@@ -27,3 +27,9 @@ We first create a list, and then repeat the list, so that each element has a red
 We take advantage of the fact that there are no repeating elements in the set, and convert the list into a set to remove the repeating elements.&#x20;
 
 Because our previous data structure was a list, for the unification, the final output still uses a list. So we need to transform the collection into a list again.
+
+## Statistics
+
+Start time of this page: December 19, 2021
+
+Completion time of this page: December 19, 2021

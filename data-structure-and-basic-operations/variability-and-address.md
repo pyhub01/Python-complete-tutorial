@@ -331,3 +331,9 @@ Tuples are changeable, so a deep copy must also be performed.
 ```
 
 Dictionary is changeable, so a deep copy must also be performed.
+
+## Statistics
+
+Start time of this page: December 19, 2021
+
+Completion time of this page: December 19, 2021

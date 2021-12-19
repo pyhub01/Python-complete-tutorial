@@ -160,3 +160,9 @@ When introducing the data structure, we will use whether to include a hash table
 * lists, sets, dictionaries are variable.
 
 I will talk about the difference between <mark style="color:red;">**Variable**</mark> and <mark style="color:green;">**Immutable**</mark> in a chapter.
+
+## Statistics
+
+Start time of this page: December 18, 2021
+
+Completion time of this page: December 18, 2021

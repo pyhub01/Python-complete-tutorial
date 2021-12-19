@@ -482,3 +482,8 @@ We can observe the pop operation from the above example. The pop operation of py
 
 
 
+## Statistics
+
+Start time of this page: December 19, 2021
+
+Completion time of this page:&#x20;
