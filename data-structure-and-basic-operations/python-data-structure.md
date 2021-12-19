@@ -134,9 +134,22 @@ We can use the type() function to observe the data type:
 
 2 is an integer.
 
-There are six data types in Python: Numbers, strings, lists, tuples, sets, dictionaries. Let's explain each data type below:
+There are six data types in Python: Numbers, strings, lists, tuples, sets, dictionaries. Let's explain each data type in next a few chapter.
 
+{% hint style="success" %}
+<mark style="color:green;">**Classified according to whether it contains a hash table**</mark>
+{% endhint %}
 
+* Numbers, strings, lists, tuples do not use hash table indexes.
+* sets, dictionaries use hash table index.
 
+When introducing the data structure, we will use whether to include a hash table to introduce separately.
 
+{% hint style="success" %}
+<mark style="color:green;">**Variable and immutable**</mark>
+{% endhint %}
 
+* Numbers, strings, tuples are immutable.
+* lists, sets, dictionaries are variable.
+
+I will talk about the difference between <mark style="color:red;">**Variable**</mark> and <mark style="color:green;">**Immutable**</mark> in a chapter.
