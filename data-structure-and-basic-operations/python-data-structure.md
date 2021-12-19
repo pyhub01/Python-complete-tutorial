@@ -261,7 +261,7 @@ Among them, \n means newline.
 
 ### <mark style="color:orange;">String index</mark>
 
-The string is composed of characters, and the character at the corresponding position can be extracted by the string index. It is worth noting that the string index starts from 0.
+The string is composed of characters, and the character at the corresponding position can be extracted by the string index. It is important that the string index starts from 0.
 
 For convenience, we use the string '123456' (note: the string in the quotation marks is not a number) to illustrate
 
@@ -290,25 +290,79 @@ IndexError: string index out of range
 >>> 
 ```
 
-We assign the string to a variable, and then index the variable. When the length of the string is exceeded, python will report an error.
+We assign the string to a variable, and then index the variable. When the Index is exceeded the length of the string(array out of bounds), python will report an error.
 
+{% hint style="danger" %}
+One advantage of using python is that python will report an array out-of-bounds error.&#x20;
 
+This is not reminded in the C language, C++ and Java. The array beyond the boundary may cause serious consequences, may modify the memory that is not intended to be modified, or leak important data to the hacker.
+{% endhint %}
 
+{% hint style="info" %}
+<mark style="color:blue;">**Index value can be negative**</mark>
+{% endhint %}
 
+Let's still use string '123456' as an example to try what happens with negative indexes:
 
+```python
+>>> test = '123456'
+>>> test
+'123456'
+>>> 
+>>> test[-1]
+'6'
+>>> test[-2]
+'5'
+>>> test[-3]
+'4'
+>>> test[-4]
+'3'
+>>> test[-5]
+'2'
+>>> test[-6]
+'1'
+>>> test[-7]
+Traceback (most recent call last):
+  File "<pyshell#123>", line 1, in <module>
+    test[-7]
+IndexError: string index out of range
+>>> 
+```
 
+We found that when a negative number is used as an index value, it will index from the end of the string forward.
 
+When the index exceeds the length of the string, an error will still be reported.
 
+### <mark style="color:orange;">**String slice**</mark>
 
+String slicing is very important. When we want to extract the key information of a string, slicing can help us extract part of it:
 
+```python
+>>> text = 'name:Tom'
+>>> text[5:]
+'Tom'
+>>> 
+```
 
+The string slice is like this: <mark style="color:blue;">**string name**</mark>** \[ **<mark style="color:red;">**start position**</mark>** : **<mark style="color:green;">**end position**</mark>** ]**
 
+```python
+>>> text = 'name:Tom'
+>>> text[2:6]
+'me:T'
+>>> 
+```
 
+When the <mark style="color:red;">**start position**</mark> is empty, it means to start cutting from the beginning of the string:
 
+```python
+>>> text = 'name:Tom'
+>>> text[:5]
+'name:'
+>>> 
+```
 
-
-
-
+When the end position is empty, it means to keep to the end of the string:
 
 
 
