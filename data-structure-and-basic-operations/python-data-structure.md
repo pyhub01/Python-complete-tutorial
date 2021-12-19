@@ -134,9 +134,30 @@ We can use the type() function to observe the data type:
 
 2 is an integer.
 
+There are six data types in Python: Numbers, strings, lists, tuples, sets, dictionaries. Let's explain each data type below:
 
+## <mark style="color:purple;">number</mark>
 
+The number types are divided into the following categories:
 
+```python
+>>> type(2)
+<class 'int'>
+>>> 
+>>> type(2.3)
+<class 'float'>
+>>> 
+>>> type(True)
+<class 'bool'>
+>>> 
+>>> type(1+2j)
+<class 'complex'>
+>>> 
+```
+
+**int** represents an integer number, and **float** represents a floating point number, which is a decimal number. **bool** represents the boolean type, which contains two types of **True** and **False**. The last type is a **complex** number, which contains real and imaginary parts. The unit of imaginary number is represented by j.
+
+## <mark style="color:purple;">string</mark>
 
 
 
