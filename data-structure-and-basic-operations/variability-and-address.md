@@ -279,11 +279,54 @@ TypeError: 'tuple' object does not support item assignment
 
 Tuples are unchangeable variables, so this problem does not exist with tuples.
 
+{% hint style="danger" %}
+<mark style="color:red;">**Sets are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
+{% endhint %}
 
+```python
+>>> a = set(range(5))
+>>> b = a
 
+>>> id(a)
+1777019500128
+>>> id(b)
+1777019500128
 
+>>> a.add(10)
+>>> b
+{0, 1, 2, 3, 4, 10}
 
+>>> id(a)
+1777019500128
+>>> id(b)
+1777019500128
+>>> 
+```
 
+Tuples are changeable, so a deep copy must also be performed.
 
+{% hint style="danger" %}
+<mark style="color:red;">**Dictionary are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
+{% endhint %}
 
+```python
+>>> a = {'name': 'tom', 'age': 24}
+>>> b = a
 
+>>> id(a)
+1777019370816
+>>> id(b)
+1777019370816
+
+>>> a['job'] = 'doctor'
+>>> b
+{'name': 'tom', 'age': 24, 'job': 'doctor'}
+
+>>> id(a)
+1777019370816
+>>> id(b)
+1777019370816
+>>> 
+```
+
+Dictionary is changeable, so a deep copy must also be performed.
