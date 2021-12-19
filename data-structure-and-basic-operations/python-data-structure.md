@@ -173,13 +173,18 @@ In this case, the value of variable a is 2.
 <mark style="color:green;">**About variables**</mark>
 {% endhint %}
 
-The first character must be a letter in the alphabet or an underscore \_.&#x20;
+1. The first character must be a letter in the alphabet or an underscore \_.&#x20;
+2. The other parts of the Variable consist of letters, numbers, and underscores.&#x20;
+3. Variable are case sensitive.
+4. Variable names should not use Python reserved words.
 
-The other parts of the Variable consist of letters, numbers, and underscores.&#x20;
+To explain the first one, for example, **abc** can be a variable name, **\_abc** can also be a variable name, **studnt\_id** can also be a variable name, but <mark style="color:red;">**2021\_weeks**</mark> cannot be a variable name, because a variable name cannot start with a number.
 
-Variable are case sensitive.
 
-Variable names should not use Python reserved words:
+
+
+
+
 
 
 
