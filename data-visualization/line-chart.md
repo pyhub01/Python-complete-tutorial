@@ -1,5 +1,6 @@
 ---
 description: line chart
+coverY: 0
 ---
 
 # 4 line chart
