@@ -175,8 +175,8 @@ In this case, the value of variable a is 2.
 <mark style="color:green;">**About variables**</mark>
 {% endhint %}
 
-1. The first character must be a letter in the alphabet or an underscore \_.&#x20;
-2. The other parts of the Variable consist of letters, numbers, and underscores.&#x20;
+1. The first character must be a letter in the alphabet or an underscore \_.
+2. The other parts of the Variable consist of letters, numbers, and underscores.
 3. Variable are case sensitive.
 4. Variable names should not use Python reserved words.
 
@@ -203,8 +203,8 @@ To explain the fourth item, if the variable name is the same as the reserved wor
 
 In programming languages, **=** means assignment, not equality in mathematics.
 
-For example, a=3 means to assign 3 to a. \
-b=a means to assign a to b. \
+For example, a=3 means to assign 3 to a.\
+b=a means to assign a to b.\
 a=a+1 means to assign a+1 to a, that is, to increase a by 1.
 
 The demonstration program is as follows:
@@ -293,7 +293,7 @@ IndexError: string index out of range
 We assign the string to a variable, and then index the variable. When the Index is exceeded the length of the string(array out of bounds), python will report an error.
 
 {% hint style="danger" %}
-One advantage of using python is that python will report an array out-of-bounds error.&#x20;
+One advantage of using python is that python will report an array out-of-bounds error.
 
 This is not reminded in the C language, C++ and Java. The array beyond the boundary may cause serious consequences, may modify the memory that is not intended to be modified, or leak important data to the hacker.
 {% endhint %}
@@ -344,7 +344,7 @@ String slicing is very important. When we want to extract the key information of
 >>> 
 ```
 
-The string slice is like this: <mark style="color:blue;">**string name**</mark>** \[ **<mark style="color:red;">**start position**</mark>** : **<mark style="color:green;">**end position**</mark>** ]**
+The string slice is like this: <mark style="color:blue;">**string name**</mark>\*\* \[ <mark style="color:red;">**start position**</mark> : <mark style="color:green;">**end position**</mark> ]\*\*
 
 ```python
 >>> text = 'name:Tom'
@@ -362,33 +362,11 @@ When the <mark style="color:red;">**start position**</mark> is empty, it means t
 >>> 
 ```
 
-When the end position is empty, it means to keep to the end of the string:
+When the <mark style="color:green;">**end position**</mark> is empty, it means to keep to the end of the string:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```python
+>>> text = 'name:Tom'
+>>> text[5:]
+'Tom'
+>>> 
+```
