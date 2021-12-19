@@ -24,7 +24,7 @@ In this example, the variable name **a** points to the memory address numbered *
 
 As shown in the figure below:
 
-![Variables and memory](../.gitbook/assets/image.png)
+![Variables and memory](<../.gitbook/assets/image (1).png>)
 
 
 
@@ -48,7 +48,7 @@ If I copy a variable in python, for example, as shown below:
 
 You will find that the memory address units pointed to by **a** and **b** are the same! That is to say, when I tried to copy a variable, I didn't really clone the variable, but: I created another pointer points to the memory, and the two pointers point to the same memory space.
 
-![Shared memory](<../.gitbook/assets/image (2) (1) (1).png>)
+![Shared memory](<../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 This means that when I try to change the content of **a**, the content of **b** will also change<mark style="color:red;">**???**</mark>
 
@@ -62,7 +62,7 @@ Then we say that this is a **variable** data type.
 
 <mark style="color:red;">**We need to pay extra attention to this pattern!**</mark>
 
-![Scenario 1](<../.gitbook/assets/image (1) (1).png>)
+![Scenario 1](<../.gitbook/assets/image (1) (1) (1).png>)
 
 
 
@@ -70,7 +70,7 @@ But if I change the value of **a**, but **a** points to another address, then **
 
 Then we say that this is an **immutable** data type.
 
-![Scenario 2](<../.gitbook/assets/image (2) (1).png>)
+![Scenario 2](<../.gitbook/assets/image (2) (1) (1).png>)
 
 {% hint style="success" %}
 <mark style="color:green;">**Numbers are immutable**</mark>

@@ -6,7 +6,7 @@ description: Introduction and use of the iris dataset
 
 Iris has many meanings, such as the iris of the eye:
 
-![iris of the eye](<../.gitbook/assets/image (1).png>)
+![iris of the eye](<../.gitbook/assets/image (1) (1).png>)
 
 The iris data set we are talking about today refers to the iris flower data set.
 
@@ -14,7 +14,7 @@ The iris data set we are talking about today refers to the iris flower data set.
 
 The Iris data set is a commonly used classification experimental data set, collected and organized by Fisher, 1936. Iris, also known as the iris flower data set, is a type of data set for multivariate analysis. The data set contains 150 data samples, divided into 3 categories, each with 50 data, and each data contains 4 attributes. The four attributes of calyx length, calyx width, petal length, and petal width can be used to predict which of the three species (Setosa, Versicolour, Virginica) the iris flower belongs to.
 
-![Setosa, Versicolour, Virginica](<../.gitbook/assets/image (2).png>)
+![Setosa, Versicolour, Virginica](<../.gitbook/assets/image (2) (1).png>)
 
 The iris data set is very small, and we can list them here.
 
@@ -413,7 +413,6 @@ print()
 print('label:')
 print(label.shape)
 print(label)
-
 ```
 
 The output is very neat data, clearer than the data output format that comes with python.
