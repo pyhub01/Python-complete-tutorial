@@ -270,5 +270,21 @@ The elements on the left edge of the slice will be kept, and the elements on the
 <mark style="color:green;">**Slices are used in python strings, lists, tuples, and sets. The rules for slicing in python are the same.**</mark>
 {% endhint %}
 
+## <mark style="color:purple;">list</mark>
 
+Lists are one of the most commonly used data types in python.
 
+We can construct an empty list in the following two ways.
+
+```python
+>>> a = list()
+>>> a
+[]
+
+>>> b = []
+>>> b
+[]
+>>> 
+```
+
+The slice and index of the list are exactly the same as the string, so I won’t repeat them here.
