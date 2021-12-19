@@ -20,6 +20,7 @@
 ## 🐍 Practice program
 
 * [🚩 fancy print](practice-program/fancy-print.md)
+* [🚩 Remove duplicate elements](practice-program/remove-duplicate-elements.md)
 
 ## 3⃣ Data mining
 
