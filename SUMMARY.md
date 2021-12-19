@@ -26,3 +26,7 @@
 
 * [3 What is data mining](data-mining/what-is-data-mining.md)
 * [3 iris data set](data-mining/iris-data-set.md)
+
+## 4⃣ data visualization
+
+* [4 line chart](data-visualization/line-chart.md)
