@@ -216,7 +216,7 @@ For convenience, we use the string '123456' (note: the string in the quotation m
 '6'
 >>> test[6]
 Traceback (most recent call last):
-  File "<pyshell#71>", line 1, in <module>
+  File "<pyshell>", line 1, in <module>
     test[6]
 IndexError: string index out of range
 >>> 
