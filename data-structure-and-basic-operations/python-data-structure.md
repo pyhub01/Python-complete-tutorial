@@ -157,6 +157,38 @@ The number types are divided into the following categories:
 
 **int** represents an integer number, and **float** represents a floating point number, which is a decimal number. **bool** represents the boolean type, which contains two types of **True** and **False**. The last type is a **complex** number, which contains real and imaginary parts. The unit of imaginary number is represented by j.
 
+We can assign a number to a variable:
+
+```python
+>>> a = 2
+>>> 
+>>> a
+2
+>>> 
+```
+
+In this case, the value of variable a is 2.
+
+{% hint style="success" %}
+<mark style="color:green;">About variables</mark>
+
+<mark style="color:green;"></mark>
+{% endhint %}
+
+<mark style="color:green;">****</mark>
+
+
+
+
+
+<mark style="color:purple;"></mark>
+
+<mark style="color:purple;"></mark>
+
+<mark style="color:purple;"></mark>
+
+<mark style="color:purple;"></mark>
+
 ## <mark style="color:purple;">string</mark>
 
 ```python
