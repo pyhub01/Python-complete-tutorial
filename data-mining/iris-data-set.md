@@ -308,7 +308,6 @@ for index in range(len(label)):
 print(data)
 print()
 print(label)
-
 ```
 
 The output is as follows:
@@ -374,13 +373,10 @@ The output is as follows:
 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
+In this way, we can easily process data. In future documents, I will directly use data and label to represent the iris data set.
 
+## Statistics
 
+Start time of this page: December 19, 2021
 
-
-
-
-
-
-
-
+Completion time of this page: December 19, 2021
