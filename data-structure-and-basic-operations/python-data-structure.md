@@ -167,6 +167,8 @@ We can assign a number to a variable:
 >>> 
 ```
 
+Enter the variable name after the **>>>** symbol, and the value of the variable can be displayed on the screen.
+
 In this case, the value of variable a is 2.
 
 {% hint style="success" %}
@@ -201,15 +203,9 @@ To explain the fourth item, if the variable name is the same as the reserved wor
 
 In programming languages, **=** means assignment, not equality in mathematics.
 
-
-
-For example, a=3 means to assign 3 to a.&#x20;
-
-b=a means to assign a to b.&#x20;
-
+For example, a=3 means to assign 3 to a. \
+b=a means to assign a to b. \
 a=a+1 means to assign a+1 to a, that is, to increase a by 1.
-
-<mark style="color:purple;"></mark>
 
 The demonstration program is as follows:
 
