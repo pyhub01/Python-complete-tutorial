@@ -1,8 +1,9 @@
 ---
 description: Slow lookup Data structures
+coverY: 0
 ---
 
-# Data structure without hash table
+# 2 Data structure without hash table
 
 ## <mark style="color:purple;">number</mark>
 

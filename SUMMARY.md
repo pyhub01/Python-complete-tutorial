@@ -13,7 +13,7 @@
 ## 2⃣ Data structure and basic operations
 
 * [2 Python data structure](data-structure-and-basic-operations/python-data-structure.md)
-* [Data structure without hash table](data-structure-and-basic-operations/data-structure-without-hash-table.md)
+* [2 Data structure without hash table](data-structure-and-basic-operations/data-structure-without-hash-table.md)
 * [2 Variability and address](data-structure-and-basic-operations/variability-and-address.md)
 
 ## 3⃣ Data mining
