@@ -178,13 +178,22 @@ In this case, the value of variable a is 2.
 3. Variable are case sensitive.
 4. Variable names should not use Python reserved words.
 
-To explain the first one, for example, **abc** can be a variable name, **\_abc** can also be a variable name, **studnt\_id** can also be a variable name, but <mark style="color:red;">**2021\_weeks**</mark> cannot be a variable name, because a variable name cannot start with a number.
+To explain the firstand second one, for example, **abc** can be a variable name, **\_abc** can also be a variable name, **studnt\_id** can also be a variable name, but <mark style="color:red;">**2021\_weeks**</mark> cannot be a variable name, because a variable name cannot start with a number.
 
+To explain the third point: **time** and **Time** and **TIME** are three different variables, because variable names are case sensitive.
 
+To explain the fourth item, if the variable name is the same as the reserved word in python, then this python reserved word is invalid, which is equivalent to modifying python itself. This is possible, but it is strongly not recommended. Python reserved words can be viewed using the following methods:
 
-
-
-
+```python
+>>> import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 
+'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 
+'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 
+'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 
+'with', 'yield']
+>>> 
+```
 
 
 
