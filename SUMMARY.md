@@ -25,3 +25,4 @@
 ## 3⃣ Data mining
 
 * [3 What is data mining](data-mining/what-is-data-mining.md)
+* [3 iris data set](data-mining/iris-data-set.md)
