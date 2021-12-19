@@ -113,7 +113,7 @@ TypeError: 'str' object does not support item assignment
 
 The string itself cannot be modified, So when we modify the string, python will report an error
 
-So when the string is updated, The original string is recycled, the pointer must point to another memory location, the previous address must be changed.
+So when the string is updated, The original string is deleted, the pointer must point to another memory location, the previous address must be changed.
 
 ```python
 >>> a = 'hello'
@@ -135,7 +135,7 @@ So when the string is updated, The original string is recycled, the pointer must
 >>> 
 ```
 
-String is an immutable data type. When I assign another string to a variable, the address of the variable changes.
+String is an immutable data type. When I assign another string to a variable, the address of the variable changes as the old string is deleted.
 
 {% hint style="danger" %}
 <mark style="color:red;">**Lists are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
@@ -260,13 +260,24 @@ So we can use python library to complete deep copy.
 
 This is a deep copy done using a copy library. If your data is high-dimensional data, then this is a good choice (this library python is already installed by default, and you don’t need to install it yourself)
 
-{% hint style="danger" %}
-<mark style="color:red;">**Tuples are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
+{% hint style="success" %}
+<mark style="color:green;">**Tuples are**</mark><mark style="color:green;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:green;">** **</mark><mark style="color:green;">**immutable**</mark>
 {% endhint %}
 
+```python
+>>> a = tuple(range(5))
+>>> a
+(0, 1, 2, 3, 4)
 
+>>> a[2] = 4
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+    a[2] = 4
+TypeError: 'tuple' object does not support item assignment
+>>> 
+```
 
-
+Tuples are unchangeable variables, so this problem does not exist with tuples.
 
 
 
