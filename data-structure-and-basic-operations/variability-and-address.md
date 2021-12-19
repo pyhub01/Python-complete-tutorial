@@ -47,7 +47,7 @@ If I copy a variable in python, for example, as shown below:
 
 You will find that the memory address units pointed to by **a** and **b** are the same! That is to say, when I tried to copy a variable, I didn't really clone the variable, but: I created another pointer points to the memory, and the two pointers point to the same memory space.
 
-![Shared memory](<../.gitbook/assets/image (2).png>)
+![Shared memory](<../.gitbook/assets/image (2) (1).png>)
 
 This means that when I try to change the content of **a**, the content of **b** will also change<mark style="color:red;">**???**</mark>
 
@@ -61,11 +61,7 @@ If I change the value of **a**, but the address of **a** does not change, the va
 
 But if I change the value of **a**, but **a** points to another address, then **b** still points to the original address, and the values of **a** and **b** are different.
 
-
-
-
-
-
+![Scenario 2](<../.gitbook/assets/image (2).png>)
 
 
 
