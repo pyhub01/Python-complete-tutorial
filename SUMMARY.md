@@ -14,7 +14,7 @@
 
 * [2 Python data structure](data-structure-and-basic-operations/python-data-structure.md)
 * [2 Data structure without hash table](data-structure-and-basic-operations/data-structure-without-hash-table.md)
-* [2 Data structure with hash table](data-structure-and-basic-operations/data-structure-with-hash-table.md)
+* [2 Data structure with hash table](data-structure-and-basic-operations/page-1.md)
 * [2 Variability and address](data-structure-and-basic-operations/variability-and-address.md)
 
 ## 🐍 Practice program
