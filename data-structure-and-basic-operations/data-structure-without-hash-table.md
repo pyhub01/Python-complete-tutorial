@@ -400,9 +400,32 @@ The type(...) function can return the type of a variable.
 
 
 
+Let's continue to explain the list:
 
+The most important method in the list is append, This is a way to add variables to the end of the list.
 
+```python
+>>> a = []
 
+>>> a.append(1)
+>>> a
+[1]
+
+>>> a.append(2)
+>>> a
+[1, 2]
+
+>>> a.append('hello')
+>>> a
+[1, 2, 'hello']
+
+>>> a.append(['world', 5])
+>>> a
+[1, 2, 'hello', ['world', 5]]
+>>> 
+```
+
+We can add any element to the end of the list, including numbers, strings, and even add a list, so that this list is nested into another list, as shown above.
 
 
 
