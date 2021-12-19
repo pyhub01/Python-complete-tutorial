@@ -1,4 +1,8 @@
-# Page 1
+---
+description: Slow lookup Data structures
+---
+
+# Data structure without hash table
 
 ## <mark style="color:purple;">number</mark>
 
