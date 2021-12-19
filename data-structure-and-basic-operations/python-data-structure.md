@@ -25,7 +25,7 @@ For example, if we enter 2 it will produce the following changes:
 
 We enter 2, and python reads 2 as a number, and then returns the entered number, which is 2.
 
-What if we enter a calculation?
+What if we enter a Formula?
 
 ```python
 >>> 1+2
@@ -33,7 +33,15 @@ What if we enter a calculation?
 >>> 
 ```
 
+Python will calculate the corresponding value.
 
+Python contains algorithms that can perform scientific calculations. For example, if you enter:
+
+```python
+>>> 7+3*7/5+5/3+(11*9+2)/5
+33.06666666666666
+>>> 
+```
 
 
 
