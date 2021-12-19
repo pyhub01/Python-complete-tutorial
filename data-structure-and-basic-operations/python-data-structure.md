@@ -222,7 +222,7 @@ IndexError: string index out of range
 >>> 
 ```
 
-
+We assign the string to a variable, and then index the variable. When the length of the string is exceeded, python will report an error.
 
 
 
