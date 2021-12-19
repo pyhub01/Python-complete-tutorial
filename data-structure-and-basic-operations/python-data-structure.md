@@ -23,7 +23,15 @@ For example, if we enter 2 it will produce the following changes:
 >>> 
 ```
 
+We enter 2, and python reads 2 as a number, and then returns the entered number, which is 2.
 
+What if we enter a calculation?
+
+```python
+>>> 1+2
+3
+>>> 
+```
 
 
 
