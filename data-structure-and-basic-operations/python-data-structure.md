@@ -225,44 +225,6 @@ The demonstration program is as follows:
 >>> 
 ```
 
-{% hint style="danger" %}
-<mark style="color:red;">**Numbers are variable**</mark>
-{% endhint %}
-
-Python is a label language, which is very different from the C language.&#x20;
-
-In python, each variable name is a pointer to the corresponding memory unit.
-
-```python
->>> a = 5
->>> id(a)
-140735232939920
->>> 
-```
-
-We can use the id() method to get the address of the memory unit pointed to by a variable.
-
-In this example, the variable name a points to the memory address numbered 140735232939920, and the memory address stores an int type data, the value of this data is 5.
-
-
-
-If I copy a variable in python, for example, as shown below:
-
-```python
->>> a = 5
->>> b = a
->>> 
->>> id(a)
-140735232939920
->>> id(b)
-140735232939920
->>> 
-```
-
-<mark style="color:purple;"></mark>
-
-<mark style="color:purple;"></mark>
-
 ## <mark style="color:purple;">string</mark>
 
 ```python
