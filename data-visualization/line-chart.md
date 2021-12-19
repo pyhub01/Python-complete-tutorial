@@ -36,3 +36,9 @@ plt.show()
 ![The relationship between income and outlay](<../.gitbook/assets/image (3).png>)
 
 In this graph, we will find that when income increases, expenditures will increase accordingly.&#x20;
+
+## Statistics
+
+Start time of this page: December 19, 2021
+
+Completion time of this page: December 19, 2021
