@@ -170,12 +170,16 @@ We can assign a number to a variable:
 In this case, the value of variable a is 2.
 
 {% hint style="success" %}
-<mark style="color:green;">About variables</mark>
-
-<mark style="color:green;"></mark>
+<mark style="color:green;">**About variables**</mark>
 {% endhint %}
 
-<mark style="color:green;">****</mark>
+The first character must be a letter in the alphabet or an underscore \_.&#x20;
+
+The other parts of the Variable consist of letters, numbers, and underscores.&#x20;
+
+Variable are case sensitive.
+
+Variable names should not use Python reserved words:
 
 
 
