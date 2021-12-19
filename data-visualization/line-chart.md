@@ -33,7 +33,7 @@ plt.grid()
 plt.show()
 ```
 
-![The relationship between income and outlay](<../.gitbook/assets/image (3).png>)
+![The relationship between income and outlay](<../.gitbook/assets/image (3) (1).png>)
 
 In this graph, we will find that when income increases, expenditures will increase accordingly.&#x20;
 
@@ -90,15 +90,50 @@ plt.show()
 
 ![Plot two functions at the same time](<../.gitbook/assets/image (2).png>)
 
+The following code block can draw multiple functions with gradually color:
+
+```python
+import numpy as np
+
+import matplotlib
+import matplotlib.pyplot as plt
+
+x = np.arange( 0, 5, 0.01 )
+N = 30
+cmap = plt.get_cmap( 'jet', N )
+
+for i, n in enumerate( np.linspace(0, 0.5, N) ):
+    y = x ** n
+    plt.plot( x, y, c=cmap(i) )
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Automatically add multiple functions')
 
 
+# Draw colorbar
+norm = matplotlib.colors.Normalize( 0, 0.5 )
+sm = plt.cm.ScalarMappable( cmap=cmap, norm=norm )
+plt.colorbar(sm)
 
 
+plt.grid()
+plt.show()
+```
 
+![N = 10](<../.gitbook/assets/image (7).png>)
 
+![N = 20](<../.gitbook/assets/image (6).png>)
 
+![N = 30](<../.gitbook/assets/image (3).png>)
 
+![N = 50](<../.gitbook/assets/image (4).png>)
 
+![N = 100](<../.gitbook/assets/image (5).png>)
+
+![N = 1000](<../.gitbook/assets/image (8).png>)
+
+This method is very useful when drawing a large number of function images, and can show the difference between different function images.
 
 ## Statistics
 
