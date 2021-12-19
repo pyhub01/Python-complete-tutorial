@@ -7,7 +7,7 @@ coverY: 0
 
 Data mining is to find some patterns from the data.
 
-
+![The relationship between income and outlay](<../.gitbook/assets/image (3).png>)
 
 
 
