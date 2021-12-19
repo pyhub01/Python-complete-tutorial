@@ -12,16 +12,15 @@ The number types are divided into the following categories:
 ```python
 >>> type(2)
 <class 'int'>
->>> 
+
 >>> type(2.3)
 <class 'float'>
->>> 
+
 >>> type(True)
 <class 'bool'>
->>> 
+
 >>> type(1+2j)
 <class 'complex'>
->>> 
 ```
 
 **int** represents an integer number, and **float** represents a floating point number, which is a decimal number. **bool** represents the boolean type, which contains two types of **True** and **False**. The last type is a **complex** number, which contains real and imaginary parts. The unit of imaginary number is represented by j.
@@ -30,10 +29,9 @@ We can assign a number to a variable:
 
 ```python
 >>> a = 2
->>> 
+
 >>> a
 2
->>> 
 ```
 
 Enter the variable name after the **>>>** symbol, and the value of the variable can be displayed on the screen, like **>>> a**.
@@ -63,7 +61,7 @@ To explain the fourth item, if the variable name is the same as the reserved wor
 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 
 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 
 'with', 'yield']
->>> 
+>>>
 ```
 
 {% hint style="success" %}
@@ -109,21 +107,20 @@ The string can use single quotation marks ('...') or double quotation marks ("..
 ```python
 >>> 'hello'
 'hello'
->>> 
+
 >>> "world"
 'world'
->>> 
+
 >>> '''good
 morning
 '''
 'good\nmorning\n'
->>> 
+
 >>> """
 good
 night
 """
 '\ngood\nnight\n'
->>> 
 ```
 
 Among them, \n means newline.
@@ -138,7 +135,7 @@ For convenience, we use the string '123456' (note: the string in the quotation m
 >>> test = '123456'
 >>> test
 '123456'
->>> 
+
 >>> test[0]
 '1'
 >>> test[1]
@@ -177,7 +174,7 @@ Let's still use string '123456' as an example to try what happens with negative 
 >>> test = '123456'
 >>> test
 '123456'
->>> 
+
 >>> test[-1]
 '6'
 >>> test[-2]
@@ -250,7 +247,7 @@ An example is:
 
 ```python
 >>> text = '0123456789'
->>> 
+
 >>> text[1:3]
 '12'
 >>> text[:3]
