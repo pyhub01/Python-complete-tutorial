@@ -372,3 +372,30 @@ When the <mark style="color:green;">**end position**</mark> is empty, it means t
 ```
 
 Python's slicing principle is left-closed and right-opened, which means that the <mark style="color:red;">**start position**</mark> is included in the slicing result and the <mark style="color:green;">**end position**</mark> is not included in the splicing result.
+
+An example is:
+
+```python
+>>> text = '0123456789'
+>>> 
+>>> text[1:3]
+'12'
+>>> text[:3]
+'012'
+>>> text[3:]
+'3456789'
+>>> text[:-1]
+'012345678'
+>>> text[-3:-1]
+'78'
+>>> 
+```
+
+
+
+
+
+
+
+
+
