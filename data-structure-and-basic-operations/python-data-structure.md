@@ -167,7 +167,7 @@ We can assign a number to a variable:
 >>> 
 ```
 
-Enter the variable name after the **>>>** symbol, and the value of the variable can be displayed on the screen.
+Enter the variable name after the **>>>** symbol, and the value of the variable can be displayed on the screen, like **>>> a**.
 
 In this case, the value of variable a is 2.
 
