@@ -33,14 +33,21 @@ If I copy a variable in python, for example, as shown below:
 >>> a = 5
 >>> b = a
 >>> 
+>>> a
+5
+>>> b
+5
+>>> 
 >>> id(a)
-140735232939920
+140735234512784
 >>> id(b)
-140735232939920
+140735234512784
 >>> 
 ```
 
 You will find that the memory address units pointed to by **a** and **b** are the same! That is to say, when I tried to copy a variable, I didn't really clone the variable, but: I created another pointer points to the memory, and the two pointers point to the same memory space.
+
+![Shared memory](<../.gitbook/assets/image (2).png>)
 
 This means that when I try to change the content of **a**, the content of **b** will also change<mark style="color:red;">**???**</mark>
 
@@ -49,6 +56,8 @@ This means that when I try to change the content of **a**, the content of **b** 
 {% endhint %}
 
 If I change the value of **a**, but the address of **a** does not change, the value of **b** will also change accordingly.&#x20;
+
+![Scenario 1](<../.gitbook/assets/image (1).png>)
 
 But if I change the value of **a**, but **a** points to another address, then **b** still points to the original address, and the values of **a** and **b** are different.
 
