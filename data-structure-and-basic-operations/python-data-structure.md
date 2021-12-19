@@ -169,13 +169,58 @@ The number types are divided into the following categories:
 
 The string can use single quotation marks ('...') or double quotation marks ("...") to indicate, a multi-line string uses three single quotation marks ("'...''') or three Multiple quotation marks ("""...""") to indicate.
 
+```python
+>>> 'hello'
+'hello'
+>>> 
+>>> "world"
+'world'
+>>> 
+>>> '''good
+morning
+'''
+'good\nmorning\n'
+>>> 
+>>> """
+good
+night
+"""
+'\ngood\nnight\n'
+>>> 
+```
 
+Among them, \n means newline.
 
+### <mark style="color:orange;">String index</mark>
 
+The string is composed of characters, and the character at the corresponding position can be extracted by the string index. It is worth noting that the string index starts from 0.
 
+For convenience, we use the string '123456' (note: the string in the quotation marks is not a number) to illustrate
 
-
-
+```python
+>>> test = '123456'
+>>> test
+'123456'
+>>> 
+>>> test[0]
+'1'
+>>> test[1]
+'2'
+>>> test[2]
+'3'
+>>> test[3]
+'4'
+>>> test[4]
+'5'
+>>> test[5]
+'6'
+>>> test[6]
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    test[6]
+IndexError: string index out of range
+>>> 
+```
 
 
 
