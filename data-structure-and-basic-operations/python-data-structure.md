@@ -333,6 +333,10 @@ We found that when a negative number is used as an index value, it will index fr
 
 When the index exceeds the length of the string, an error will still be reported.
 
+{% hint style="success" %}
+<mark style="color:green;">**Indexes are used in python strings, lists, tuples, and sets. The rules for indexing in python are the same.**</mark>
+{% endhint %}
+
 ### <mark style="color:orange;">**String slice**</mark>
 
 String slicing is very important. When we want to extract the key information of a string, slicing can help us extract part of it:
@@ -371,7 +375,7 @@ When the <mark style="color:green;">**end position**</mark> is empty, it means t
 >>> 
 ```
 
-Python's slicing principle is left-closed and right-opened, which means that the <mark style="color:red;">**start position**</mark> is included in the slicing result and the <mark style="color:green;">**end position**</mark> is not included in the splicing result.
+Python's slicing principle is <mark style="color:red;">**left-closed**</mark> and <mark style="color:green;">**right-opened**</mark>, which means that the <mark style="color:red;">**start position**</mark> is included in the slicing result and the <mark style="color:green;">**end position**</mark> is not included in the splicing result.
 
 An example is:
 
@@ -391,7 +395,11 @@ An example is:
 >>> 
 ```
 
+The elements on the left edge of the slice will be kept, and the elements on the right edge of the slice will be discarded.
 
+{% hint style="success" %}
+<mark style="color:green;">**Slices are used in python strings, lists, tuples, and sets. The rules for slicing in python are the same.**</mark>
+{% endhint %}
 
 
 
