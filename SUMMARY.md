@@ -13,7 +13,7 @@
 ## 2⃣ Data structure and basic operations
 
 * [2 Python data structure](data-structure-and-basic-operations/python-data-structure.md)
-* [2 Variability](data-structure-and-basic-operations/variability.md)
+* [2 Variability and address](data-structure-and-basic-operations/variability-and-address.md)
 
 ## 3⃣ Data mining
 

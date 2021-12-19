@@ -2,7 +2,7 @@
 description: Quite important
 ---
 
-# 2 Variability
+# 2 Variability and address
 
 Python is a label language, which is very different from the C language.&#x20;
 
