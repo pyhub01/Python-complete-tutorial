@@ -47,7 +47,7 @@ Python will perform operations based on the priority of arithmetic symbols.
 
 Python can also directly perform large number operations, you can calculate any number less than 1e10000:
 
-```
+```python
 >>> 2**2
 4
 >>> 2**3
@@ -122,11 +122,17 @@ Python can also directly perform large number operations, you can calculate any 
 >>>
 ```
 
+Where \*\* means to calculate the power.
 
+We can use the type() function to observe the data type:
 
+```python
+>>> type(2)
+<class 'int'>
+>>> 
+```
 
-
-
+2 is an integer.
 
 
 
