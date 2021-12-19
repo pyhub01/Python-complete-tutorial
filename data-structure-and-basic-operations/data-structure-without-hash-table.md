@@ -271,7 +271,7 @@ The elements on the left edge of the slice will be kept, and the elements on the
 
 Lists are one of the most commonly used data types in python.
 
-We can construct an empty list in the following two ways.
+We can creat an empty list in the following two ways.
 
 ```python
 >>> a = list()
@@ -284,4 +284,43 @@ We can construct an empty list in the following two ways.
 >>> 
 ```
 
-The slice and index of the list are exactly the same as the string, so I won’t repeat them here.
+The slice and index of the list are exactly the same as the string, so I won’t repeat them here. I will give a few examples:
+
+```python
+>>> a = list(range(10))
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> a[0]
+0
+>>> a[5]
+5
+>>> a[-1]
+9
+>>> a[-9]
+1
+>>> a[-10]
+0
+
+>>> a[2:5]
+[2, 3, 4]
+
+>>> a[-5:-1]
+[5, 6, 7, 8]
+>>> 
+```
+
+{% hint style="success" %}
+<mark style="color:green;">**range(...)**</mark>
+{% endhint %}
+
+
+
+
+
+
+
+
+
+
+
