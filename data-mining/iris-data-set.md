@@ -1,5 +1,6 @@
 ---
 description: Introduction and use of the iris dataset
+coverY: 0
 ---
 
 # 3 iris data set
