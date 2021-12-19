@@ -57,23 +57,38 @@ This means that when I try to change the content of **a**, the content of **b** 
 
 If I change the value of **a**, but the address of **a** does not change, the value of **b** will also change accordingly.&#x20;
 
+Then we say that this is a **variable** data type.
+
 ![Scenario 1](<../.gitbook/assets/image (1).png>)
 
 But if I change the value of **a**, but **a** points to another address, then **b** still points to the original address, and the values of **a** and **b** are different.
 
+Then we say that this is an **immutable** data type.
+
 ![Scenario 2](<../.gitbook/assets/image (2).png>)
-
-
-
-
-
-
 
 {% hint style="danger" %}
 <mark style="color:red;">**Numbers are immutable**</mark>
 {% endhint %}
 
-
+```python
+>>> a = 5
+>>> b = a
+>>> 
+>>> id(a)
+140735234512784
+>>> id(b)
+140735234512784
+>>> 
+>>> a = 10
+>>> b
+5
+>>> id(a)
+140735234512944
+>>> id(b)
+140735234512784
+>>> 
+```
 
 
 
