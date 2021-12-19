@@ -314,6 +314,65 @@ The slice and index of the list are exactly the same as the string, so I won’t
 <mark style="color:green;">**range(...)**</mark>
 {% endhint %}
 
+The range(...) function is one of the most commonly used construction methods in python.
+
+The range function will generate a sequence of numbers:
+
+```python
+>>> range(10)
+range(0, 10)
+
+>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+```
+
+Range will generate a range type variable. If you force this range type variable into a list, then you can see the numbers contained in this range.&#x20;
+
+If you give only one parameter to the range function, then range will generate an integer sequence starting from 0 to this parameter minus 1.&#x20;
+
+This parameter must be an integer, otherwise an error will be reported.
+
+```python
+>>> range(4.5)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+    range(4.5)
+TypeError: 'float' object cannot be interpreted as an integer
+>>> 
+```
+
+Range can also enter multiple parameters. The first parameter is the start point of the range(included), the second parameter is the end point of the range(not included), and the third parameter is the step length of the range (optional parameter)
+
+```python
+>>> list(range(5))
+[0, 1, 2, 3, 4]
+
+>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> list(range(3, 10))
+[3, 4, 5, 6, 7, 8, 9]
+
+>>> list(range(3, 10, 2))
+[3, 5, 7, 9]
+
+>>> list(range(10, 3))
+[]
+
+>>> list(range(10, 3, -1))
+[10, 9, 8, 7, 6, 5, 4]
+>>> 
+```
+
+The step length can be a negative number, then the sequence is a decreasing sequence, notice that the starting point must be greater than the ending point, otherwise the range function will return an empty list.
+
+{% hint style="success" %}
+<mark style="color:green;">**Forced type conversion**</mark>
+{% endhint %}
+
+<mark style="color:green;">****</mark>
+
 
 
 
