@@ -61,9 +61,20 @@ set()
 >>> 
 ```
 
+We can also convert a list into a collection.
 
+```python
+>>> a = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5]
+>>> a
+[1, 2, 2, 2, 3, 4, 4, 5, 5, 5]
 
+>>> a = set(a)
+>>> a
+{1, 2, 3, 4, 5}
+>>> 
+```
 
+You will find that the repeated elements have been deleted from the set.
 
 
 
