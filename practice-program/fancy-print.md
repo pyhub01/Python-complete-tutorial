@@ -1,8 +1,9 @@
 ---
 description: Print format
+coverY: 0
 ---
 
-# fancy print
+# 🚩 fancy print
 
 In order to facilitate the debugging of the program, we write the fancy print function, this function can print the variable name and variable content, so that the output becomes simple and easy to understand.
 

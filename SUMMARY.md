@@ -19,7 +19,7 @@
 
 ## 🐍 Practice program
 
-* [fancy print](practice-program/fancy-print.md)
+* [🚩 fancy print](practice-program/fancy-print.md)
 
 ## 3⃣ Data mining
 
