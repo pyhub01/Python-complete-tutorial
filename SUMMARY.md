@@ -5,10 +5,10 @@
 
 ## 1⃣ Try python for the first time
 
-* [1 1 Install python](try-python-for-the-first-time/install-python.md)
-* [1 1 Hello world!](try-python-for-the-first-time/hello-world.md)
-* [1 1 Hello world in a nutshell](try-python-for-the-first-time/hello-world-in-a-nutshell.md)
-* [1 1 The first simple python project](try-python-for-the-first-time/the-first-simple-python-project.md)
+* [1 Install python](try-python-for-the-first-time/install-python.md)
+* [1 Hello world!](try-python-for-the-first-time/hello-world.md)
+* [1 Hello world in a nutshell](try-python-for-the-first-time/hello-world-in-a-nutshell.md)
+* [1 The first simple python project](try-python-for-the-first-time/the-first-simple-python-project.md)
 
 ## 2⃣ Data structure and basic operations
 
@@ -16,4 +16,4 @@
 
 ## 3⃣ Data mining
 
-* [3 3 What is data mining](data-mining/what-is-data-mining.md)
+* [3 What is data mining](data-mining/what-is-data-mining.md)
