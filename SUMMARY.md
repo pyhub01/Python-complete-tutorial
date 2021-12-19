@@ -9,6 +9,7 @@
 * [1 Hello world!](try-python-for-the-first-time/hello-world.md)
 * [1 Hello world in a nutshell](try-python-for-the-first-time/hello-world-in-a-nutshell.md)
 * [1 The first simple python project](try-python-for-the-first-time/the-first-simple-python-project.md)
+* [1 Recommended websites](try-python-for-the-first-time/recommended-websites.md)
 
 ## 2⃣ Data structure and basic operations
 
