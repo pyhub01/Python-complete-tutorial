@@ -402,6 +402,8 @@ The type(...) function can return the type of a variable.
 
 Let's continue to explain the list:
 
+#### <mark style="color:green;">append</mark>
+
 The most important method in the list is append, This is a way to add variables to the end of the list.
 
 ```python
@@ -426,6 +428,55 @@ The most important method in the list is append, This is a way to add variables 
 ```
 
 We can add any element to the end of the list, including numbers, strings, and even add a list, so that this list is nested into another list, as shown above.
+
+#### <mark style="color:green;">pop</mark>
+
+```python
+>>> a = list(range(10))
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+>>> a.pop()
+9
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+>>> a.pop(8)
+8
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 7]
+
+>>> a.pop(3)
+3
+>>> a
+[0, 1, 2, 4, 5, 6, 7]
+
+>>> a.pop(5)
+6
+>>> a
+[0, 1, 2, 4, 5, 7]
+>>> 
+```
+
+pop is one of the classic operations of the stack, which means to remove and output the last element from the stack
+
+We can observe the pop operation from the above example. The pop operation of python also supports popping the element with the corresponding index. For example, pop(8) means popping the element with the index 8. The 8 here does not refer to the 8, but the 9th element (the index is 8)
+
+## <mark style="color:purple;">tuple</mark>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
