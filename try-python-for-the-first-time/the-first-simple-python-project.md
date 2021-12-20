@@ -51,6 +51,10 @@ Then you will open an interface like this:
 
 Then enter pip install numpy in it. After that, you will find that the progress bar keeps moving, and then the installation is complete.
 
+```bash
+pip install numpy
+```
+
 Now you try the previous commands again, and you are all set.
 
 ```python
