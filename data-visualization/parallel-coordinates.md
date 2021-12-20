@@ -9,7 +9,7 @@ When you are trying to find the relationship between multiple variables, Paralle
 
 Parallel coordinates can clearly observe the distribution of data. For example, we can run Parallel coordinates on the iris data set.
 
-![iris dataset with parallel\_coordinates](<../.gitbook/assets/image (9).png>)
+![iris dataset with parallel\_coordinates](<../.gitbook/assets/image (9) (1).png>)
 
 ```python
 import seaborn

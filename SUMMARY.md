@@ -23,6 +23,7 @@
 
 * [🚩 fancy print](practice-program/fancy-print.md)
 * [🚩 Remove duplicate elements](practice-program/remove-duplicate-elements.md)
+* [🚩 Palindrome detection](practice-program/palindrome-detection.md)
 
 ## 3⃣ Data mining
 
