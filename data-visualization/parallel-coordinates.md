@@ -21,6 +21,7 @@ parallel_coordinates( iris_data, 'species',
                       )
 
 import matplotlib.pyplot as plt
+plt.title('iris dataset with parallel_coordinates')
 # Mandatory run display interface
 plt.show()
 ```
