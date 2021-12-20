@@ -583,6 +583,16 @@ label:
 
 In this way, we can easily process data. In future documents, I will directly use data and label to represent the iris data set.
 
+{% hint style="danger" %}
+The iris data set is very commonly used, so there are some libraries that provide a way to directly read the iris data set.&#x20;
+
+For example, pandas has such a function, and the data and label obtained are similar to those obtained by my method.&#x20;
+
+The advantage of my method is freedom, which means that this method can be applied to any data set, and you can get whatever data you want. The format of the data is also a very common array format like numpy.&#x20;
+
+I hope everyone can understand and learn this way, because reading data is an important part of understanding data.
+{% endhint %}
+
 ## Statistics
 
 Start time of this page: December 19, 2021
