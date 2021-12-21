@@ -191,6 +191,14 @@ The first of these is the Pearson correlation coefficient
 
 Pearson correlation coefficient can be extracted through index
 
+{% hint style="success" %}
+If the correlation coefficient is closer to 1, it means that the two vectors have a stronger positive correlation.&#x20;
+
+If the correlation coefficient is close to 0, it means that the two vectors are orthogonal (irrelevant).&#x20;
+
+If the correlation coefficient is closer to -1, it means that the two vectors are more strongly negative Related.
+{% endhint %}
+
 ## Spearman correlation coefficient
 
 Spearman's correlation coefficient can still be implemented easily through the scipy library:
@@ -216,6 +224,14 @@ SpearmanrResult(correlation=0.9908673886137245, pvalue=3.010166323417494e-08)
 >>> 
 ```
 
+{% hint style="success" %}
+If the correlation coefficient is closer to 1, it means that the two vectors have a stronger positive correlation.&#x20;
+
+If the correlation coefficient is close to 0, it means that the two vectors are orthogonal (irrelevant).&#x20;
+
+If the correlation coefficient is closer to -1, it means that the two vectors are more strongly negative Related.
+{% endhint %}
+
 ## Kendall rank correlation coefficient <a href="#firstheading" id="firstheading"></a>
 
 Kendall rank correlation coefficient also has a library in scipy, which is very simple to implement:
@@ -240,6 +256,26 @@ KendalltauResult(correlation=0.9660917830792959, pvalue=0.00014324249514425838)
 0.9660917830792959
 >>> 
 ```
+
+{% hint style="danger" %}
+Kendall rank correlation coefficient is different from the previous correlation coefficient usage scenarios!
+{% endhint %}
+
+Kendall rank correlation coefficient is a category correlation coefficient.
+
+For example: each judge has a different taste, some judges like sweeter food, and some judges like salty food.&#x20;
+
+There are two judges who gave comments on the five dishes. We want to know whether the tastes of the two judges are similar. Kendall rank correlation coefficient is suitable for solving such problems.&#x20;
+
+If the Kendall rank correlation coefficient is high, it means that the two judges have similar preferences. If the Kendall rank correlation coefficient is close to zero, it means that the two judges prefer a low correlation. If the Kendall rank correlation coefficient is negative, it means that the two judges have opposite preferences.
+
+{% hint style="success" %}
+If the correlation coefficient is closer to 1, it means that the two vectors have a stronger positive correlation.&#x20;
+
+If the correlation coefficient is close to 0, it means that the two vectors are orthogonal (irrelevant).&#x20;
+
+If the correlation coefficient is closer to -1, it means that the two vectors are more strongly negative Related.
+{% endhint %}
 
 ## Comparison of several methods
 
@@ -309,20 +345,6 @@ Pearson's correlation coefficient is often used to measure linear data. This met
 
 Spearman correlation coefficient is a recommended algorithm, because this method has wide applicability, has better recognition ability for nonlinear data, and can eliminate the influence of noise.
 {% endhint %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Statistics
 
