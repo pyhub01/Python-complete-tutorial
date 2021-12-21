@@ -31,6 +31,7 @@
 * [3 iris data set](data-mining/iris-data-set.md)
 * [3 Mean median mode](data-mining/mean-median-mode.md)
 * [3 Histogram](data-mining/histogram.md)
+* [3 Correlation algorithm](data-mining/correlation-algorithm.md)
 
 ## 4⃣ data visualization
 
