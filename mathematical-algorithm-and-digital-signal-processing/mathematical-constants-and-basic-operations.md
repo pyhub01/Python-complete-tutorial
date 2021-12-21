@@ -23,10 +23,17 @@ Python's built-in math library contains a lot of mathematical operations, but fo
 0.7071067811865476
 
 # Power has priority over division, so there is no need to add parentheses
->>> 2**0.5         
+>>> 2**0.5 / 2
 0.7071067811865476
 
->>> np.e ** ( 0+1j * np.pi )
+# Euler formula: e^(i*pi)+1=0 numpy can handle complex number operations
+>>> np.e ** (0+1j * np.pi)
 (-1+1.2246467991473532e-16j)
 >>> 
 ```
+
+## Statistics
+
+Start time of this page: December 21, 2021
+
+Completion time of this page: December 21, 2021
