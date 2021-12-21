@@ -119,7 +119,7 @@ plt.grid()
 plt.show()
 ```
 
-![Cosine distance](<../.gitbook/assets/image (11).png>)
+![Cosine distance](<../.gitbook/assets/image (11) (1).png>)
 
 The angle between the two vectors is the cosine distance.
 
@@ -272,6 +272,35 @@ plt.grid()
 plt.title('data visualization')
 plt.show()
 ```
+
+Let's visualize the data first: we found that the data we generated (blue) and the original data (orange) are positively correlated. But the data we generated is a 100-point Gaussian distribution, so the distribution is not uniform.
+
+![data visualization](<../.gitbook/assets/image (11).png>)
+
+Now let's try the correlation coefficient:
+
+```python
+>>> from scipy.spatial import distance
+>>> distance.cosine( x, y )
+0.1661535106571015
+>>> from scipy.stats import pearsonr
+>>> pearsonr( x, y )[0]
+0.8325135614884113
+>>> from scipy.stats import spearmanr
+>>> spearmanr( x, y )[0]
+0.9999999999999999
+>>> 
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
