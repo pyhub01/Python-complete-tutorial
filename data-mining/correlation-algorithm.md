@@ -126,9 +126,11 @@ It shows that the directionality of these two data is quite consistent.
 
 ## Pearson Correlation Coefficient
 
+Pearson's correlation coefficient is a linear correlation coefficient.&#x20;
 
+At the end, I will explain the comparison of these types of correlation coefficients with you.
 
-
+In scipy, there is a Pearson correlation coefficient library, which can be easily used by just calling it.
 
 
 
