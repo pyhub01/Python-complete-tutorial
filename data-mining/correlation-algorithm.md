@@ -218,6 +218,45 @@ SpearmanrResult(correlation=0.9908673886137245, pvalue=3.010166323417494e-08)
 
 ## Kendall rank correlation coefficient <a href="#firstheading" id="firstheading"></a>
 
+Kendall rank correlation coefficient also has a library in scipy, which is very simple to implement:
+
+```python
+import numpy as np
+
+a = np.array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] )
+b = np.array( [ 1, 1, 2, 4, 5, 6, 8, 8, 9, 9  ] )
+
+from scipy.stats import kendalltau
+
+kendalltau = kendalltau(a, b)
+print(kendalltau)
+print(kendalltau[0])
+```
+
+Same as the previous output and usage method, this is the result:
+
+```python
+KendalltauResult(correlation=0.9660917830792959, pvalue=0.00014324249514425838)
+0.9660917830792959
+>>> 
+```
+
+## Comparison of several methods
+
+Distance and average distance are a good way to measure the similarity between samples.&#x20;
+
+When the samples are really close, the distance is very useful, but if there is a proportional relationship between the samples, then the non-normalization method of distance will not work.
+
+The cosine distance is the correlation. The Pearson correlation coefficient is an improved and normalized version of the cosine distance. Its essence is the same as the cosine distance, except that the cosine distance is directly calculated using the sample. The Pearson correlation coefficient subtracts the sample average from the sample (the calculation is the sample difference between).
+
+Spearman's correlation coefficient is another improvement of Pearson's correlation coefficient. Pearson's correlation coefficient is linear, which means that if two variables are positively correlated, but not linear, the result of Pearson's correlation coefficient will be relatively low (not correlated) ), and the result of Spearman's correlation coefficient will be higher (correlation).
+
+Let's look at the following example:
+
+
+
+
+
 
 
 
