@@ -65,11 +65,28 @@ The above code is the calculation method of Euclidean distance, and the results 
 >>> 
 ```
 
+We can use numpy's own function to calculate Euclidean distance.
 
+```python
+import numpy as np
 
+a = np.array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] )
+b = np.array( [ 1, 1, 2, 4, 5, 6, 8, 8, 9, 9  ] )
 
+dist = np.linalg.norm( a - b )
+print(dist)
+```
 
+Can get the same result
 
+```python
+2.0
+>>> 
+```
+
+{% hint style="danger" %}
+In particular, linalg is a linear algebra library, we will often use it in subsequent programs.
+{% endhint %}
 
 
 
