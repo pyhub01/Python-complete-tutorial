@@ -25,13 +25,13 @@
 * [🚩 Remove duplicate elements](practice-program/remove-duplicate-elements.md)
 * [🚩 Palindrome detection](practice-program/palindrome-detection.md)
 
-## 3⃣ Data mining
+## 3⃣ Data mining and machine learning
 
-* [What is data mining](data-mining/what-is-data-mining.md)
-* [iris data set](data-mining/iris-data-set.md)
-* [Mean median mode](data-mining/mean-median-mode.md)
-* [Histogram](data-mining/histogram.md)
-* [Correlation algorithm](data-mining/correlation-algorithm.md)
+* [What is data mining](data-mining-and-machine-learning/what-is-data-mining.md)
+* [iris data set](data-mining-and-machine-learning/iris-data-set.md)
+* [Mean median mode](data-mining-and-machine-learning/mean-median-mode.md)
+* [Histogram](data-mining-and-machine-learning/histogram.md)
+* [Correlation algorithm](data-mining-and-machine-learning/correlation-algorithm.md)
 
 ## 4⃣ data visualization
 

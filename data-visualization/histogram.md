@@ -3,12 +3,12 @@ description: Frequency distribution
 coverY: 0
 ---
 
-# 4 Histogram
+# Histogram chart
 
 For the content of this chapter, please refer to: (no more details here)
 
-{% content-ref url="../data-mining/histogram.md" %}
-[histogram.md](../data-mining/histogram.md)
+{% content-ref url="../data-mining-and-machine-learning/histogram.md" %}
+[histogram.md](../data-mining-and-machine-learning/histogram.md)
 {% endcontent-ref %}
 
 ## Statistics
