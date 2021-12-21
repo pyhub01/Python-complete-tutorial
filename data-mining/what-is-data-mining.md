@@ -3,11 +3,9 @@ description: Introduction to iris data set
 coverY: 0
 ---
 
-# 3 What is data mining
+# 3 3 What is data mining
 
 Data mining is to find out some patterns from the data.
-
-
 
 For example, here is a piece of data about income and outlay
 
@@ -36,15 +34,13 @@ plt.grid()
 plt.show()
 ```
 
-![The relationship between income and outlay](<../.gitbook/assets/image (3) (1).png>)
+![The relationship between income and outlay](<../.gitbook/assets/image (3) (1) (1).png>)
 
-In this graph, we will find that when income increases, expenditures will increase accordingly.&#x20;
+In this graph, we will find that when income increases, expenditures will increase accordingly.
 
-This is a common sense of life, that is, when we earn more, we are more inclined to consume more, we earn less, we don't have so much money to consume.&#x20;
+This is a common sense of life, that is, when we earn more, we are more inclined to consume more, we earn less, we don't have so much money to consume.
 
 We can dig out the above content from this data.
-
-
 
 This is data mining. We find some patterns hidden in the data, and you will find that python is born for data mining. Then we will explain more in the next chapter.
 

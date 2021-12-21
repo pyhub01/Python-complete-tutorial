@@ -3,9 +3,9 @@ description: Quite important
 coverY: 0
 ---
 
-# 2 Variability and address
+# 2 2 Variability and address
 
-Python is a label language, which is very different from the C language.&#x20;
+Python is a label language, which is very different from the C language.
 
 In python, each variable name is a pointer to the corresponding memory unit.
 
@@ -25,8 +25,6 @@ In this example, the variable name **a** points to the memory address numbered *
 As shown in the figure below:
 
 ![Variables and memory](<../.gitbook/assets/image (1).png>)
-
-
 
 If I copy a variable in python, for example, as shown below:
 
@@ -56,15 +54,13 @@ This means that when I try to change the content of **a**, the content of **b** 
 <mark style="color:red;">**Not always, This is the real trouble!**</mark>
 {% endhint %}
 
-If I change the value of **a**, but the address of **a** does not change, the value of **b** will also change accordingly.&#x20;
+If I change the value of **a**, but the address of **a** does not change, the value of **b** will also change accordingly.
 
 Then we say that this is a **variable** data type.
 
 <mark style="color:red;">**We need to pay extra attention to this pattern!**</mark>
 
 ![Scenario 1](<../.gitbook/assets/image (1) (1) (1).png>)
-
-
 
 But if I change the value of **a**, but **a** points to another address, then **b** still points to the original address, and the values of **a** and **b** are different.
 
@@ -139,7 +135,7 @@ So when the string is updated, The original string is deleted, the pointer must 
 String is an immutable data type. When I assign another string to a variable, the address of the variable changes as the old string is deleted.
 
 {% hint style="danger" %}
-<mark style="color:red;">**Lists are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
+<mark style="color:red;">**Lists are**</mark><mark style="color:red;">\*\*</mark> <mark style="color:red;"></mark><mark style="color:green;"><mark style="color:red;">**\*\*\*\***<mark style="color:red;"></mark> \*\*<mark style="color:red;">**Variable**</mark>
 {% endhint %}
 
 ```python
@@ -234,9 +230,7 @@ You may find it a bit troublesome to do so, so we can complete the deep copy thr
 
 **b = \[i for i in a]** This is a very simple deep copy scheme. No need to introduce any libraries.
 
-
-
-Of course, the problem is that we sometimes use high-dimensional data. If we still need to nest multiple loops in this way, it would be a little troublesome.&#x20;
+Of course, the problem is that we sometimes use high-dimensional data. If we still need to nest multiple loops in this way, it would be a little troublesome.
 
 So we can use python library to complete deep copy.
 
@@ -257,12 +251,12 @@ So we can use python library to complete deep copy.
 >>> 
 ```
 
-**b = copy.deepcopy(a)**&#x20;
+**b = copy.deepcopy(a)**
 
 This is a deep copy done using a copy library. If your data is high-dimensional data, then this is a good choice (this library python is already installed by default, and you don’t need to install it yourself)
 
 {% hint style="success" %}
-<mark style="color:green;">**Tuples are**</mark><mark style="color:green;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:green;">** **</mark><mark style="color:green;">**immutable**</mark>
+<mark style="color:green;">**Tuples are**</mark><mark style="color:green;">\*\*</mark> <mark style="color:green;"></mark><mark style="color:green;"><mark style="color:red;">**\*\*\*\***<mark style="color:red;"></mark> \*\*<mark style="color:green;">**immutable**</mark>
 {% endhint %}
 
 ```python
@@ -281,7 +275,7 @@ TypeError: 'tuple' object does not support item assignment
 Tuples are unchangeable variables, so this problem does not exist with tuples.
 
 {% hint style="danger" %}
-<mark style="color:red;">**Sets are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
+<mark style="color:red;">**Sets are**</mark><mark style="color:red;">\*\*</mark> <mark style="color:red;"></mark><mark style="color:green;"><mark style="color:red;">**\*\*\*\***<mark style="color:red;"></mark> \*\*<mark style="color:red;">**Variable**</mark>
 {% endhint %}
 
 ```python
@@ -307,7 +301,7 @@ Tuples are unchangeable variables, so this problem does not exist with tuples.
 Tuples are changeable, so a deep copy must also be performed.
 
 {% hint style="danger" %}
-<mark style="color:red;">**Dictionary are**</mark><mark style="color:red;">** **</mark><mark style="color:red;"><mark style="color:green;">****<mark style="color:green;"></mark><mark style="color:red;">** **</mark><mark style="color:red;">**Variable**</mark>
+<mark style="color:red;">**Dictionary are**</mark><mark style="color:red;">\*\*</mark> <mark style="color:red;"></mark><mark style="color:green;"><mark style="color:red;">**\*\*\*\***<mark style="color:red;"></mark> \*\*<mark style="color:red;">**Variable**</mark>
 {% endhint %}
 
 ```python
