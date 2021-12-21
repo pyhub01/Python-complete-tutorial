@@ -88,13 +88,27 @@ Can get the same result
 In particular, linalg is a linear algebra library, we will often use it in subsequent programs.
 {% endhint %}
 
+## Cosine distance
 
+The cosine distance can measure the angle between two vectors. If the angle is small, the two vectors are relatively close. If the angle is large, the distance between the two vectors is large.
 
+The formula of the cosine distance is very complicated. Fortunately, scipy has created a library for us to calculate the cosine distance, which only needs to be called:
 
+```python
+import numpy as np
 
+a = np.array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] )
+b = np.array( [ 1, 1, 2, 4, 5, 6, 8, 8, 9, 9  ] )
 
+from scipy.spatial import distance
 
+dist = distance.cosine( a, b )
+print(dist)
 
+# The smaller the distance, the higher the similarity
+similarity = 1 - dist
+print(similarity)
+```
 
 
 
