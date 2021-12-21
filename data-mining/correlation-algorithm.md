@@ -281,24 +281,34 @@ Now let's try the correlation coefficient:
 
 ```python
 >>> from scipy.spatial import distance
->>> distance.cosine( x, y )
-0.1661535106571015
+>>> 1 - distance.cosine( x, y )
+0.8338464893428985
+
 >>> from scipy.stats import pearsonr
 >>> pearsonr( x, y )[0]
 0.8325135614884113
+
 >>> from scipy.stats import spearmanr
 >>> spearmanr( x, y )[0]
 0.9999999999999999
 >>> 
 ```
 
+Cosine distance is the correlation coefficient without normalization and centering. Because the data is normally distributed (higher symmetry), the effect of cosine distance is not bad.
 
+The Pearson correlation coefficient is a normalized correlation coefficient. It can be found that the two sets of data are positively correlated, but because the two sets of data are not linearly positively correlated, the Pearson correlation coefficient is not 1.
 
+Spearman's correlation coefficient can be used to process non-linear data, so very high results are obtained.
 
+{% hint style="danger" %}
+In actual data mining:
 
+We rarely use cosine distance, because cosine distance does not perform well on arbitrary data.
 
+Pearson's correlation coefficient is often used to measure linear data. This method handles noise and nonlinear data poorly. Notice that: Pearson's correlation coefficient may make you misjudge the data. There are some data with poor correlation, and the Pearson's correlation coefficient may not be bad.
 
-
+Spearman correlation coefficient is a recommended algorithm, because this method has wide applicability, has better recognition ability for nonlinear data, and can eliminate the influence of noise.
+{% endhint %}
 
 
 
