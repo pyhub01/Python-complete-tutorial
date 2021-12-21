@@ -1,8 +1,9 @@
 ---
 description: The most important concept
+coverY: 0
 ---
 
-# 3 Mean median mode
+# Mean median mode
 
 ## mean
 
@@ -82,7 +83,7 @@ median = 5.0
 
 ## mode
 
-Mode refers to the number with the largest number in a set of data.&#x20;
+Mode refers to the number with the largest number in a set of data.
 
 Obviously, the most numerous number in this set of data is 5.
 
@@ -124,7 +125,7 @@ mode = 5
 >>> 
 ```
 
-## Summarize&#x20;
+## Summarize
 
 Mean median mode is the most commonly used method in data analysis. They are very simple but also very effective. All data mining engineers should keep in mind and master these three methods.
 
