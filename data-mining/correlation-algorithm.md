@@ -92,6 +92,33 @@ In particular, linalg is a linear algebra library, we will often use it in subse
 
 The cosine distance can measure the angle between two vectors. If the angle is small, the two vectors are relatively close. If the angle is large, the distance between the two vectors is large.
 
+```python
+import matplotlib.pyplot as plt
+
+a = [1, 2]
+b = [5, 4]
+
+plt.plot( [ a[0], 0 ],
+          [ a[1], 0 ] )
+
+plt.plot( [ 0, b[0] ],
+          [ 0, b[1] ], '#1f77b4' ) # color: matplotlib blue
+
+plt.scatter( [ a[0], b[0] ],
+             [ a[1], b[1] ] )
+
+plt.xlim(0, 6)
+plt.ylim(0, 5)
+
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.title('Cosine distance')
+
+plt.grid()
+plt.show()
+```
+
 ![Cosine distance](<../.gitbook/assets/image (11).png>)
 
 The angle between the two vectors is the cosine distance.
@@ -146,9 +173,14 @@ pearsonr = pearsonr(a, b)
 print(pearsonr)
 ```
 
+The output obtained is as follows:
 
+```python
+(0.9808651973571281, 5.731479081203351e-07)
+>>> 
+```
 
-
+The first of these is the Pearson correlation coefficient
 
 
 
