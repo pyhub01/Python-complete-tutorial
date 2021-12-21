@@ -35,3 +35,7 @@
 
 * [4 line chart](data-visualization/line-chart.md)
 * [4 Parallel coordinates](data-visualization/parallel-coordinates.md)
+
+## 5⃣ Mathematical algorithm and digital signal processing
+
+* [5 Mathematical constants and basic operations](mathematical-algorithm-and-digital-signal-processing/mathematical-constants-and-basic-operations.md)
