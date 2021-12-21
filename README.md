@@ -3,7 +3,7 @@ description: Read me the document
 coverY: 0
 ---
 
-# 😎 Python Complete Tutorial
+# Python Complete Tutorial
 
 ## GitHub
 
@@ -34,8 +34,6 @@ This book follows the GNU General Public License v3.0
 ## Statistics
 
 Start writing time of this book: December 17, 2021
-
-
 
 Start time of this page: December 17, 2021
 

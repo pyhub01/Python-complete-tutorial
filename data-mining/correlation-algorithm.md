@@ -92,6 +92,12 @@ In particular, linalg is a linear algebra library, we will often use it in subse
 
 The cosine distance can measure the angle between two vectors. If the angle is small, the two vectors are relatively close. If the angle is large, the distance between the two vectors is large.
 
+![Cosine distance](<../.gitbook/assets/image (11).png>)
+
+The angle between the two vectors is the cosine distance.
+
+
+
 The formula of the cosine distance is very complicated. Fortunately, scipy has created a library for us to calculate the cosine distance, which only needs to be called:
 
 ```python
@@ -110,7 +116,13 @@ similarity = 1 - dist
 print(similarity)
 ```
 
+It shows that the directionality of these two data is quite consistent.
 
+```python
+0.005152370287896502
+0.9948476297121035
+>>> 
+```
 
 
 
