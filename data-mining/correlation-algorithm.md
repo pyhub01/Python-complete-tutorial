@@ -182,9 +182,14 @@ The output obtained is as follows:
 
 The first of these is the Pearson correlation coefficient
 
+```python
+(0.9808651973571281, 5.731479081203351e-07)
+>>> pearsonr[0]
+0.9808651973571281
+>>> 
+```
 
-
-
+Pearson correlation coefficient can be extracted through index
 
 
 
