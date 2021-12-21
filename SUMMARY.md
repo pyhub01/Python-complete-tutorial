@@ -37,7 +37,7 @@
 
 * [line chart](data-visualization/line-chart.md)
 * [Parallel coordinates](data-visualization/parallel-coordinates.md)
-* [Histogram](data-visualization/histogram.md)
+* [Histogram chart](data-visualization/histogram.md)
 
 ## 5⃣ Mathematical algorithm and digital signal processing
 
