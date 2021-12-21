@@ -253,7 +253,25 @@ Spearman's correlation coefficient is another improvement of Pearson's correlati
 
 Let's look at the following example:
 
+```python
+import numpy as np
 
+mu = 0
+sigma = 0.6
+
+# Normally distributed data
+x = np.random.normal(mu, sigma, 100)
+y = (x - mu) ** 3
+
+import matplotlib.pyplot as plt
+
+plt.plot(x, x, '#ff7f0e')
+plt.scatter(x, y)
+
+plt.grid()
+plt.title('data visualization')
+plt.show()
+```
 
 
 
