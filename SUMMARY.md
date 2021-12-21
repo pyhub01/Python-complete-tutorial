@@ -32,6 +32,7 @@
 * [Mean median mode](data-mining-and-machine-learning/mean-median-mode.md)
 * [Histogram](data-mining-and-machine-learning/histogram.md)
 * [Correlation algorithm](data-mining-and-machine-learning/correlation-algorithm.md)
+* [SVM](data-mining-and-machine-learning/svm.md)
 
 ## 4⃣ data visualization
 
