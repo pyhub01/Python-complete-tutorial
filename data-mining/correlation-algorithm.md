@@ -191,13 +191,32 @@ The first of these is the Pearson correlation coefficient
 
 Pearson correlation coefficient can be extracted through index
 
+## Spearman correlation coefficient
 
+Spearman's correlation coefficient can still be implemented easily through the scipy library:
 
+```python
+import numpy as np
 
+a = np.array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] )
+b = np.array( [ 1, 1, 2, 4, 5, 6, 8, 8, 9, 9  ] )
 
+from scipy.stats import spearmanr
 
+spearmanr = spearmanr(a, b)
+print(spearmanr)
+print(spearmanr[0])
+```
 
+The results are as follows:
 
+```python
+SpearmanrResult(correlation=0.9908673886137245, pvalue=3.010166323417494e-08)
+0.9908673886137245
+>>> 
+```
+
+## Kendall rank correlation coefficient <a href="#firstheading" id="firstheading"></a>
 
 
 
