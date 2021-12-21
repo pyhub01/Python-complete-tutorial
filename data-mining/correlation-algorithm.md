@@ -1,5 +1,6 @@
 ---
 description: Distance and correlation
+coverY: 0
 ---
 
 # 3 Correlation algorithm
