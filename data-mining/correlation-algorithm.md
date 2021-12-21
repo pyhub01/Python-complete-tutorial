@@ -96,8 +96,6 @@ The cosine distance can measure the angle between two vectors. If the angle is s
 
 The angle between the two vectors is the cosine distance.
 
-
-
 The formula of the cosine distance is very complicated. Fortunately, scipy has created a library for us to calculate the cosine distance, which only needs to be called:
 
 ```python
@@ -126,7 +124,7 @@ It shows that the directionality of these two data is quite consistent.
 
 ## Pearson Correlation Coefficient
 
-Pearson's correlation coefficient is a linear correlation coefficient.&#x20;
+Pearson's correlation coefficient is a linear correlation coefficient.
 
 At the end, I will explain the comparison of these types of correlation coefficients with you.
 
@@ -135,6 +133,12 @@ In scipy, there is a Pearson correlation coefficient library, which can be easil
 
 
 
+
+
+
+{% hint style="success" %}
+If the cosine similarity between two vectors is positive, it means that the two vectors are in the same direction (positive correlation). If it is negative, then it means that the two vectors are in opposite directions (negative correlation). The absolute value of the cosine similarity of the two vectors The larger the value, the closer the angle of the two vectors, and the closer the cosine similarity of the two vectors is to 0, indicating that the two vectors are closer to unrelated (perpendicular to each other).
+{% endhint %}
 
 
 
