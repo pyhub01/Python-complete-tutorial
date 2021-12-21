@@ -42,6 +42,10 @@ plt.grid()
 plt.show()
 ```
 
+![Euclidean distance](<../.gitbook/assets/image (3).png>)
+
+The length of the line segment in the figure is the Euclidean distance.
+
 ```python
 a = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 b = [ 1, 1, 2, 4, 5, 6, 8, 8, 9, 9  ]
