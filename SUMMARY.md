@@ -27,18 +27,18 @@
 
 ## 3⃣ Data mining
 
-* [3 3 What is data mining](data-mining/what-is-data-mining.md)
-* [3 3 iris data set](data-mining/iris-data-set.md)
-* [3 3 Mean median mode](data-mining/mean-median-mode.md)
-* [3 3 Histogram](data-mining/histogram.md)
-* [3 3 Correlation algorithm](data-mining/correlation-algorithm.md)
+* [What is data mining](data-mining/what-is-data-mining.md)
+* [iris data set](data-mining/iris-data-set.md)
+* [Mean median mode](data-mining/mean-median-mode.md)
+* [Histogram](data-mining/histogram.md)
+* [Correlation algorithm](data-mining/correlation-algorithm.md)
 
 ## 4⃣ data visualization
 
-* [4 4 line chart](data-visualization/line-chart.md)
-* [4 4 Parallel coordinates](data-visualization/parallel-coordinates.md)
-* [4 4 Histogram](data-visualization/histogram.md)
+* [line chart](data-visualization/line-chart.md)
+* [Parallel coordinates](data-visualization/parallel-coordinates.md)
+* [Histogram](data-visualization/histogram.md)
 
 ## 5⃣ Mathematical algorithm and digital signal processing
 
-* [5 5 Mathematical constants and basic operations](mathematical-algorithm-and-digital-signal-processing/mathematical-constants-and-basic-operations.md)
+* [Mathematical constants and basic operations](mathematical-algorithm-and-digital-signal-processing/mathematical-constants-and-basic-operations.md)
