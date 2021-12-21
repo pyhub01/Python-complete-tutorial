@@ -1,5 +1,6 @@
 ---
 description: pi e Trigonometric function
+coverY: 0
 ---
 
 # 5 Mathematical constants and basic operations
