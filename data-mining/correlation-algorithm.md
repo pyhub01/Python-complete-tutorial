@@ -122,6 +122,10 @@ It shows that the directionality of these two data is quite consistent.
 >>> 
 ```
 
+{% hint style="success" %}
+If the cosine similarity between two vectors is positive, it means that the two vectors are in the same direction (positive correlation). If it is negative, then it means that the two vectors are in opposite directions (negative correlation). The absolute value of the cosine similarity of the two vectors The larger the value, the closer the angle of the two vectors, and the closer the cosine similarity of the two vectors is to 0, indicating that the two vectors are closer to unrelated (perpendicular to each other).
+{% endhint %}
+
 ## Pearson Correlation Coefficient
 
 Pearson's correlation coefficient is a linear correlation coefficient.
@@ -130,15 +134,33 @@ At the end, I will explain the comparison of these types of correlation coeffici
 
 In scipy, there is a Pearson correlation coefficient library, which can be easily used by just calling it.
 
+```python
+import numpy as np
+
+a = np.array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] )
+b = np.array( [ 1, 1, 2, 4, 5, 6, 8, 8, 9, 9  ] )
+
+from scipy.stats import pearsonr
+
+pearsonr = pearsonr(a, b)
+print(pearsonr)
+```
 
 
 
 
 
 
-{% hint style="success" %}
-If the cosine similarity between two vectors is positive, it means that the two vectors are in the same direction (positive correlation). If it is negative, then it means that the two vectors are in opposite directions (negative correlation). The absolute value of the cosine similarity of the two vectors The larger the value, the closer the angle of the two vectors, and the closer the cosine similarity of the two vectors is to 0, indicating that the two vectors are closer to unrelated (perpendicular to each other).
-{% endhint %}
+
+
+
+
+
+
+
+
+
+
 
 
 
