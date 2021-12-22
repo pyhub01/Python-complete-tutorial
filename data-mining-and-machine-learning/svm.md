@@ -1,5 +1,6 @@
 ---
 description: Support Vector Machines
+coverY: 0
 ---
 
 # SVM
@@ -217,9 +218,149 @@ label:
 
 
 
+So we start to explain what svm is.
+
 {% embed url="https://scikit-learn.org/stable/auto_examples/svm/plot_separating_hyperplane.html#sphx-glr-auto-examples-svm-plot-separating-hyperplane-py" %}
 Reference program
 {% endembed %}
+
+The first thing: use sklearn to build an svm on the data set:
+
+```python
+####################
+# read data
+####################
+
+f = open('iris.csv', 'r')
+lines = f.readlines()
+
+data = []
+label = []
+
+for line in lines[ 1: ]:
+    line = line.replace('\n', '').split(',')
+
+    # Convert string data into float form
+    data.append( list(map(float, line[ :-1 ])) )
+    label.append( line[-1] )
+
+
+# Converted into a numpy array, you can process the data like MATLAB.
+import numpy as np
+
+data = np.array(data)
+label = np.array(label)
+
+
+
+####################
+# setosa & versicolor
+####################
+
+# Extract only two categories from it
+data = data[ label != 'virginica' ]
+label = label[ label != 'virginica' ]
+
+# Replace the label with a number
+for i in range(len(label)):
+    if label[i] == 'setosa':
+        label[i] = 0
+    else:
+        label[i] = 1
+
+# convert string into int
+label = label.astype(int) 
+
+
+
+####################
+# pca
+####################
+
+from sklearn.decomposition import PCA
+
+pca = PCA( n_components = 2 ) # 2D data
+
+# fit the model
+pca.fit(data) 
+print(pca.explained_variance_ratio_)
+
+# transformed data
+data = pca.fit_transform(data)
+
+
+
+####################
+# show data
+####################
+
+print('data:')
+# View the dimensional information of the data
+print(data.shape)
+print(data)
+print()
+print('label:')
+print(label.shape)
+print(label)
+
+import matplotlib.pyplot as plt
+
+# visualizaion
+plt.scatter( data[:, 0], data[:, 1],
+             c = label, cmap = 'tab10'
+             )
+
+# plt.show()
+
+
+
+####################
+# svm
+####################
+
+from sklearn import svm
+
+clf = svm.SVC( kernel='linear' )
+clf.fit( data, label) 
+
+xlim = [ min(data[:, 0]), max(data[:, 0]) ]
+ylim = [ min(data[:, 1]), max(data[:, 1]) ] 
+
+
+xx = np.linspace(xlim[0], xlim[1], 10)
+yy = np.linspace(ylim[0], ylim[1], 10)
+YY, XX = np.meshgrid(yy, xx)
+
+
+xy = np.vstack([XX.ravel(), YY.ravel()]).T
+Z = clf.decision_function(xy).reshape(XX.shape)
+
+ax = plt.gca()
+
+# plot decision boundary and margins
+ax.contour( XX, YY, Z,
+            cmap = 'tab10',
+            levels = [-1, 0, 1],
+            alpha = 0.5,
+            linestyles = ['--', '-', '--']
+            )
+
+plt.show()
+```
+
+![Linear svm](<../.gitbook/assets/image (6).png>)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -229,4 +370,4 @@ Reference program
 
 Start time of this page: December 21, 2021
 
-Completion time of this page: December 21, 2021
+Completion time of this page: December 22, 2021

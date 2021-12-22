@@ -3,7 +3,7 @@ description: line chart
 coverY: 0
 ---
 
-# 4 4 line chart
+# line chart
 
 The line chart is to use lines to represent data. It is generally used to see the trend of the data, whether it is a positive ratio (increasing) or an inverse ratio (decreasing)
 
@@ -122,7 +122,7 @@ plt.show()
 
 ![N = 10](<../.gitbook/assets/image (7).png>)
 
-![N = 20](<../.gitbook/assets/image (6).png>)
+![N = 20](<../.gitbook/assets/image (6) (1).png>)
 
 ![N = 30](<../.gitbook/assets/image (3) (1).png>)
 
