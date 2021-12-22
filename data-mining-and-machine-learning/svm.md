@@ -350,13 +350,15 @@ plt.show()
 
 ![Linear svm](<../.gitbook/assets/image (6).png>)
 
+SVM is a classifier and one of the best classifiers for supervised learning.
 
+The basic idea of SVM is to draw a line to separate two different data. For example, in the picture: the brown line separates the blue and green dots.
 
+The SVM algorithm ensures that the points on both sides are separated by this line to the greatest extent: that is, the points on both sides are the farthest away from this line.
 
+So SVM adjusts the slope and position of this line so that the point on both sides which closest to this line(Use dashed lines to indicate) are the farthest from this line. Just as shown in the picture.
 
-
-
-
+We call the distance between the dotted line and the SVM dividing line margen. The purpose of the SVM trainer is to maximize the margen of the training set data.
 
 
 
