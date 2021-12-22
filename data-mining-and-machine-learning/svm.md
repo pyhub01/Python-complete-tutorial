@@ -360,7 +360,7 @@ So SVM adjusts the slope and position of this line so that the point on both sid
 
 We call the distance between the dotted line and the SVM dividing line margen. The purpose of the SVM trainer is to maximize the margen of the training set data.
 
-
+The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we can use linear svm and kernel svm very conveniently.
 
 
 
