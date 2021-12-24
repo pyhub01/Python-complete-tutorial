@@ -466,13 +466,70 @@ In order to solve the XOR problem, if we make the dividing line of the SVM into 
 
 In the following example, I replaced the linear core with an rbf core.
 
+```python
+x = [
+    [1, 2], [2, -1], [-1, -2], [-2, 1],
+    [2, 1], [1, -2], [-2, -1], [-1, 2],
+    ]
+
+y = [0, 0, 0, 0, 1, 1, 1, 1]
+
+import numpy as np
+
+x = np.array(x)
+y = np.array(y)
+
+import matplotlib.pyplot as plt
+
+plt.figure( figsize=(6, 6) )
+
+plt.scatter( x[:, 0], x[:, 1],
+             c = y
+             )
+
+plt.grid()
+# plt.show()
+
+####################
+# svm
+####################
+
+from sklearn import svm
+
+clf = svm.SVC( kernel='rbf',
+               C = 1000
+               )
+clf.fit( x, y ) 
 
 
 
+xx = np.linspace( min(x[:, 0])-1, max(x[:, 0])+1, 1000 )
+yy = np.linspace( min(x[:, 1])-1, max(x[:, 1])+1, 1000 )
+XX, YY = np.meshgrid(xx, yy)
 
 
+ax = plt.gca()
 
+Z = clf.predict( np.vstack([XX.ravel(), YY.ravel()]).T ).reshape(XX.shape)
 
+out = ax.contourf( XX, YY, Z,
+                   alpha = 0.1
+                   )
+
+plt.show()
+```
+
+![rbf core SVM](<../.gitbook/assets/image (1).png>)
+
+The problem has been solved very well!
+
+The area where the purple dot is located is divided into purple, and the area where the yellow dot is located is divided into yellow.
+
+And you will find that the space between the yellow and purple points is very large, which means that the SVM is very adaptable. If the data has a certain range, it can still be in the correct position.
+
+{% hint style="success" %}
+<mark style="color:green;">**RBF kernel**</mark>
+{% endhint %}
 
 
 

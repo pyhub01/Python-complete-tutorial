@@ -24,7 +24,7 @@ In this example, the variable name **a** points to the memory address numbered *
 
 As shown in the figure below:
 
-![Variables and memory](<../.gitbook/assets/image (1).png>)
+![Variables and memory](<../.gitbook/assets/image (1) (1).png>)
 
 If I copy a variable in python, for example, as shown below:
 
@@ -60,7 +60,7 @@ Then we say that this is a **variable** data type.
 
 <mark style="color:red;">**We need to pay extra attention to this pattern!**</mark>
 
-![Scenario 1](<../.gitbook/assets/image (1) (1) (1).png>)
+![Scenario 1](<../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 But if I change the value of **a**, but **a** points to another address, then **b** still points to the original address, and the values of **a** and **b** are different.
 

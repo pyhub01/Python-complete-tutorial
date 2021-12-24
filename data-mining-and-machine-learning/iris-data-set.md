@@ -7,7 +7,7 @@ coverY: 0
 
 Iris has many meanings, such as the iris of the eye:
 
-![iris of the eye](<../.gitbook/assets/image (1) (1).png>)
+![iris of the eye](<../.gitbook/assets/image (1) (1) (1).png>)
 
 The iris data set we are talking about today refers to the iris flower data set.
 
