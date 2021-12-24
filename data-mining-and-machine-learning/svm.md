@@ -362,11 +362,11 @@ We call the distance between the dotted line and the SVM dividing line margen. T
 
 The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we can use linear svm and kernel svm very conveniently.
 
+## XOR problem
 
 
 
-
-
+![](<../.gitbook/assets/image (13).png>)
 
 ## Statistics
 
