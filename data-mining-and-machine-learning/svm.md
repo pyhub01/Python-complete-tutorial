@@ -321,7 +321,7 @@ plt.scatter( data[:, 0], data[:, 1],
 from sklearn import svm
 
 clf = svm.SVC( kernel='linear' )
-clf.fit( data, label) 
+clf.fit( data, label ) 
 
 xlim = [ min(data[:, 0]), max(data[:, 0]) ]
 ylim = [ min(data[:, 1]), max(data[:, 1]) ] 
@@ -364,9 +364,103 @@ The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we
 
 ## XOR problem
 
+Problems like the following that cannot be divided by a straight line are called XOR problems.
+
+![XOR problems](<../.gitbook/assets/image (13).png>)
+
+```python
+x = [
+    [1, 2], [2, -1], [-1, -2], [-2, 1],
+    [2, 1], [1, -2], [-2, -1], [-1, 2],
+    ]
+    
+y = [0, 0, 0, 0, 1, 1, 1, 1]
+
+import numpy as np
+
+x = np.array(x)
+y = np.array(y)
+
+import matplotlib.pyplot as plt
+
+plt.figure( figsize=(6, 6) )
+
+plt.scatter( x[:, 0], x[:, 1],
+             c = y
+             )
+
+plt.grid()
+plt.show()
+```
+
+The accuracy of dividing this problem with a straight line can never be higher than 50%.
+
+SVM is a classifier based on a hyperplane, so SVM can draw a dividing line that is much more complicated than a straight line.
+
+```python
+x = [
+    [1, 2], [2, -1], [-1, -2], [-2, 1],
+    [2, 1], [1, -2], [-2, -1], [-1, 2],
+    ]
+
+y = [0, 0, 0, 0, 1, 1, 1, 1]
+
+import numpy as np
+
+x = np.array(x)
+y = np.array(y)
+
+import matplotlib.pyplot as plt
+
+plt.figure( figsize=(6, 6) )
+
+plt.scatter( x[:, 0], x[:, 1],
+             c = y
+             )
+
+plt.grid()
+# plt.show()
+
+####################
+# svm
+####################
+
+from sklearn import svm
+
+clf = svm.SVC( kernel='linear',
+               C = 1000
+               )
+clf.fit( x, y ) 
 
 
-![](<../.gitbook/assets/image (13).png>)
+
+xx = np.linspace( min(x[:, 0])-1, max(x[:, 0])+1, 10 )
+yy = np.linspace( min(x[:, 1])-1, max(x[:, 1])+1, 10 )
+XX, YY = np.meshgrid(xx, yy)
+
+
+ax = plt.gca()
+
+Z = clf.predict( np.vstack([XX.ravel(), YY.ravel()]).T ).reshape(XX.shape)
+
+out = ax.contourf( XX, YY, Z,
+                   alpha = 0.5
+                   )
+
+plt.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Statistics
 
