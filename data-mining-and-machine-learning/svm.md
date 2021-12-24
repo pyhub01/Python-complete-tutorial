@@ -366,7 +366,7 @@ The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we
 
 Problems like the following that cannot be divided by a straight line are called XOR problems.
 
-![XOR problems](<../.gitbook/assets/image (13) (1).png>)
+![XOR problems](<../.gitbook/assets/image (13) (1) (1).png>)
 
 ```python
 x = [
@@ -456,7 +456,7 @@ plt.show()
 
 ![Resolution = 1000](<../.gitbook/assets/image (2).png>)
 
-![Resolution = 2000](<../.gitbook/assets/image (13).png>)
+![Resolution = 2000](<../.gitbook/assets/image (13) (1).png>)
 
 We can see that linear SVM is racking it brains to solve this classification problem.
 
@@ -531,13 +531,52 @@ And you will find that the space between the yellow and purple points is very la
 <mark style="color:green;">**RBF kernel**</mark>
 {% endhint %}
 
+The RBF core is one of the most commonly used cores because of its simple principle and good effect.
+
+If we draw the RBF core it looks like this:
+
+```python
+from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+import numpy as np
+
+fig = plt.figure()
+ax = plt.axes( projection = '3d' )
 
 
+minmax = 2
+xx = np.arange( -minmax, minmax, minmax / 100 )
+yy = np.arange( -minmax, minmax, minmax / 100 )
+X, Y = np.meshgrid( xx, yy )
+Z = np.e ** -( X**2 + Y**2 )
 
 
+ax.plot_surface( X, Y, Z,
+                 cmap = 'rainbow'
+                 )
 
+plt.title('rbf function')
+plt.xlabel('x')
+plt.ylabel('y')
 
+plt.grid()
+plt.show()
+```
 
+![RBF function](<../.gitbook/assets/image (13).png>)
+
+The RBF function turns a linear function into a nonlinear result, which is very useful in machine learning. Because the world we live in is also non-linear.
+
+For example, in SVM, we cannot use straight lines to divide regions, because the points are not on different sides of a picture, they may overlap(XOR problem), so these nonlinear functions are very useful.
+
+## Comparison of different kernels
+
+{% embed url="https://scikit-learn.org/stable/auto_examples/svm/plot_iris_svc.html" %}
+Reference program
+{% endembed %}
+
+sklearn provides us with a very good program to visualize the effects of different SVM cores.
 
 ## Statistics
 
