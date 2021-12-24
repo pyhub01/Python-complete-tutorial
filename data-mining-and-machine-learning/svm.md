@@ -348,7 +348,7 @@ ax.contour( XX, YY, Z,
 plt.show()
 ```
 
-![Linear svm](<../.gitbook/assets/image (6).png>)
+![Linear svm](<../.gitbook/assets/image (6) (1).png>)
 
 SVM is a classifier and one of the best classifiers for supervised learning.
 
@@ -366,7 +366,7 @@ The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we
 
 Problems like the following that cannot be divided by a straight line are called XOR problems.
 
-![XOR problems](<../.gitbook/assets/image (13).png>)
+![XOR problems](<../.gitbook/assets/image (13) (1).png>)
 
 ```python
 x = [
@@ -449,6 +449,26 @@ out = ax.contourf( XX, YY, Z,
 
 plt.show()
 ```
+
+![Resolution = 10](<../.gitbook/assets/image (11).png>)
+
+![Resolution = 100](<../.gitbook/assets/image (6).png>)
+
+![Resolution = 1000](<../.gitbook/assets/image (2).png>)
+
+![Resolution = 2000](<../.gitbook/assets/image (13).png>)
+
+We can see that linear SVM is racking it brains to solve this classification problem.
+
+But this is basically futile, and you will find that SVM fantasizes out a pattern that does not exist in the first place. When we adjust C (penalty coefficient) too high, SVM has a strong overfitting problem.
+
+In order to solve the XOR problem, if we make the dividing line of the SVM into a curve, then the problem is solved?
+
+In the following example, I replaced the linear core with an rbf core.
+
+
+
+
 
 
 

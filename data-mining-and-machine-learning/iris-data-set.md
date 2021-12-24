@@ -3,7 +3,7 @@ description: Introduction and use of the iris dataset
 coverY: 0
 ---
 
-# 3 iris data set
+# iris data set
 
 Iris has many meanings, such as the iris of the eye:
 
@@ -15,7 +15,7 @@ The iris data set we are talking about today refers to the iris flower data set.
 
 The Iris data set is a commonly used classification experimental data set, collected and organized by Fisher, 1936. Iris, also known as the iris flower data set, is a type of data set for multivariate analysis. The data set contains 150 data samples, divided into 3 categories, each with 50 data, and each data contains 4 attributes. The four attributes of calyx length, calyx width, petal length, and petal width can be used to predict which of the three species (Setosa, Versicolour, Virginica) the iris flower belongs to.
 
-![Setosa, Versicolour, Virginica](<../.gitbook/assets/image (2) (1).png>)
+![Setosa, Versicolour, Virginica](<../.gitbook/assets/image (2) (1) (1).png>)
 
 The iris data set is very small, and we can list them here.
 
@@ -584,11 +584,11 @@ label:
 In this way, we can easily process data. In future documents, I will directly use data and label to represent the iris data set.
 
 {% hint style="danger" %}
-The iris data set is very commonly used, so there are some libraries that provide a way to directly read the iris data set.&#x20;
+The iris data set is very commonly used, so there are some libraries that provide a way to directly read the iris data set.
 
-For example, pandas has such a function, and the data and label obtained are similar to those obtained by my method.&#x20;
+For example, pandas has such a function, and the data and label obtained are similar to those obtained by my method.
 
-The advantage of my method is freedom, which means that this method can be applied to any data set, and you can get whatever data you want. The format of the data is also a very common array format like numpy.&#x20;
+The advantage of my method is freedom, which means that this method can be applied to any data set, and you can get whatever data you want. The format of the data is also a very common array format like numpy.
 
 I hope everyone can understand and learn this way, because reading data is an important part of understanding data.
 {% endhint %}
