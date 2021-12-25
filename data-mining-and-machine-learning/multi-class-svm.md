@@ -36,9 +36,11 @@ For example, the handwritten number 4, the mnist data set contains thousands of 
 
 There are 10 kinds of handwritten numbers, so we need to classify these 10 kinds of numbers, but SVM can only classify two kinds of data at a time, what should we do?
 
+### Strategy 1: One-to-many method
 
+For example, if we first classify 0 from 10 handwritten digits, then we classify 0 into one category, and the remaining 123456789 into one category to construct an svm. Then we classify 1 from 10 handwritten digits, then we divide 1 into one category, and the remaining 023456789 into one category, and so on, until we separate all 10 categories.
 
-
+The advantage of this is that for the k classification problem, we only need to construct k svms, and the amount of calculation is small. Of course, the disadvantage is obvious, that is, the accuracy rate is relatively low.
 
 
 
