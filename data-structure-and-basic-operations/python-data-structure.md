@@ -3,7 +3,7 @@ description: beginning
 coverY: 0
 ---
 
-# 2 Python data structure
+# Python data structure
 
 The following code is completed in the interactive interface (you can also write the code into the script, you need to add print(...) to display):
 
@@ -159,7 +159,7 @@ When introducing the data structure, we will use whether to include a hash table
 * Numbers, strings, tuples are immutable.
 * lists, sets, dictionaries are variable.
 
-I will talk about the difference between <mark style="color:red;">**Variable**</mark> and <mark style="color:green;">**Immutable**</mark> in a chapter.
+I will talk about the difference between <mark style="color:red;">**Variable**</mark> and <mark style="color:green;">**Immutable**</mark> in a later chapter.
 
 ## Statistics
 

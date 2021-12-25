@@ -30,6 +30,19 @@ b = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 >>> 
 ```
 
+In fact, we don't need to write a separate function to solve this problem, we can use the built-in print function of python to solve this problem:
+
+```python
+>>> a = 5
+>>> print('a =', a)
+a = 5
+
+>>> b = 'hello'
+>>> print('b =', b)
+b = hello
+>>> 
+```
+
 ## Statistics
 
 Start time of this page: December 19, 2021
