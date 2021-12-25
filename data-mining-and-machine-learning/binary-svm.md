@@ -348,7 +348,7 @@ ax.contour( XX, YY, Z,
 plt.show()
 ```
 
-![Linear svm](<../.gitbook/assets/image (6) (1) (1).png>)
+![Linear svm](<../.gitbook/assets/image (6) (1) (1) (1).png>)
 
 SVM is a classifier and one of the best classifiers for supervised learning.
 
@@ -452,7 +452,7 @@ plt.show()
 
 ![Resolution = 10](<../.gitbook/assets/image (11).png>)
 
-![Resolution = 100](<../.gitbook/assets/image (6) (1).png>)
+![Resolution = 100](<../.gitbook/assets/image (6) (1) (1).png>)
 
 ![Resolution = 1000](<../.gitbook/assets/image (2).png>)
 
@@ -713,11 +713,11 @@ Then comes the higher-order Taylor expansion:
 
 ![N = 4](<../.gitbook/assets/image (14).png>)
 
-![N = 5](<../.gitbook/assets/image (7) (1).png>)
+![N = 5](<../.gitbook/assets/image (7) (1) (1).png>)
 
 ![N = 6](<../.gitbook/assets/image (15).png>)
 
-![N = 7](<../.gitbook/assets/image (6).png>)
+![N = 7](<../.gitbook/assets/image (6) (1).png>)
 
 ![N = 8](<../.gitbook/assets/image (9).png>)
 
