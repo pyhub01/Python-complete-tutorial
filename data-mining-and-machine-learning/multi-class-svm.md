@@ -62,6 +62,8 @@ Directed acyclic graph SVM and error correction coding SVMs which perform binary
 
 {% hint style="success" %}
 <mark style="color:green;">**good news**</mark>
+
+The svm in the sklearn library implements one-to-one svm as built-in, so you only need to send the category into it and it will work normally!
 {% endhint %}
 
 <mark style="color:green;">****</mark>
