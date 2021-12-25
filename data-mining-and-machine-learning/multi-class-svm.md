@@ -36,11 +36,35 @@ For example, the handwritten number 4, the mnist data set contains thousands of 
 
 There are 10 kinds of handwritten numbers, so we need to classify these 10 kinds of numbers, but SVM can only classify two kinds of data at a time, what should we do?
 
-### Strategy 1: One-to-many method
+### Strategy 1: One-to-many
 
-For example, if we first classify 0 from 10 handwritten digits, then we classify 0 into one category, and the remaining 123456789 into one category to construct an svm. Then we classify 1 from 10 handwritten digits, then we divide 1 into one category, and the remaining 023456789 into one category, and so on, until we separate all 10 categories.
+For example, we firstly classify 0 from 10 handwritten digits: we classify 0 into one category, and the remaining 123456789 into another category to construct an svm. Then we classify 1 from 10 handwritten digits: we divide 1 into one category, and the remaining 023456789 into another category, and so on, until we separate all 10 categories.
 
 The advantage of this is that for the k classification problem, we only need to construct k svms, and the amount of calculation is small. Of course, the disadvantage is obvious, that is, the accuracy rate is relatively low.
+
+### Strategy 2: One-to-One
+
+We perform SVM on any two classes: 0 and 1, 0 and 2, 0 and 3, 0 and 4, 0 and 5, 0 and 6, 0 and 7, 0 and 8, 0 and 9, 1 and 2, 1 and 3, 1 and 4, . . . , 8 and 7, 8 and 8, 8 and 9.
+
+In this way, we need to build k\*(k-1)/2 SVMs, which is a considerable computational overhead, especially when the number of categories is large. The characteristics of SVM predestined that SVM is difficult to perform multi-process calculation (SVM is difficult to calculate in parallel). We can only use one core of the CPU to run one SVM, so large calculations are often fatal. (It takes several hours to complete the classification)
+
+The accuracy of this method is very good, so python's svm uses this method by default.
+
+### Strategy 3: Hierarchical Support Vector Machine
+
+The hierarchical classification method first divides all categories into two sub-categories, and then further divides the sub-categories into two sub-categories, and so on until a single category is obtained.
+
+This method will be covered later in the graph theory chapter.
+
+### Other strategies
+
+Directed acyclic graph SVM and error correction coding SVMs which perform binary coding on categories are also implementation methods, but they are rarely used, so the analysis is not carried out.
+
+{% hint style="success" %}
+<mark style="color:green;">**good news**</mark>
+{% endhint %}
+
+<mark style="color:green;">****</mark>
 
 
 
