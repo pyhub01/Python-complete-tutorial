@@ -348,7 +348,7 @@ ax.contour( XX, YY, Z,
 plt.show()
 ```
 
-![Linear svm](<../.gitbook/assets/image (6) (1).png>)
+![Linear svm](<../.gitbook/assets/image (6) (1) (1).png>)
 
 SVM is a classifier and one of the best classifiers for supervised learning.
 
@@ -452,7 +452,7 @@ plt.show()
 
 ![Resolution = 10](<../.gitbook/assets/image (11).png>)
 
-![Resolution = 100](<../.gitbook/assets/image (6).png>)
+![Resolution = 100](<../.gitbook/assets/image (6) (1).png>)
 
 ![Resolution = 1000](<../.gitbook/assets/image (2).png>)
 
@@ -664,7 +664,7 @@ out = ax.contourf( XX, YY, Z,
 plt.show()
 ```
 
-![sigmoid core SVM](<../.gitbook/assets/image (15) (1).png>)
+![sigmoid core SVM](<../.gitbook/assets/image (15) (1) (1).png>)
 
 You will find that sigmoid does not work well when dealing with XOR problems.
 
@@ -674,7 +674,7 @@ You will find that sigmoid does not work well when dealing with XOR problems.
 
 If you know what a series, Taylor expansion or Fourier transform is, then polynomial expansion will be much easier.
 
-![Taylor expansion of some formulas](<../.gitbook/assets/image (14) (1).png>)
+![Taylor expansion of some formulas](<../.gitbook/assets/image (14) (1) (1).png>)
 
 If you don't know the above concepts, then please check out the following example.
 
@@ -695,6 +695,7 @@ plt.plot(x, y)
 
 plt.title('cos(x) Taylor Expansion')
 plt.xlabel('x'); plt.ylabel('y')
+plt.ylim(-3, 3)
 plt.grid(); plt.show()
 ```
 
@@ -702,27 +703,37 @@ The above function can draw the function image of the Taylor expansion of the co
 
 For example, when N=2, the first-order Taylor expansion is drawn:
 
-![N = 2](<../.gitbook/assets/image (15).png>)
+![N = 2](<../.gitbook/assets/image (5).png>)
 
 For example, when N=3, the second-order Taylor expansion is drawn:
 
-![N = 3](<../.gitbook/assets/image (7).png>)
+![N = 3](<../.gitbook/assets/image (10).png>)
 
 Then comes the higher-order Taylor expansion:
 
+![N = 4](<../.gitbook/assets/image (14).png>)
 
+![N = 5](<../.gitbook/assets/image (7).png>)
 
+![N = 6](<../.gitbook/assets/image (15).png>)
 
+![N = 7](<../.gitbook/assets/image (6).png>)
 
+![N = 8](<../.gitbook/assets/image (9).png>)
 
+![N = 9](<../.gitbook/assets/image (8).png>)
 
+When N=10, numpy reports an error, and Taylor expansion uses the power, and the power increases exponentially, which soon broke through the tolerance range of python. In the mathematical method, we will discuss other calculation algorithms to reduce the burden of python.
 
+```python
+Traceback (most recent call last):
+  File "xxx.py", line 8, in <module>
+    y += (-1)**(i-1) * x**(2*i-1) / np.math.factorial(2*i-1)
+TypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided 
+output parameter (typecode 'd') according to the casting rule ''same_kind''
+```
 
-
-
-
-
-
+You will find that when N increases, the function of the Taylor expansion becomes more and more like a cosine function. This is a polynomial.
 
 ```python
 import numpy as np
@@ -746,17 +757,19 @@ plt.ylim(-3, 3)
 plt.grid(); plt.legend(); plt.show()
 ```
 
-![merged](<../.gitbook/assets/image (14).png>)
+![merged](<../.gitbook/assets/image (14) (1).png>)
 
+We can plot the multi-level results together, and you can see the difference between them.
 
+When our order is **insufficient**, underfitting will occur, that is, the Taylor expansion function cannot keep up with the change of the original function. When the order is **right**, it fits the original function exactly. When the order is **too high**, over-fitting will occur, and the Taylor expansion will not tolerate any noise at all. But because the real world is noisy, the polynomials will have large deviations.
 
+For example, in the previous example, if I get too few polynomials, the following results will appear:
 
+![Underfitting](<../.gitbook/assets/image (3).png>)
 
+If our polynomial order is right, then we can get as good results as the rbf kernel:
 
-
-
-
-
+![Correct fit](<../.gitbook/assets/image (4).png>)
 
 
 

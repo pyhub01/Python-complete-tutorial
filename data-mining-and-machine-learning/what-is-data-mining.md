@@ -3,7 +3,7 @@ description: Introduction to iris data set
 coverY: 0
 ---
 
-# 3 3 What is data mining
+# What is data mining
 
 Data mining is to find out some patterns from the data.
 
@@ -34,7 +34,7 @@ plt.grid()
 plt.show()
 ```
 
-![The relationship between income and outlay](<../.gitbook/assets/image (3) (1) (1).png>)
+![The relationship between income and outlay](<../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 In this graph, we will find that when income increases, expenditures will increase accordingly.
 

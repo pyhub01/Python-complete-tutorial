@@ -34,7 +34,7 @@ plt.grid()
 plt.show()
 ```
 
-![The relationship between income and outlay](<../.gitbook/assets/image (3) (1) (1).png>)
+![The relationship between income and outlay](<../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 In this graph, we will find that when income increases, expenditures will increase accordingly.
 
@@ -120,17 +120,17 @@ plt.grid()
 plt.show()
 ```
 
-![N = 10](<../.gitbook/assets/image (7) (1).png>)
+![N = 10](<../.gitbook/assets/image (7) (1) (1).png>)
 
-![N = 20](<../.gitbook/assets/image (6) (1) (1).png>)
+![N = 20](<../.gitbook/assets/image (6) (1) (1) (1).png>)
 
-![N = 30](<../.gitbook/assets/image (3) (1).png>)
+![N = 30](<../.gitbook/assets/image (3) (1) (1).png>)
 
-![N = 50](<../.gitbook/assets/image (4).png>)
+![N = 50](<../.gitbook/assets/image (4) (1).png>)
 
-![N = 100](<../.gitbook/assets/image (5).png>)
+![N = 100](<../.gitbook/assets/image (5) (1).png>)
 
-![N = 1000](<../.gitbook/assets/image (8).png>)
+![N = 1000](<../.gitbook/assets/image (8) (1).png>)
 
 This method is very useful when drawing a large number of function images, and can show the difference between different function images.
 

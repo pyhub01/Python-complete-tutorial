@@ -3,13 +3,13 @@ description: Parallel coordinates
 coverY: 0
 ---
 
-# 4 Parallel coordinates
+# Parallel coordinates
 
 When you are trying to find the relationship between multiple variables, Parallel coordinates is a good choice.
 
 Parallel coordinates can clearly observe the distribution of data. For example, we can run Parallel coordinates on the iris data set.
 
-![iris dataset with parallel\_coordinates](<../.gitbook/assets/image (9) (1).png>)
+![iris dataset with parallel\_coordinates](<../.gitbook/assets/image (9) (1) (1).png>)
 
 ```python
 import seaborn
@@ -26,7 +26,7 @@ plt.title('iris dataset with parallel_coordinates')
 plt.show()
 ```
 
-After running Parallel coordinates on the iris data set, you can clearly observe the relationship between sepal\_length, sepal\_width, petal\_length, petal\_width and species.&#x20;
+After running Parallel coordinates on the iris data set, you can clearly observe the relationship between sepal\_length, sepal\_width, petal\_length, petal\_width and species.
 
 For example, the petal\_length of virginica is larger than the other two varieties. Then when you encounter an iris plant in the future, if its petal\_length is larger, then it is likely to be a virginica.
 

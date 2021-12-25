@@ -3,7 +3,7 @@ description: Frequency distribution
 coverY: 0
 ---
 
-# 3 Histogram
+# Histogram
 
 The histogram can very vividly show the frequency distribution of data.
 
@@ -53,7 +53,7 @@ plt.title('Temperature detection distribution')
 plt.show()
 ```
 
-![Histogram](<../.gitbook/assets/image (10).png>)
+![Histogram](<../.gitbook/assets/image (10) (1).png>)
 
 From this figure, we can clearly see the distribution of the data.
 

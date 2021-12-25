@@ -11,7 +11,7 @@ Iris has many meanings, such as the iris of the eye:
 
 The iris data set we are talking about today refers to the iris flower data set.
 
-![iris dataset](<../.gitbook/assets/image (4) (1).png>)
+![iris dataset](<../.gitbook/assets/image (4) (1) (1).png>)
 
 The Iris data set is a commonly used classification experimental data set, collected and organized by Fisher, 1936. Iris, also known as the iris flower data set, is a type of data set for multivariate analysis. The data set contains 150 data samples, divided into 3 categories, each with 50 data, and each data contains 4 attributes. The four attributes of calyx length, calyx width, petal length, and petal width can be used to predict which of the three species (Setosa, Versicolour, Virginica) the iris flower belongs to.
 
