@@ -348,13 +348,31 @@ cifar10 contains a total of ten different types.
 
 Each type is represented by a number. They are from 0-9.
 
+## Maximum likelihood analysis
 
+Maximum likelihood analysis is our most commonly used analysis method.
 
+For example, there is a baby who just came into this world. He doesn't know anything.
 
+You tell him what a panda is, and he learned what a panda is.
 
+You tell him what a horse is, and he learned what a horse is.
 
+At this time you showed him a picture of a zebra. He has never seen a zebra, but he has seen horses and pandas. He thinks that zebras look more like pandas, so zebras are pandas.
 
+This is the maximum likelihood analysis. For another example, in the morning there are dense clouds and the weather forecast says it might rain in the afternoon, so you bring an umbrella before you go out. This is also a maximum likelihood analysis, because you believe it is likely to rain in the afternoon, so in order not to get wet, you Bring an umbrella. If you don't think it will rain in the afternoon, then you will not bring an umbrella because it is a troublesome thing.
 
+Maximum likelihood analysis is to find the probability of each event, then compare these probabilities, and consider that the highest probability event will occur.
+
+For example, if I throw a dice, but this dice has been manipulated, the probability of 5 face up is 80%, and the probability of the other faces up is only 4%. Then after maximum likelihood analysis, I Think 5 is up.
+
+## One Hot Encoding
+
+We return to the cifar10 classification problem.
+
+The code of the airplane is 0, the code of the bird is 2, and the code of the car is 1.
+
+There is a thing that looks like both a bird and an airplane. The definition of airplane is 0 and the definition of bird is 2. Then the weight of the probability of this thing should be around 1, right? So if we analyze according to the maximum likelihood, this thing is likely to be a car.
 
 
 
