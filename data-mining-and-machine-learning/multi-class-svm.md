@@ -131,7 +131,11 @@ y_test[ :20 ] = [7 2 1 0 4 1 4 9 5 9 0 6 9 0 1 5 9 7 3 4]
 >>> 
 ```
 
+The upper line is the result of our SVM prediction, and the lower line is the true value.
 
+It can be found that our SVM model only predicted one number incorrectly. It shows that the accuracy of one-to-one SVM is pretty high.
+
+In the following chapters I will tell you how to judge the quality of our model.
 
 ## Statistics
 
