@@ -3,7 +3,7 @@ description: Support Vector Machines
 coverY: 0
 ---
 
-# SVM
+# binary SVM
 
 Before deep learning became popular on a large scale, support vector machines were the most popular machine learning method.
 
@@ -664,7 +664,7 @@ out = ax.contourf( XX, YY, Z,
 plt.show()
 ```
 
-![sigmoid core SVM](<../.gitbook/assets/image (15).png>)
+![sigmoid core SVM](<../.gitbook/assets/image (15) (1).png>)
 
 You will find that sigmoid does not work well when dealing with XOR problems.
 
@@ -674,9 +674,55 @@ You will find that sigmoid does not work well when dealing with XOR problems.
 
 If you know what a series, Taylor expansion or Fourier transform is, then polynomial expansion will be much easier.
 
-![Taylor expansion of some formulas](<../.gitbook/assets/image (14).png>)
+![Taylor expansion of some formulas](<../.gitbook/assets/image (14) (1).png>)
 
-If you don't know the above concepts, then please look at the following example.
+If you don't know the above concepts, then please check out the following example.
+
+```python
+import numpy as np
+x = np.arange(-np.pi*2, np.pi*2, 0.1)
+y = np.zeros(x.shape)
+
+N = 2
+
+for i in range( 1, N ):
+    y += (-1)**(i-1) * x**(2*i-1) / np.math.factorial(2*i-1)
+
+
+import matplotlib.pyplot as plt
+
+plt.plot(x, y)
+
+plt.title('cos(x) Taylor Expansion')
+plt.xlabel('x'); plt.ylabel('y')
+plt.grid(); plt.show()
+```
+
+The above function can draw the function image of the Taylor expansion of the cosine. Adjusting N can change the order of the Taylor expansion drawn.
+
+For example, when N=2, the first-order Taylor expansion is drawn:
+
+![N = 2](<../.gitbook/assets/image (15).png>)
+
+For example, when N=3, the second-order Taylor expansion is drawn:
+
+![N = 3](<../.gitbook/assets/image (7).png>)
+
+Then comes the higher-order Taylor expansion:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```python
 import numpy as np
@@ -700,7 +746,7 @@ plt.ylim(-3, 3)
 plt.grid(); plt.legend(); plt.show()
 ```
 
-
+![merged](<../.gitbook/assets/image (14).png>)
 
 
 
