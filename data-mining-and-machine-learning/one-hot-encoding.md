@@ -1,5 +1,6 @@
 ---
 description: Multi-classification problem
+coverY: 0
 ---
 
 # One Hot Encoding
@@ -37,6 +38,8 @@ tensorflow will be installed on your computer. Please note that tensorflow is a 
 I will tell you about the GPU version installation in the anaconda tutorial.
 
 {% hint style="danger" %}
+Deep learning requires a huge amount of calculation. Generally, the CPU has only 4-16 cores, and even the most powerful CPU today will generally not exceed 100 cores. That is to say, if I want to train a deep learning model, a CPU can only train 16 data at a time, and deep learning generally contains tens of thousands of data and extremely complex networks. So using CPU to train deep learning often takes a very long time.
+
 
 {% endhint %}
 
@@ -68,3 +71,8 @@ I will tell you about the GPU version installation in the anaconda tutorial.
 
 
 
+## Statistics
+
+Start time of this page: December 25, 2021
+
+Completion time of this page: December 28, 2021
