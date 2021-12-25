@@ -374,6 +374,36 @@ The code of the airplane is 0, the code of the bird is 2, and the code of the ca
 
 There is a thing that looks like both a bird and an airplane. The definition of airplane is 0 and the definition of bird is 2. Then the weight of the probability of this thing should be around 1, right? So if we analyze according to the maximum likelihood, this thing is likely to be a car.
 
+This is obviously wrong, if we directly weight according to the number, then there will be confusion between things.
+
+So we use one-hot encoding to solve this problem.
+
+```
+airplane =  [ 1, 0, 0 ]
+car =       [ 0, 1, 0 ]
+bird =      [ 0, 0, 1 ]
+```
+
+One-hot encoding is to turn the original label into a sparse matrix. Each different type is represented on a different column, and the remaining columns are all 0.
+
+Then when the probability distribution of an object is \[0.6, 0, 0.4], this object is an airplane according to the maximum likelihood analysis, instead of being defined as a car.
+
+## Code and implementation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
