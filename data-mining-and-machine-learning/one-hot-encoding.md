@@ -390,25 +390,101 @@ Then when the probability distribution of an object is \[0.6, 0, 0.4], this obje
 
 ## Code and implementation
 
+```python
+from tensorflow.keras.datasets import cifar10
+
+(x_train, y_train), (x_test, y_test) = cifar10.load_data()
+
+print('y_train.shape =', y_train.shape)
+print('y_train[:10] =\n', y_train[:10])
+print()
 
 
 
+from tensorflow.keras.utils import to_categorical
 
+y_train_onehot = to_categorical(y_train)
 
+print('y_train_onehot.shape =', y_train_onehot.shape)
+print('y_train_onehot[:10] =\n', y_train_onehot[:10])
+```
 
+There are many ways to implement one-hot encoding, and to\_categorical is one of the easiest ways.
 
+We can observe whether the position of 1 in the figure below is the same as the label above. (Hint: start from 0)
 
+```python
+y_train.shape = (50000, 1)
+y_train[:10] =
+ [[6]
+ [9]
+ [9]
+ [4]
+ [1]
+ [1]
+ [2]
+ [7]
+ [8]
+ [3]]
 
+y_train_onehot.shape = (50000, 10)
+y_train_onehot[:10] =
+ [[0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]]
+>>> 
+```
 
+The above is the way to realize one-hot encoding, let's talk about how to restore one-hot encoding:
 
+```python
+y_train_onehot = [
+    [ 0, 0, 0, 0, 0, 0, 1, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+    [ 0, 0, 0, 0, 1, 0, 0, 0, 0, 0 ],
+    [ 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 ],
+    [ 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 ],
+    [ 0, 0, 0, 1, 0, 0, 0, 0, 0, 0 ]
+    ]
 
+import numpy as np
 
+for i in y_train_onehot:
+    print( np.argmax(i) )
+```
 
+argmax is a function specially used to solve maximum likelihood analysis and one-hot encoding fallback. Its meaning is to find out where the maximum value appears in a set of data.
 
+We use the same set of data to test and you will find that the backed one-hot encoding is exactly the same as the label before encoding.
 
+```python
+6
+9
+9
+4
+1
+1
+2
+7
+8
+3
+>>> 
+```
 
+One-hot coding is very commonly used in deep learning and machine learning.
 
-
+This section introduces the cafir10 data set and some keras commonly used data sets, as well as what is maximum likelihood analysis and one-hot coding.
 
 ## Statistics
 
