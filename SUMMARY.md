@@ -33,6 +33,7 @@
 * [Histogram](data-mining-and-machine-learning/histogram.md)
 * [Correlation algorithm](data-mining-and-machine-learning/correlation-algorithm.md)
 * [binary SVM](data-mining-and-machine-learning/binary-svm.md)
+* [One Hot Encoding](data-mining-and-machine-learning/one-hot-encoding.md)
 * [Multi-class SVM](data-mining-and-machine-learning/multi-class-svm.md)
 
 ## 4⃣ data visualization
