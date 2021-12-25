@@ -1,5 +1,6 @@
 ---
 description: Expansion of the two classification problem
+coverY: 0
 ---
 
 # Multi-class SVM
