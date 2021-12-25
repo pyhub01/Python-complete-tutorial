@@ -35,15 +35,19 @@ Enter the above command in the CMD command prompt (search in win10)
 
 tensorflow will be installed on your computer. Please note that tensorflow is a deep learning library, the library has two versions of CPU and GPU, because the GPU version is extremely troublesome to install, so I recommend installing the CPU version here.
 
-I will tell you about the GPU version installation in the anaconda tutorial.
+I will tell you about the GPU version installation in the anaconda and deeplearning tutorial.
 
 {% hint style="danger" %}
 Deep learning requires a huge amount of calculation. Generally, the CPU has only 4-16 cores, and even the most powerful CPU today will generally not exceed 100 cores. That is to say, if I want to train a deep learning model, a CPU can only train 16 data at a time, and deep learning generally contains tens of thousands of data and extremely complex networks. So using CPU to train deep learning often takes a very long time.
 
+However, GPUs often have hundreds of thousands of cores, so when we use GPUs for calculations, they are dozens of times faster than CPUs, which compresses the calculations that would otherwise take several days to dozens of minutes to dozens of minutes.
 
+New GPUs often have TPU cores (computing cores that only support integer numbers, and deep learning often does not require such high precision), and these tensor cores often have faster computing speeds.
+
+Designing GPU computing programs is a very complicated thing. Fortunately, libraries like tensorflow have helped us design programs. The same program can run on both the CPU and the GPU.
 {% endhint %}
 
-
+Then we can load the cifar data set and visualize it:
 
 
 
