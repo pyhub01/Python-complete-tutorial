@@ -366,7 +366,7 @@ The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we
 
 Problems like the following that cannot be divided by a straight line are called XOR problems.
 
-![XOR problems](<../.gitbook/assets/image (13) (1) (1) (1).png>)
+![XOR problems](<../.gitbook/assets/image (13) (1) (1) (1) (1).png>)
 
 ```python
 x = [
@@ -456,7 +456,7 @@ plt.show()
 
 ![Resolution = 1000](<../.gitbook/assets/image (2).png>)
 
-![Resolution = 2000](<../.gitbook/assets/image (13) (1) (1).png>)
+![Resolution = 2000](<../.gitbook/assets/image (13) (1) (1) (1).png>)
 
 We can see that linear SVM is racking it brains to solve this classification problem.
 
@@ -564,7 +564,7 @@ plt.grid()
 plt.show()
 ```
 
-![RBF function](<../.gitbook/assets/image (13) (1).png>)
+![RBF function](<../.gitbook/assets/image (13) (1) (1).png>)
 
 The RBF function turns a linear function into a nonlinear result, which is very useful in machine learning. Because the world we live in is also non-linear.
 
@@ -577,6 +577,39 @@ We use other kernels to show you the effect of nonlinear SVM:
 {% hint style="success" %}
 <mark style="color:green;">**sigmoid core**</mark>
 {% endhint %}
+
+![sigmoid](<../.gitbook/assets/image (13).png>)
+
+```python
+from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+import numpy as np
+
+fig = plt.figure()
+ax = plt.axes( projection = '3d' )
+
+
+minmax = 2
+xx = np.arange( -minmax, minmax, minmax / 100 )
+yy = np.arange( -minmax, minmax, minmax / 100 )
+X, Y = np.meshgrid( xx, yy )
+Z = 1 / ( 1 + np.e ** -( X - Y ))
+
+
+ax.plot_surface( X, Y, Z,
+                 cmap = 'rainbow'
+                 )
+
+plt.title('sigmoid function')
+plt.xlabel('x')
+plt.ylabel('y')
+
+plt.grid()
+plt.show()
+```
+
+What is drawn here is a two-dimensional sigmoid function. The sigmoid function is also a very commonly used function to turn linear results into nonlinearities.
 
 ```python
 x = [
@@ -633,9 +666,55 @@ plt.show()
 
 ![sigmoid core SVM](<../.gitbook/assets/image (15).png>)
 
-<mark style="color:green;">****</mark>
+You will find that sigmoid does not work well when dealing with XOR problems.
 
-<mark style="color:green;">****</mark>
+{% hint style="success" %}
+<mark style="color:green;">**polynomial core**</mark>
+{% endhint %}
+
+If you know what a series, Taylor expansion or Fourier transform is, then polynomial expansion will be much easier.
+
+![Taylor expansion of some formulas](<../.gitbook/assets/image (14).png>)
+
+If you don't know the above concepts, then please look at the following example.
+
+```python
+import numpy as np
+x = np.arange(-np.pi*2, np.pi*2, 0.1)
+y = np.zeros(x.shape)
+
+N = 10
+curves = np.zeros((N-1, x.shape[0]))
+for i in range( 1, N ):
+    y += (-1)**(i-1) * x**(2*i-1) / np.math.factorial(2*i-1)
+    curves[i-1] = y
+# print(curves)
+
+import matplotlib.pyplot as plt
+for i in range(len(curves)):
+    plt.plot(x, curves[i], label = i+1)
+
+plt.title('cos(x) Taylor Expansion')
+plt.xlabel('x'); plt.ylabel('y')
+plt.ylim(-3, 3)
+plt.grid(); plt.legend(); plt.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -649,7 +728,7 @@ Reference program
 
 sklearn provides us with a very good program to visualize the effects of different SVM cores.
 
-![SVM different kernel visualization](<../.gitbook/assets/image (13).png>)
+![SVM different kernel visualization](<../.gitbook/assets/image (13) (1).png>)
 
 ```python
 import numpy as np
