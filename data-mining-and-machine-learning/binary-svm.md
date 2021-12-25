@@ -771,13 +771,7 @@ If our polynomial order is right, then we can get as good results as the rbf ker
 
 ![Correct fit](<../.gitbook/assets/image (4).png>)
 
-
-
-
-
-
-
-
+In this example, there is no overfitting problem. The overfitting problem needs a larger and more noisy data set.
 
 ## Comparison of different kernels
 
@@ -880,6 +874,12 @@ plt.show()
 ```
 
 The basic idea of this visualization: use the iris data set to train an SVM model, and then divide the visualization space into small grids by linear interpolation, and then send the data of each small grid to the SVM to predict the results, and then give the background based on the results Color, and finally get the color block map of this area in the above figure.
+
+{% hint style="danger" %}
+<mark style="color:red;">**Tips on tuning**</mark>
+
+In svm, rbf and linear are the most commonly used. Linear is suitable for linear data, while rbf is used for almost any data. When the noise is very large or the data has XOR problems, then rbf is a good choice. SVM has Some significant shortcomings, such as over-fitting, this problem can generally only be solved using deep learning.
+{% endhint %}
 
 ## Statistics
 
