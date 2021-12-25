@@ -3,7 +3,7 @@ description: Dictionaries and sets
 coverY: 0
 ---
 
-# 2 Data structure with hash table
+# Data structure with hash table
 
 I will explain the hash table in detail in the database section later. At present, we only need to know that the hash table can be quickly searched.
 
@@ -42,11 +42,19 @@ set time cost =  0.0 s
 >>> 
 ```
 
-You will find that it takes a long time to search when the data structure does not contain a hash table, and when the data structure contains a hash table, the search can be completed in almost no time.&#x20;
+You will find that it takes a long time to search when the data structure does not contain a hash table, and when the data structure contains a hash table, the search can be completed in almost no time.
 
 This difference becomes more obvious when the amount of data becomes larger.
 
 So when we perform large-scale data search, we should use data structure contains hash tables.
+
+{% hint style="danger" %}
+One requirement for using a hash table is: there can only be one of each element. If the content to be searched contains duplicate elements, then the hash table cannot be used to speed up the search.
+
+For example, you can use a hash table to find specific elements in 1, 2, 3, 4, 5, but you cannot find specific elements in 1, 1, 2, 2, 3 because they contain duplicate elements. This is reflected in both sets and dictionaries: sets do not allow duplicate elements, and dictionaries do not allow duplicate keys.
+
+This feature of the hash table is very dangerous. If the content you need to find contains duplicate elements, it may cause errors in the search results.
+{% endhint %}
 
 ## <mark style="color:purple;">set</mark>
 
@@ -76,14 +84,8 @@ We can also convert a list into a collection.
 
 You will find that the repeated elements have been deleted from the set.
 
-
-
-
-
-
-
 ## Statistics
 
 Start time of this page: December 19, 2021
 
-Completion time of this page:&#x20;
+Completion time of this page:
