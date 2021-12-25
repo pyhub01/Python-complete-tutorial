@@ -46,6 +46,8 @@ The advantage of this is that for the k classification problem, we only need to 
 
 We perform SVM on any two classes: 0 and 1, 0 and 2, 0 and 3, 0 and 4, 0 and 5, 0 and 6, 0 and 7, 0 and 8, 0 and 9, 1 and 2, 1 and 3, 1 and 4, . . . , 8 and 7, 8 and 8, 8 and 9.
 
+Afterwards, voting is used in these SVMs to determine which category an area belongs to.
+
 In this way, we need to build k\*(k-1)/2 SVMs, which is a considerable computational overhead, especially when the number of categories is large. The characteristics of SVM predestined that SVM is difficult to perform multi-process calculation (SVM is difficult to calculate in parallel). We can only use one core of the CPU to run one SVM, so large calculations are often fatal. (It takes several hours to complete the classification)
 
 The accuracy of this method is very good, so python's svm uses this method by default.
@@ -66,9 +68,68 @@ Directed acyclic graph SVM and error correction coding SVMs which perform binary
 The svm in the sklearn library implements one-to-one svm as built-in, so you only need to send the category into it and it will work normally!
 {% endhint %}
 
-<mark style="color:green;">****</mark>
+## Test multi-class SVM on mnist
+
+```python
+from tensorflow.keras.datasets import mnist
+
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+
+# flatten
+x_train = x_train.reshape( x_train.shape[0], -1 )
+x_test = x_test.reshape( x_test.shape[0], -1 )
+
+# reduce data size
+train_set_size = 1000
+x_train = x_train[ :train_set_size, : ]
+y_train = y_train[ :train_set_size ]
+
+test_set_size = 20
+x_test = x_test[ :test_set_size, : ]
 
 
+
+from sklearn import svm
+import numpy as np
+
+clf = svm.SVC( kernel = 'linear' )
+clf.fit( x_train, y_train )
+
+print('train finished!')
+print()
+
+x_pred = clf.predict( x_test )
+
+print('x_pred[ :20 ] =', x_pred[ :test_set_size ])
+print('y_test[ :20 ] =', y_test[ :test_set_size ])
+```
+
+First, we first read the mnist data set. The dimensions of the mnist data set are:
+
+```python
+>>> x_train.shape
+(60000, 28, 28)
+>>> y_train.shape
+(60000,)
+
+>>> x_test.shape
+(10000, 28, 28)
+>>> y_test.shape
+(10000,)
+>>> 
+```
+
+So we need to flatten the data into one dimension(as SVM can only process 1D data), because the SVM calculation is very slow, so I only take 1000 handwritten digits of total 60000 as the training set, and 20 handwritten digits of total 10000 as the test set. Then use the training set to train our linear SVM model, and finally use our linear SVM to predict our test set.
+
+The results of the program are as follows:
+
+```python
+train finished!
+
+x_pred[ :20 ] = [7 2 1 0 4 1 4 9 2 9 0 6 9 0 1 5 9 7 3 4]
+y_test[ :20 ] = [7 2 1 0 4 1 4 9 5 9 0 6 9 0 1 5 9 7 3 4]
+>>> 
+```
 
 
 
