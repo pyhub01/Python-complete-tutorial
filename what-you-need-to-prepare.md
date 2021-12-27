@@ -112,7 +112,13 @@ RAM is different from our hard disk. When the power is off, the data in the hard
 
 <mark style="color:green;">**Because the two principles are different, the disk can store data permanently, whether it is stored in the form of a magnetic field or in the form of electric charge, it takes longer than RAM.**</mark>
 
-If you are interested in the principles of rom and ram, then please read the article about transistors and MOSFETs and how MOSFETs store charge.
+<mark style="color:green;">**If you are interested in the principles of rom and ram, then please read the article about transistors and MOSFETs and how MOSFETs store electric charge.**</mark>
+{% endhint %}
+
+{% hint style="danger" %}
+<mark style="color:red;">**The memory is fast, dozens of times faster than the disk, but still much slower than the CPU. So the bottleneck of many programs is to read data from memory. This is why you have a fast CPU but cannot process data at this speed.**</mark>
+
+<mark style="color:red;">**So improving your memory is very important, because it will directly increase the execution speed of your program. Especially for big data programs.**</mark>
 {% endhint %}
 
 RAM has three important parameters, one is ddrx, the other is speed, and the other is capacity.
@@ -125,7 +131,15 @@ The number of instruction cycles refers to how many cycles of instructions are u
 
 These previous parameters will make your program run faster, if you deal with big data, then the effect will be more significant.
 
+{% hint style="danger" %}
+<mark style="color:red;">**There are many things to note about memory:**</mark>
 
+<mark style="color:red;">**The first is to check what memory your motherboard supports. If you buy unsupported memory, it may not be plugged into the motherboard (ddr3 and ddr4 have different slots) or cannot be read correctly.**</mark>
+
+<mark style="color:red;">**The second is that memory modules are generally dual-channel, which means that if you have two memory slots, one memory slot has been inserted into 8GB 2400MHZ CL22 memory, then the other memory slot should also be inserted exactly the same. Memory (including the brand must be the same), so as to maximize compatibility. If you insert a 16GB memory, it may not be recognized. If you insert 3200MHZ memory, the motherboard will down-clock this 3200MHZ memory to 2400MHZ to synchronize with another memory. So you should ensure the consistency of dual-channel memory.**</mark>&#x20;
+
+Unless you know how to mix memory <mark style="color:red;">**with different size**</mark> and are willing to take the risk of memory errors, or you can try whether it succeeds, and return the product if it fails.
+{% endhint %}
 
 
 
