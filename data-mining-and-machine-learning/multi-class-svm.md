@@ -26,7 +26,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![mnist data set, handwritten digit recognition](<../.gitbook/assets/image (12).png>)
+![mnist data set, handwritten digit recognition](<../.gitbook/assets/image (12) (1).png>)
 
 The mnist data set is a handwritten digit recognition data set, which is much larger than the iris data set. We will often use this data set later.
 

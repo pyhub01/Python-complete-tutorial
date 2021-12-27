@@ -98,7 +98,7 @@ plt.scatter(data[:, 0], data[:, 1], c = label)
 plt.show()
 ```
 
-![2D-data visualization](<../.gitbook/assets/image (12) (1).png>)
+![2D-data visualization](<../.gitbook/assets/image (12) (1) (1).png>)
 
 \[0.90505321 0.07466183] is the parameter of pca. The first dimension occupies 0.90505321 of the information of all dimensions, and the second dimension occupies 0.07466183 of the information of all dimensions, so the iris data set actually only needs one dimension to retain 0.90505321 Information which is nearly all the information.
 

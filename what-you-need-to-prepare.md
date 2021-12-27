@@ -99,7 +99,45 @@ cpu cost performance
 GPU cost performance
 {% endembed %}
 
-## Random access memory(RAM)
+### Random access memory(RAM)
+
+![RAM](<.gitbook/assets/image (12).png>)
+
+RAM is a storage method: when our computer is powered on, it can storeage data. When the computer is powered off, the stored content disappears with the power off.
+
+RAM is different from our hard disk. When the power is off, the data in the hard disk still exists, but the data in RAM disappears.
+
+{% hint style="success" %}
+<mark style="color:green;">**The speed of RAM that disappears after a power off is much faster than that of a disk that does not disappear after a power off.**</mark>&#x20;
+
+<mark style="color:yellow;">Because the two principles are different, the disk can store data permanently, whether it is stored in the form of a magnetic field or in the form of electric charge, it takes longer than RAM.</mark>
+{% endhint %}
+
+RAM has three important parameters, one is ddrx, the other is speed, and the other is capacity.
+
+ddrx is generally ddr3 or ddr4, these are two types of memory chips, and their working principles are different. ddr3 is half the speed of ddr4, so if you have ddr4 memory, then your program execution speed will also increase.
+
+The second parameter is the speed and the number of instruction cycles: the memory has different frequencies such as **2133MHZ, 2400MHZ, 2666MHZ, 3000MHZ, 3200MHZ**. The higher the frequency, the faster the memory speed, and the running speed of your program will increase accordingly.
+
+The number of instruction cycles refers to how many cycles of instructions are used to read data from the memory. For example, **CL16, CL19, CL22** are common. The smaller the number of instruction cycles, the better. If your instruction cycle number is CL22 and the memory frequency is 3200MHZ, then you need to read an instruction The time spent is: 1/3200MHZ\*22=6.875ns. (The actual time may be different from this)&#x20;
+
+These previous parameters will make your program run faster, if you deal with big data, then the effect will be more significant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
