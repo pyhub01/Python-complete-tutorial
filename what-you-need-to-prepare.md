@@ -61,13 +61,45 @@ The video memory size of the computing card is generally 16G and above, so in ge
 
 The reason why computing cards are expensive is that computing cards have several times of the computing power of general graphics cards. It is very likely that the CPU has not yet prepared the data, and the GPU has already completed the calculation. So you should use multiple processes when using a computing card.
 
-_Most people use gaming graphics cards:_
+**Most people use gaming graphics cards:**
 
 ![Recommended graphics card](<.gitbook/assets/image (10).png>)
 
+I also recommend that you buy and use gaming graphics cards, because if you give up python programming and deep learning, such graphics cards can still play games or sell.
 
+{% hint style="danger" %}
+Please do not buy second-hand graphics cards as much as possible, because graphics cards are often used for mining, and mining is very harmful to the graphics cards.
 
+Many mining cards are easily damaged or many functions are already unstable. Unless you can be sure that the graphics card is not a mining card, you should be extra cautious.
+{% endhint %}
 
+The performance of the graphics card is divided into two points, the first is the size of the video memory, and the second is the strength of the computing power.
+
+The video memory size is the most important, because if your model cannot fit in the video memory, then your model cannot run on the graphics card!
+
+So I recommend buying a large-capacity graphics card. For example, the RTX3060 has 12GB of video memory but the price is very cheap (of course, you can’t buy the RTX3060 in 2020 2021 2022 or even later because everyone is mining ethereum And other cryptocurrencies that are mined with graphics cards now) or the RTX3090 has 24G of video memory, which is slightly more expensive but has strong performance.
+
+The computing power of the graphics card is actually not very important. Of course, the graphics memory and computing power of the graphics card earlier than GTX960 are not enough (when the computing power is below a certain level, deep learning cannot be performed, but this kind of graphics card should not be available in shop now) . Another important point is that the M-series graphics card used by the laptop computers and tablet is a weakened version of the desktop computer graphics card. The heat dissipation and power consumption of the M-series graphics card may cause damage to the notebook (for example, one of my previous notebooks exploded because of long-term deep learning).
+
+{% hint style="danger" %}
+The best way to buy graphics cards and CPUs is to evaluate the product's cost-effectiveness and performance.
+
+We should choose graphics cards and CPUs that are more cost-effective and have higher running scores.
+
+The following is a very good evaluation score and cost-effective website.
+
+**(The data on this website is not so accurate, so it is more appropriate as a reference and approximate ranking)**
+{% endhint %}
+
+{% embed url="https://www.cpubenchmark.net/cpu_value_available.html" %}
+cpu cost performance
+{% endembed %}
+
+{% embed url="https://www.videocardbenchmark.net/gpu_value.html" %}
+GPU cost performance
+{% endembed %}
+
+## Random access memory(RAM)
 
 
 
