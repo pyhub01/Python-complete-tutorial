@@ -366,7 +366,7 @@ The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we
 
 Problems like the following that cannot be divided by a straight line are called XOR problems.
 
-![XOR problems](<../.gitbook/assets/image (13) (1) (1) (1) (1).png>)
+![XOR problems](<../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png>)
 
 ```python
 x = [
@@ -456,7 +456,7 @@ plt.show()
 
 ![Resolution = 1000](<../.gitbook/assets/image (2) (1).png>)
 
-![Resolution = 2000](<../.gitbook/assets/image (13) (1) (1) (1).png>)
+![Resolution = 2000](<../.gitbook/assets/image (13) (1) (1) (1) (1).png>)
 
 We can see that linear SVM is racking it brains to solve this classification problem.
 
@@ -564,7 +564,7 @@ plt.grid()
 plt.show()
 ```
 
-![RBF function](<../.gitbook/assets/image (13) (1) (1).png>)
+![RBF function](<../.gitbook/assets/image (13) (1) (1) (1).png>)
 
 The RBF function turns a linear function into a nonlinear result, which is very useful in machine learning. Because the world we live in is also non-linear.
 
@@ -578,7 +578,7 @@ We use other kernels to show you the effect of nonlinear SVM:
 <mark style="color:green;">**sigmoid core**</mark>
 {% endhint %}
 
-![sigmoid](<../.gitbook/assets/image (13).png>)
+![sigmoid](<../.gitbook/assets/image (13) (1).png>)
 
 ```python
 from matplotlib import pyplot as plt
@@ -674,7 +674,7 @@ You will find that sigmoid does not work well when dealing with XOR problems.
 
 If you know what a series, Taylor expansion or Fourier transform is, then polynomial expansion will be much easier.
 
-![Taylor expansion of some formulas](<../.gitbook/assets/image (14) (1) (1).png>)
+![Taylor expansion of some formulas](<../.gitbook/assets/image (14) (1) (1) (1).png>)
 
 If you don't know the above concepts, then please check out the following example.
 
@@ -711,7 +711,7 @@ For example, when N=3, the second-order Taylor expansion is drawn:
 
 Then comes the higher-order Taylor expansion:
 
-![N = 4](<../.gitbook/assets/image (14).png>)
+![N = 4](<../.gitbook/assets/image (14) (1).png>)
 
 ![N = 5](<../.gitbook/assets/image (7) (1) (1) (1).png>)
 
@@ -757,7 +757,7 @@ plt.ylim(-3, 3)
 plt.grid(); plt.legend(); plt.show()
 ```
 
-![merged](<../.gitbook/assets/image (14) (1).png>)
+![merged](<../.gitbook/assets/image (14) (1) (1).png>)
 
 We can plot the multi-level results together, and you can see the difference between them.
 
@@ -781,7 +781,7 @@ Reference program
 
 sklearn provides us with a very good program to visualize the effects of different SVM cores.
 
-![SVM different kernel visualization](<../.gitbook/assets/image (13) (1).png>)
+![SVM different kernel visualization](<../.gitbook/assets/image (13) (1) (1).png>)
 
 ```python
 import numpy as np

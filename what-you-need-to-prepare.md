@@ -138,22 +138,36 @@ These previous parameters will make your program run faster, if you deal with bi
 
 <mark style="color:red;">**The second is that memory modules are generally dual-channel, which means that if you have two memory slots, one memory slot has been inserted into 8GB 2400MHZ CL22 memory, then the other memory slot should also be inserted exactly the same. Memory (including the brand must be the same), so as to maximize compatibility. If you insert a 16GB memory, it may not be recognized. If you insert 3200MHZ memory, the motherboard will down-clock this 3200MHZ memory to 2400MHZ to synchronize with another memory. So you should ensure the consistency of dual-channel memory.**</mark>&#x20;
 
-Unless you know how to mix memory <mark style="color:red;">**with different size**</mark> and are willing to take the risk of memory errors, or you can try whether it succeeds, and return the product if it fails.
+<mark style="color:red;">**Unless you know how to mix memory with different size and are willing to take the risk of memory errors, or you can try whether it succeeds, and return the product if it fails.**</mark>
 {% endhint %}
 
+### Read only memory (ROM)
 
+![UV erasable read-only memory](<.gitbook/assets/image (17).png>)
 
+The name read-only memory comes from the 1970s, when the disk at that time is shown in the picture above (there are even ertlier read-only memories, The ertlier the ROM, the more unconvent to use.). This chip requires a special programmer to write data into it. When in use, data can only be read but not written. When we need to change the data, we need to use ultraviolet rays into the small quartz window in the middle of the chip. The high-energy ultraviolet light will excite the stored charges and clear the data in the chip.
 
+![Mask ROM](<.gitbook/assets/image (13).png>)
 
+Mask ROM is one of the oldest ROMs. This type of ROM writes data when it leaves the factory and cannot modify the data once it leaves the factory. Each transistor as above represents data 1, and blank represents data 0.
 
+So when you look at today's disks, you will have an illusion, that is: It is obvious that we can easily write data, why is this thing called a read-only memory. The reason lies in the above two tell you th story about the primitive and ancient read-only memories.
 
+#### HDD
 
+![HDD](<.gitbook/assets/image (16).png>)
 
+The abbreviation of Hard drive disk is HDD. HDD is an ancient computer hard disk. This hard disk uses a robotic arm to read and write the contents of the disk. Since it takes time for the robot arm to be in place and to rotate, the HDD speed is very slow. Especially when we try to put a large amount of fragmented data on the HDD, it will take a long time for the robotic arm to find the data and read the data.
 
+Because HDDs rely on mechanical structures to store data, HDDs are very fragile, and mechanical arm failures, bumps, and magnets can easily destroy this delicate device. Therefore, the content stored on the HDD is not safe.
 
+#### SSD
 
+![HDD & SSD](<.gitbook/assets/image (14).png>)
 
+SSD is the abbreviation of solid state drive. Solid state drives use chips to store data, which is very different from mechanical hard drives.
 
+The use of a chip to store data in a solid-state drive will increase the reliability of the data (it is not easy to damage the data due to bumps and magnets), and will reduce the weight of the disk.
 
 
 
