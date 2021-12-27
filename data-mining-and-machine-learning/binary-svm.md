@@ -454,7 +454,7 @@ plt.show()
 
 ![Resolution = 100](<../.gitbook/assets/image (6) (1) (1).png>)
 
-![Resolution = 1000](<../.gitbook/assets/image (2).png>)
+![Resolution = 1000](<../.gitbook/assets/image (2) (1).png>)
 
 ![Resolution = 2000](<../.gitbook/assets/image (13) (1) (1) (1).png>)
 
@@ -664,7 +664,7 @@ out = ax.contourf( XX, YY, Z,
 plt.show()
 ```
 
-![sigmoid core SVM](<../.gitbook/assets/image (15) (1) (1).png>)
+![sigmoid core SVM](<../.gitbook/assets/image (15) (1) (1) (1).png>)
 
 You will find that sigmoid does not work well when dealing with XOR problems.
 
@@ -707,21 +707,21 @@ For example, when N=2, the first-order Taylor expansion is drawn:
 
 For example, when N=3, the second-order Taylor expansion is drawn:
 
-![N = 3](<../.gitbook/assets/image (10).png>)
+![N = 3](<../.gitbook/assets/image (10) (1).png>)
 
 Then comes the higher-order Taylor expansion:
 
 ![N = 4](<../.gitbook/assets/image (14).png>)
 
-![N = 5](<../.gitbook/assets/image (7) (1) (1).png>)
+![N = 5](<../.gitbook/assets/image (7) (1) (1) (1).png>)
 
-![N = 6](<../.gitbook/assets/image (15).png>)
+![N = 6](<../.gitbook/assets/image (15) (1).png>)
 
 ![N = 7](<../.gitbook/assets/image (6) (1).png>)
 
-![N = 8](<../.gitbook/assets/image (9).png>)
+![N = 8](<../.gitbook/assets/image (9) (1).png>)
 
-![N = 9](<../.gitbook/assets/image (8).png>)
+![N = 9](<../.gitbook/assets/image (8) (1).png>)
 
 When N=10, numpy reports an error, and Taylor expansion uses the power, and the power increases exponentially, which soon broke through the tolerance range of python. In the mathematical method, we will discuss other calculation algorithms to reduce the burden of python.
 

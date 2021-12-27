@@ -2,6 +2,7 @@
 
 * [Python Complete Tutorial](README.md)
 * [About this book](about-this-book.md)
+* [What you need to prepare](what-you-need-to-prepare.md)
 
 ## 1⃣ Try python for the first time
 

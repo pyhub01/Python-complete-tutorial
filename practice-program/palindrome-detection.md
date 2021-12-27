@@ -5,7 +5,7 @@ coverY: 0
 
 # 🚩 Palindrome detection
 
-![DNA](<../.gitbook/assets/image (9) (1).png>)
+![DNA](<../.gitbook/assets/image (9) (1) (1).png>)
 
 There are some palindrome sequences in DNA, such as "ATGCGCGTAATGCGCGTA"
 

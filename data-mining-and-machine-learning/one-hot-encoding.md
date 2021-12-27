@@ -340,7 +340,7 @@ y_train[:5] = [[6]
  [1]]
 ```
 
-![cifar10](<../.gitbook/assets/image (7).png>)
+![cifar10](<../.gitbook/assets/image (7) (1).png>)
 
 cifar10 contains a total of ten different types.
 

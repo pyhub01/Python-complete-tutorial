@@ -53,7 +53,7 @@ plt.title('Temperature detection distribution')
 plt.show()
 ```
 
-![Histogram](<../.gitbook/assets/image (10) (1).png>)
+![Histogram](<../.gitbook/assets/image (10) (1) (1).png>)
 
 From this figure, we can clearly see the distribution of the data.
 

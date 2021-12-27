@@ -87,7 +87,7 @@ plt.legend()
 plt.show()
 ```
 
-![Plot two functions at the same time](<../.gitbook/assets/image (2) (1).png>)
+![Plot two functions at the same time](<../.gitbook/assets/image (2) (1) (1).png>)
 
 The following code block can draw multiple functions with gradually color:
 
@@ -120,7 +120,7 @@ plt.grid()
 plt.show()
 ```
 
-![N = 10](<../.gitbook/assets/image (7) (1) (1) (1) (1).png>)
+![N = 10](<../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png>)
 
 ![N = 20](<../.gitbook/assets/image (6) (1) (1) (1) (1).png>)
 
@@ -130,7 +130,7 @@ plt.show()
 
 ![N = 100](<../.gitbook/assets/image (5) (1).png>)
 
-![N = 1000](<../.gitbook/assets/image (8) (1).png>)
+![N = 1000](<../.gitbook/assets/image (8) (1) (1).png>)
 
 This method is very useful when drawing a large number of function images, and can show the difference between different function images.
 
