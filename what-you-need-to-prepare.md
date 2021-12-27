@@ -110,7 +110,9 @@ RAM is different from our hard disk. When the power is off, the data in the hard
 {% hint style="success" %}
 <mark style="color:green;">**The speed of RAM that disappears after a power off is much faster than that of a disk that does not disappear after a power off.**</mark>&#x20;
 
-<mark style="color:yellow;">Because the two principles are different, the disk can store data permanently, whether it is stored in the form of a magnetic field or in the form of electric charge, it takes longer than RAM.</mark>
+<mark style="color:green;">**Because the two principles are different, the disk can store data permanently, whether it is stored in the form of a magnetic field or in the form of electric charge, it takes longer than RAM.**</mark>
+
+If you are interested in the principles of rom and ram, then please read the article about transistors and MOSFETs and how MOSFETs store charge.
 {% endhint %}
 
 RAM has three important parameters, one is ddrx, the other is speed, and the other is capacity.
