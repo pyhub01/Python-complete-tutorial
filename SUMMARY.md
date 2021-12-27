@@ -35,12 +35,13 @@
 * [binary SVM](data-mining-and-machine-learning/binary-svm.md)
 * [One Hot Encoding](data-mining-and-machine-learning/one-hot-encoding.md)
 * [Multi-class SVM](data-mining-and-machine-learning/multi-class-svm.md)
+* [Accuracy and error rate](data-mining-and-machine-learning/accuracy-and-error-rate.md)
 
-## 4⃣ data visualization
+## 4⃣ big data and data visualization
 
-* [line chart](data-visualization/line-chart.md)
-* [Parallel coordinates](data-visualization/parallel-coordinates.md)
-* [Histogram chart](data-visualization/histogram.md)
+* [line chart](big-data-and-data-visualization/line-chart.md)
+* [Parallel coordinates](big-data-and-data-visualization/parallel-coordinates.md)
+* [Histogram chart](big-data-and-data-visualization/histogram.md)
 
 ## 5⃣ Mathematical algorithm and digital signal processing
 
