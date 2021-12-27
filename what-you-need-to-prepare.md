@@ -31,7 +31,13 @@ GPU is a graphics computing unit. Unlike the CPU, the CPU is powerful, but gener
 
 When dealing with complex problems, we need scientists, but when dealing with a large number of simple problems, we need enough workers. We let scientists design blueprints for workers and guide them in their work, and many workers will return the results after completing the construction then Give to the scientist to do the acceptance. This is the job of the GPU.
 
-Therefore, the workflow of the graphics card is as follows: CPU processing data is sent to the graphics card and tells the graphics card what each core should do. After the graphics card receives the data and instructions, it performs high-intensity parallel calculations, and finally feeds back the calculation results to the CPU, and the CPU Print the calculation results on the screen and you will see the calculation result.
+Therefore, the workflow of the graphics card is as follows: CPU processing data which sent to the graphics card and tells the graphics card what each core should do. After the graphics card receives the data and instructions, it performs high-intensity parallel calculations, and finally feeds back the calculation results to the CPU, and the CPU Print the calculation results on the screen and you will see the calculation result.
+
+**So the working process of GPU is actually the cooperation of GPU and CPU. In other words, if your GPU is too strong and the CPU is too weak, then the CPU may not have preprocessed the data, and the GPU will complete the calculation. Or your GPU is too weak and the CPU is too strong, then the CPU has to wait for the GPU to process the data. Therefore, the capabilities of the CPU and GPU must be properly matched, so that they can work together perfectly, shorten the running time, and reduce the vacancy rate of the equipment.**
+
+Under normal circumstances, the performance of your game graphics card is much weaker than the CPU, so there is no need to worry about the problem of excessive CPU.
+
+
 
 GPU is mainly used in two places, one is graphics rendering, and the other is deep learning.
 
@@ -54,6 +60,8 @@ This kind of graphics card is generally configured on the server and is cooled b
 The video memory size of the computing card is generally 16G and above, so in general, the general model does not need to worry about the video memory usage problem.
 
 The reason why computing cards are expensive is that computing cards have several times of the computing power of general graphics cards. It is very likely that the CPU has not yet prepared the data, and the GPU has already completed the calculation. So you should use multiple processes when using a computing card.
+
+_Most people use gaming graphics cards:_
 
 ![Recommended graphics card](<.gitbook/assets/image (10).png>)
 
