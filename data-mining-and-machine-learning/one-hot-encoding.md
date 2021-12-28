@@ -495,12 +495,60 @@ from tensorflow.keras.utils import to_categorical
 
 y_train = [ 1, 2, 3 ]
 print(to_categorical(y_train))
+```
+
+The result of the above code is:
+
+```python
+[[0. 1. 0. 0.]
+ [0. 0. 1. 0.]
+ [0. 0. 0. 1.]]
+>>> 
+```
+
+There are three types of our input, but **to\_categorical** gives four types of results, indicating that **to\_categorical** starts from 0.
+
+
+
+```python
 from tensorflow.keras.utils import to_categorical
 
-y_train = [ 1, 2, 3 ]
+y_train = [ 1, 9, 14 ]
 print(to_categorical(y_train))
-
 ```
+
+The above code is as follows:
+
+```python
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
+>>> 
+```
+
+**to\_categorical** will faithfully encode the numbers into one-hot codes in the order from 0-1-2-3, which means that even if I only have three categories 1, 9, 14, it will still be encoded into a huge matrix. When your categories are not continuous, you need to make the categories continuous or use other methods to encode one-hot encoding.
+
+
+
+```python
+from tensorflow.keras.utils import to_categorical
+
+y_train = [ 'cat', 'dog', 'monkey' ]
+print(to_categorical(y_train))
+```
+
+The output of the above program is as follows:
+
+```python
+Traceback (most recent call last):
+  File "xxxxx.py", line 4, in <module>
+    print(to_categorical(y_train))
+  File "...\np_utils.py", line 69, in to_categorical
+    y = np.array(y, dtype='int')
+ValueError: invalid literal for int() with base 10: 'cat'
+```
+
+You will find that **to\_categorical** can only be numbered according to numbers, and this number has to be an integer number.
 
 ## Statistics
 
