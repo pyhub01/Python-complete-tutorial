@@ -3,7 +3,7 @@ description: Confusion matrix
 coverY: 0
 ---
 
-# Confusion matrix
+# Confusion matrix &
 
 Confusion matrix is one of the most important ways to observe training results in machine learning and deep learning.
 
@@ -96,13 +96,19 @@ The results of the above program are as follows:
 >>> 
 ```
 
+{% hint style="danger" %}
+<mark style="color:red;">**Don't write your own code!**</mark>
 
+In python programming, we should avoid writing code by ourselves as much as possible, because the code you write is not necessarily correct, and even if it is correct, it is certainly not as efficient as the code in the python built-in library.
 
+So if there is a piece of code in the python built-in library (including keras, sklearn, numpy, pandas), then don't write your own code!
+{% endhint %}
 
+### Error rate
 
+The error rate is 1-the accuracy rate. Because of the accuracy rate is so clear, we rarely compare the error rate.
 
-
-
+In the confusion matrix, the error rate is sum of all prediction error types: FN and FP, divided by the total amount of data.
 
 
 
