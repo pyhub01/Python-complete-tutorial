@@ -485,7 +485,7 @@ TypeError: 'tuple' object does not support item assignment
 
 Through the above program, you can change the content referred to by the variable name that originally pointed to the tuple.
 
-This also makes tuples meaningless in python.
+This makes tuples meaningless in python.
 
 Unlike in C++:
 
@@ -494,6 +494,8 @@ const int a = 3;
 a = 5
 // C++ does allow this happened
 ```
+
+The C++ const attribute makes an element completely fixed, and there is no way to change this variable.
 
 ## Statistics
 
