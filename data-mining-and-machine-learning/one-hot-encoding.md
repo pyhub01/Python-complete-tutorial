@@ -490,6 +490,18 @@ This section introduces the cafir10 data set and some keras commonly used data s
 <mark style="color:red;">**Need to pay attention to**</mark>
 {% endhint %}
 
+```python
+from tensorflow.keras.utils import to_categorical
+
+y_train = [ 1, 2, 3 ]
+print(to_categorical(y_train))
+from tensorflow.keras.utils import to_categorical
+
+y_train = [ 1, 2, 3 ]
+print(to_categorical(y_train))
+
+```
+
 ## Statistics
 
 Start time of this page: December 25, 2021
