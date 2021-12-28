@@ -225,11 +225,17 @@ Cloud disks have certain risks. If you don't want your data to be exposed to pub
 
 Data security is a very important topic. You must adopt certain security strategies to ensure that your data is not leaked or maliciously tampered with. This requires a certain cryptographic foundation, which will be explained in subsequent chapters.
 
-<mark style="color:green;">****</mark>
+{% hint style="success" %}
+Data integrity
+{% endhint %}
+
+<mark style="color:green;"></mark>
 
 <mark style="color:green;">****</mark>
 
 <mark style="color:green;">****</mark>
+
+![RAID 5](<.gitbook/assets/image (18).png>)
 
 <mark style="color:green;">****</mark>
 
