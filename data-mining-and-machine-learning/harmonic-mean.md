@@ -17,15 +17,15 @@ For example, Some students study literature and mathematics. We want to give the
 
 <mark style="color:blue;">But his harmonic average score is: 2/(1/100+1/20)=33.33333333333333</mark>
 
-![binary harmonic mean definition](<../.gitbook/assets/image (19).png>)
+![binary harmonic mean definition](<../.gitbook/assets/image (19) (1).png>)
 
 We can see that the second student's partial subject problem is more serious.
 
+![Lymphoma](<../.gitbook/assets/image (19).png>)
 
+Lymphoma is a cancer that occurs on the lymphatics.
 
-
-
-
+The incidence of lymphoma is only 6.68 per 100,000 people.
 
 
 
