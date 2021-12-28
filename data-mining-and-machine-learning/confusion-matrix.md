@@ -5,7 +5,7 @@ coverY: 0
 
 # Confusion matrix
 
-
+Confusion matrix is one of the most important ways to observe training results in machine learning and deep learning.
 
 
 
