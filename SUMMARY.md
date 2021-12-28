@@ -31,6 +31,7 @@
 * [What is data mining](data-mining-and-machine-learning/what-is-data-mining.md)
 * [iris data set](data-mining-and-machine-learning/iris-data-set.md)
 * [Mean median mode](data-mining-and-machine-learning/mean-median-mode.md)
+* [Harmonic mean](data-mining-and-machine-learning/harmonic-mean.md)
 * [Histogram](data-mining-and-machine-learning/histogram.md)
 * [Correlation algorithm](data-mining-and-machine-learning/correlation-algorithm.md)
 * [binary SVM](data-mining-and-machine-learning/binary-svm.md)
