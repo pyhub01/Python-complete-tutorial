@@ -19,19 +19,29 @@ For example, Some students study literature and mathematics. We want to give the
 
 ![binary harmonic mean definition](<../.gitbook/assets/image (19) (1).png>)
 
-We can see that the second student's partial subject problem is more serious.
+We can know that the second student's partial subject problem is more serious.
 
-![Lymphoma](<../.gitbook/assets/image (19).png>)
+
+
+![Lymphoma](<../.gitbook/assets/image (6).png>)
 
 Lymphoma is a cancer that occurs on the lymphatics.
 
 The incidence of lymphoma is only 6.68 per 100,000 people.
 
+We call a data set with approximately the same number of positive samples (sickness) and negative samples (not sick) as a balanced data set. A data set with a large difference in the number of positive samples (sick) and negative samples (not sick) is called an unbalanced data set.
 
+**You should be extra careful when dealing with unbalanced data sets:**
 
+If we invent a new lymphoma detection method, the detection accuracy rate in normal people is 99.9%, while the detection accuracy rate in patients is 0%.
 
+This detection method is actually useless at all, because it can't detect patients at all.
 
+If we use a weighted average to measure the effectiveness of this detection method, because the number of people who are not sick accounted for the vast majority, so the weight of the contribution of those who are not sick is very high, then the correct rate is relatively close to 99.9%. The detection method is very effective according to the result from the weighted average, but it is wrong.
 
+If we use the harmonic average, then the final accuracy is equal to 0, which is the correct result.
+
+More details will be discussed in F1 score.
 
 ## Statistics
 
