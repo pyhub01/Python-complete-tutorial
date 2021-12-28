@@ -486,6 +486,10 @@ One-hot coding is very commonly used in deep learning and machine learning.
 
 This section introduces the cafir10 data set and some keras commonly used data sets, as well as what is maximum likelihood analysis and one-hot coding.
 
+{% hint style="danger" %}
+<mark style="color:red;">**Need to pay attention to**</mark>
+{% endhint %}
+
 ## Statistics
 
 Start time of this page: December 25, 2021
