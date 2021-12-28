@@ -226,30 +226,42 @@ Cloud disks have certain risks. If you don't want your data to be exposed to pub
 Data security is a very important topic. You must adopt certain security strategies to ensure that your data is not leaked or maliciously tampered with. This requires a certain cryptographic foundation, which will be explained in subsequent chapters.
 
 {% hint style="success" %}
-Data integrity
+<mark style="color:green;">**Data integrity**</mark>
 {% endhint %}
 
-<mark style="color:green;"></mark>
-
-<mark style="color:green;">****</mark>
-
-<mark style="color:green;">****</mark>
+We have already talked about the fragility of hard disks before, so if we combine multiple hard disks and place one data on multiple disks to form a disk array, then we can effectively avoid the problem of data loss due to damage to a single disk. It is possible that the same disk fails, but if 2 or 3 disks fail at the same time, it is a small probability event. If we can make the data redundant, then we can guarantee us with great probability Data integrity.
 
 ![RAID 5](<.gitbook/assets/image (18).png>)
 
-<mark style="color:green;">****</mark>
+The picture shows the raid5 scheme that can tolerate any one-disk failure but the data integrity is not destroyed. Here we do not discuss the implementation details of raid5, we will discuss in detail in the database section later.
 
-<mark style="color:green;">****</mark>
+In order to realize raid disk array solutions such as raid1, raid5, raid6, and raid10. We may need raid expansion cards or hard drive docks or NAS (Network Attached Storage). The specific implementation is relatively simple. Many data integrity solutions are mature and have graphical interfaces.
 
-<mark style="color:green;">****</mark>
+### Motherboard and power supply
 
+The motherboard, power supply, cooling fan, and chassis provide a platform for all of the above. Among them, there is less content that needs to be explained.
 
+It is worth noting that the motherboard needs to be compatible with your CPU, GPU, memory, and hard drive. Many motherboards have restrictions on the size of memory. You need to read your motherboard instructions carefully. At the same time, motherboards have different sizes. If the motherboard you buy is too large, you may not be able to install it in a mini-size chassis.
 
+Regarding the power supply: You should ensure that the output power of the power supply is greater than the total power of your hardware, and retain 20% of the wealth. Otherwise, your power supply may explode or catch fire due to excessive current.
 
+{% hint style="danger" %}
+<mark style="color:red;">**Keeping the computer at a low temperature is very important, because high temperature will increase the electronic drift rate in the chip and accelerate the aging of the chip. At the same time, if the chip temperature is too high, the chip's own temperature protection will be triggered, and the chip will reduce its load. And frequency, your program will also be greatly affected.**</mark>
+{% endhint %}
 
+## Python programming computer recommendations
 
+The type of code you write needs to match the type of your computer.
 
+For example, if the code you write is ordinary object-oriented programming or web page production or basic visualization, then any tablet, laptop, or even mobile phone can meet your requirements.
 
+But if you want to do more complex visualization, you need a laptop or desktop computer with a discrete graphics card.
+
+If you are doing machine learning then it is recommended that you have a desktop computer, but not a very advanced graphics card.
+
+If you do deep learning, then you need a better graphics card, and the performance of the laptop is not enough at this time.
+
+If you are doing large-scale deep learning models, it is recommended that you use a server-level supercomputer.
 
 ## Statistics
 
