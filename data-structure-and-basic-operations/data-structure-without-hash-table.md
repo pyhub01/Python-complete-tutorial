@@ -3,7 +3,7 @@ description: Slow lookup Data structures
 coverY: 0
 ---
 
-# 2 Data structure without hash table
+# Data structure without hash table
 
 ## <mark style="color:purple;">number</mark>
 
@@ -327,9 +327,9 @@ range(0, 10)
 >>> 
 ```
 
-Range will generate a range type variable. If you force this range type variable into a list, then you can see the numbers contained in this range.&#x20;
+Range will generate a range type variable. If you force this range type variable into a list, then you can see the numbers contained in this range.
 
-If you give only one parameter to the range function, then range will generate an integer sequence starting from 0 to this parameter minus 1.&#x20;
+If you give only one parameter to the range function, then range will generate an integer sequence starting from 0 to this parameter minus 1.
 
 This parameter must be an integer, otherwise an error will be reported.
 
@@ -371,7 +371,7 @@ The step length can be a negative number, then the sequence is a decreasing sequ
 <mark style="color:green;">**Forced type conversion**</mark>
 {% endhint %}
 
-**Forced type conversion **<mark style="color:green;">****</mark> can convert a data structure of one type into a data structure of another type.&#x20;
+\*\*Forced type conversion \*\*<mark style="color:green;">\*\*\*\*</mark> can convert a data structure of one type into a data structure of another type.
 
 For example, **list(...)** can convert the data type in parentheses to list.
 
@@ -397,8 +397,6 @@ The type(...) function can return the type of a variable.
 ['2']
 >>> 
 ```
-
-
 
 Let's continue to explain the list:
 
@@ -464,26 +462,41 @@ We can observe the pop operation from the above example. The pop operation of py
 
 ## <mark style="color:purple;">tuple</mark>
 
+Tuples are almost the same as lists, except that the contents of tuples cannot be changed, so tuples do not have methods such as append or pop that can change its elements.
 
+Tuples are rarely used in python, because although the contents of tuples are immutable, variable names can be reassigned, which also destroys the immutable properties of tuples:
 
+```python
+>>> test = (1, 2, 3)
+>>> test
+(1, 2, 3)
 
+>>> test[0]=5
+Traceback (most recent call last):
+  File "<pyshell#>", line 1, in <module>
+    test[0]=5
+TypeError: 'tuple' object does not support item assignment
 
+>>> test = 'another content'
+>>> test
+'another content'
+>>> 
+```
 
+Through the above program, you can change the content referred to by the variable name that originally pointed to the tuple.
 
+This also makes tuples meaningless in python.
 
+Unlike in C++:
 
-
-
-
-
-
-
-
-
-
+```cpp
+const int a = 3;
+a = 5
+// C++ does allow this happened
+```
 
 ## Statistics
 
 Start time of this page: December 19, 2021
 
-Completion time of this page:&#x20;
+Completion time of this page: December 30, 2021
