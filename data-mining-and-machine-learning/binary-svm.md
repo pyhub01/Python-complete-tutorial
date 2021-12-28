@@ -664,7 +664,7 @@ out = ax.contourf( XX, YY, Z,
 plt.show()
 ```
 
-![sigmoid core SVM](<../.gitbook/assets/image (15) (1) (1) (1).png>)
+![sigmoid core SVM](<../.gitbook/assets/image (15) (1) (1) (1) (1).png>)
 
 You will find that sigmoid does not work well when dealing with XOR problems.
 
@@ -674,7 +674,7 @@ You will find that sigmoid does not work well when dealing with XOR problems.
 
 If you know what a series, Taylor expansion or Fourier transform is, then polynomial expansion will be much easier.
 
-![Taylor expansion of some formulas](<../.gitbook/assets/image (14) (1) (1) (1).png>)
+![Taylor expansion of some formulas](<../.gitbook/assets/image (14) (1) (1) (1) (1).png>)
 
 If you don't know the above concepts, then please check out the following example.
 
@@ -711,11 +711,11 @@ For example, when N=3, the second-order Taylor expansion is drawn:
 
 Then comes the higher-order Taylor expansion:
 
-![N = 4](<../.gitbook/assets/image (14) (1).png>)
+![N = 4](<../.gitbook/assets/image (14) (1) (1).png>)
 
 ![N = 5](<../.gitbook/assets/image (7) (1) (1) (1).png>)
 
-![N = 6](<../.gitbook/assets/image (15) (1).png>)
+![N = 6](<../.gitbook/assets/image (15) (1) (1).png>)
 
 ![N = 7](<../.gitbook/assets/image (6) (1).png>)
 
@@ -757,7 +757,7 @@ plt.ylim(-3, 3)
 plt.grid(); plt.legend(); plt.show()
 ```
 
-![merged](<../.gitbook/assets/image (14) (1) (1).png>)
+![merged](<../.gitbook/assets/image (14) (1) (1) (1).png>)
 
 We can plot the multi-level results together, and you can see the difference between them.
 

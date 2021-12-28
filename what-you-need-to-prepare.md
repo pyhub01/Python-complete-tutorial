@@ -43,7 +43,7 @@ GPU is mainly used in two places, one is graphics rendering, and the other is de
 
 If you are not writing python programs for these two purposes, then a normal notebook core graphics card can meet your needs.
 
-![The most common GPU](<.gitbook/assets/image (15).png>)
+![The most common GPU](<.gitbook/assets/image (15) (1).png>)
 
 GPU has two parameters: memory size and computing power.
 
@@ -99,6 +99,10 @@ cpu cost performance
 GPU cost performance
 {% endembed %}
 
+{% hint style="info" %}
+<mark style="color:blue;">**Once the CPU and GPU are installed successfully, as long as the radiator works normally and keeps the CPU and GPU below 90 degrees Celsius, the CPU and GPU are difficult to break. So CPU and GPU are not consumables.**</mark>
+{% endhint %}
+
 ### Random access memory(RAM)
 
 ![RAM](<.gitbook/assets/image (12).png>)
@@ -141,9 +145,13 @@ These previous parameters will make your program run faster, if you deal with bi
 <mark style="color:red;">**Unless you know how to mix memory with different size and are willing to take the risk of memory errors, or you can try whether it succeeds, and return the product if it fails.**</mark>
 {% endhint %}
 
+{% hint style="info" %}
+<mark style="color:blue;">**Once the memory is installed successfully, it is generally difficult to break (unless you overclock too much and the temperature is too high or accidentally spill Coke on it), so memory is not a consumables.**</mark>
+{% endhint %}
+
 ### Read only memory (ROM)
 
-![UV erasable read-only memory](<.gitbook/assets/image (17).png>)
+![UV erasable read-only memory](<.gitbook/assets/image (17) (1).png>)
 
 The name read-only memory comes from the 1970s, when the disk at that time is shown in the picture above (there are even ertlier read-only memories, The ertlier the ROM, the more unconvent to use.). This chip requires a special programmer to write data into it. When in use, data can only be read but not written. When we need to change the data, we need to use ultraviolet rays into the small quartz window in the middle of the chip. The high-energy ultraviolet light will excite the stored charges and clear the data in the chip.
 
@@ -159,15 +167,75 @@ So when you look at today's disks, you will have an illusion, that is: It is obv
 
 The abbreviation of Hard drive disk is HDD. HDD is an ancient computer hard disk. This hard disk uses a robotic arm to read and write the contents of the disk. Since it takes time for the robot arm to be in place and to rotate, the HDD speed is very slow. Especially when we try to put a large amount of fragmented data on the HDD, it will take a long time for the robotic arm to find the data and read the data.
 
-Because HDDs rely on mechanical structures to store data, HDDs are very fragile, and mechanical arm failures, bumps, and magnets can easily destroy this delicate device. Therefore, the content stored on the HDD is not safe.
+In the middle of the HDD is a floppy disk. This disk rotates at a high speed when the hard disk is working, usually 5400RPM (round per minute) or 7200RPM, or even 10000RPM (these speed depends on the factory positioning of the disk itself). Mechanical aging determines the life of the disk. (The aging of the magnetic head, the ingress of dust, and the degaussing of the disk will also affect the life of the disk)
+
+Because HDDs rely on mechanical structures to store data, HDDs are very fragile, and mechanical arm failures, power failure, bumps, and magnets can easily destroy this delicate device. Therefore, the content stored on the HDD is not safe.
 
 #### SSD
 
-![HDD & SSD](<.gitbook/assets/image (14).png>)
+![HDD & SSD](<.gitbook/assets/image (14) (1).png>)
 
 SSD is the abbreviation of solid state drive. Solid state drives use chips to store data, which is very different from mechanical hard drives.
 
 The use of a chip to store data in a solid-state drive will increase the reliability of the data (it is not easy to damage the data due to bumps and magnets), and will reduce the weight of the disk.
+
+But because electric charge is used to store data, it is easy to damage the SSD if there is static electricity, and static electricity is relatively easy to occur.
+
+![TLC in 2020 and QLC after 2025](<.gitbook/assets/image (17).png>)
+
+Solid state drives also have a wide range of concerns, that is, life issues. Solid state drives rely on electric charge to store data, and the charge is stored in the MOSFET. The first problem is that the charge will leak slowly, when the leakage reaches a certain level. , The data in the solid state drive will be lost, and the charge leakage rate is proportional to the three-half square of the temperature (thermodynamic formula). That is to say, the problem of charge leakage becomes extremely serious as the temperature rises.
+
+If the room temperature is 20 degrees, the charge will leak out in 5 years, and if the room temperature is 30 degrees, the charge will leak out in only 2-3 years. So your data may disappear within 2-3 years, unless you intermittently power on your SSD. In this case, the data is not secure.
+
+In addition, in order to increase the capacity and cost of the solid state drive, new technologies such as TLC and QLC are adopted, which reduces the life of the solid state drive, but this is fine, because the current life of the 1TB solid state drive is still 300-600TBW, which is Say that a 1TB solid state drive needs to write 300-600TB of data to be damaged, and few people can write so much data in 10-20 years.
+
+{% hint style="danger" %}
+<mark style="color:red;">**It is worth noting that modern hard drives use cache to improve disk performance (make writing and reading faster). The cache is composed of RAM, which means that all data in the RAM cache will disappear once the power is turned off.**</mark>
+
+<mark style="color:red;">**And RAM may store very important data, once these data is lost, it will damage the integrity of the information. What's more serious is that some of the hard disk's own data is also stored in RAM. If the power is suddenly cut off, the hard disk may be directly unreadable, thereby damaging the hard disk.**</mark>
+
+<mark style="color:red;">**Therefore, a power failure will cause serious problems with the hard disk! We should 100% avoid power failure of the hard drive!**</mark>
+{% endhint %}
+
+#### UPS
+
+In order to avoid damage to the hard disk due to sudden power failure, an uninterruptible power supply is introduced.
+
+The simplest uninterruptible power supply is the battery of mobile phones and laptops. Battery exhaustion can be estimated, so the system will force the hard disk to write the cache to the hard disk before the battery is almost exhausted to avoid data loss and hard disk damage. So devices with batteries do not need to worry about sudden power failures.
+
+For desktop computers and servers that contain important data, UPS is necessary.
+
+![Home UPS](<.gitbook/assets/image (15).png>)
+
+The UPS has large and small, and the small is as large as a power strip, but its internal battery can provide short-term power supply in the event of a power failure. If the power is interrupted, the user needs to back up the data in time and shut down the computer.
+
+Large data centers need to use diesel generator UPS, which usually does not need us to consider.
+
+![data center](<.gitbook/assets/image (14).png>)
+
+#### data center
+
+If your programs and data are very important, storing in an online cloud disk is a good choice. First of all, the online cloud disk is very safe. Your data will follow principles such as 3-2-1 (3: store 3 complete files, one original Add two copies. 2: Keep the files on at least two different media. 1: Keep one copy in a different place.). And you only need to spend relatively little money to maintain your data service.
+
+Cloud disks have certain risks. If you don't want your data to be exposed to public, then you'd better build your own private cloud disk.
+
+{% hint style="success" %}
+<mark style="color:green;">**About data security**</mark>
+{% endhint %}
+
+Data security is a very important topic. You must adopt certain security strategies to ensure that your data is not leaked or maliciously tampered with. This requires a certain cryptographic foundation, which will be explained in subsequent chapters.
+
+<mark style="color:green;">****</mark>
+
+<mark style="color:green;">****</mark>
+
+<mark style="color:green;">****</mark>
+
+<mark style="color:green;">****</mark>
+
+<mark style="color:green;">****</mark>
+
+<mark style="color:green;">****</mark>
 
 
 
