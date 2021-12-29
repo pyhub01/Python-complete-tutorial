@@ -50,3 +50,7 @@
 ## 5⃣ Mathematical algorithm and digital signal processing
 
 * [Mathematical constants and basic operations](mathematical-algorithm-and-digital-signal-processing/mathematical-constants-and-basic-operations.md)
+
+## 6⃣ Classes and design patterns
+
+* [Classes and design patterns](classes-and-design-patterns/classes-and-design-patterns.md)
