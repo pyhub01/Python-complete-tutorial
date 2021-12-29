@@ -183,7 +183,7 @@ For example, a sudden outbreak of an infectious disease, this infectious disease
 
 If we isolate more people, there will be no serious consequences other than causing panic among the crowd and increasing the medical burden. But if some patients are not quarantined, the problem is serious because this infectious disease will explode quickly and cause the collapse of this society. The recall rate is a measure of the intensity of quarantining the sick. The higher the recall rate, the better the control of the disease.
 
-**Because most of the events in our lives are afraid of defective products leaving the factory, the recall rate is more meaningful than Precision in actual use.**
+**Because most of the events in our lives are afraid of defective products leaving the factory(Cell phones that can explode, cars that can fail, reactors that can leak nuclear, psychiatric patients with homicidal tendencies, malignant tumors that have not been detected, etc.), the recall rate is more meaningful than Precision in actual use.**
 {% endhint %}
 
 A simple solution to realize the recall rate is provided in sklearn:
