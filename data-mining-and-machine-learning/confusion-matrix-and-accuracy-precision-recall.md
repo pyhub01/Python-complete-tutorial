@@ -154,7 +154,7 @@ If the micro-average is much lower than the macro-average, then check the classe
 
 If the macro average is significantly lower than the micro average, then check the class with a small sample size to determine the reason for the poor performance of the indicator.
 
-In most cases, the difference between these two calculation methods is not big, so in general, you don't need to care about such subtle issues.
+**In most cases, the difference between these two calculation methods is not big, so in general, you don't need to care about such subtle issues.**
 
 {% hint style="success" %}
 <mark style="color:green;">**What is precision?**</mark>
@@ -168,11 +168,23 @@ The precision rate can be used to measure whether the announcement issued by the
 For example, there was a small robbery in the parking lot of a nuclear power plant, and the suspect robbed 20 dollars, then this is a micro accident that has nothing to do with the safety of the nuclear power plant. If such an accident causes public panic, the precision rate of nuclear power plant accidents will be very low.
 {% endhint %}
 
+### Recall
 
+The recall rate refers to the proportion of the samples that are actually positive that are predicted to be positive to the samples that are actually positive.
 
+In other words, the recall rate is a measure of how many positive samples are not marked as positive.
 
+{% hint style="success" %}
+<mark style="color:green;">**What is recall?**</mark>
 
+**The recall rate is a measure of how many positive samples are not marked as positive.**
 
+For example, a sudden outbreak of an infectious disease, this infectious disease is very dangerous, so we have to isolate the patients. We conduct tests in the crowd and find possible patients for isolation.
+
+If we isolate more people, there will be no serious consequences other than causing panic among the crowd and increasing the medical burden. But if some patients are not quarantined, the problem is serious because this infectious disease will explode quickly and cause the collapse of this society. The recall rate is a measure of the intensity of quarantining the sick. The higher the recall rate, the better the control of the disease.
+
+Because most of the events in our lives are afraid of defective products leaving the factory, the recall rate is more meaningful than Precision in actual use.
+{% endhint %}
 
 
 
