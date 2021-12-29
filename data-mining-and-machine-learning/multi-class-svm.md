@@ -32,7 +32,7 @@ The mnist data set is a handwritten digit recognition data set, which is much la
 
 For example, the handwritten number 4, the mnist data set contains thousands of data of handwritten 4.
 
-![Handwriting 4](<../.gitbook/assets/image (7) (1) (1).png>)
+![Handwriting 4](<../.gitbook/assets/image (7) (1) (1) (1).png>)
 
 There are 10 kinds of handwritten numbers, so we need to classify these 10 kinds of numbers, but SVM can only classify two kinds of data at a time, what should we do?
 

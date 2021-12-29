@@ -23,7 +23,7 @@ CPUs generally have multiple cores, but python's support for multi-core is not g
 
 The same CPU generates a lot of heat, so you should have a good CPU cooler. CPU radiators are divided into water-cooled and air-cooled. I personally recommend air-cooling, because electronic equipment will short-circuit when exposed to water, and water-cooling has a certain risk of leakage. In addition, water-cooling is much more expensive than air-cooling, but the heat dissipation effect may not be much better. , So air cooling has a high cost performance and safety.
 
-![This kind of radiator has the best heat dissipation effect](<.gitbook/assets/image (7).png>)
+![This kind of radiator has the best heat dissipation effect](<.gitbook/assets/image (7) (1).png>)
 
 #### Graphics Processing Unit (GPU)
 

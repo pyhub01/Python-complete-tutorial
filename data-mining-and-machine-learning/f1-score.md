@@ -11,17 +11,29 @@ Then the technological level has entered the state of Nash equilibrium. We donâ€
 
 In the previous chapter, we talked about precision and recall. If the precision is high, you need a low level of craftsmanship, and if the precision is high, you need a high level of craftsmanship. Then if we use an average (we said before that the harmonic average is suitable for dealing with such problems) to average the precision and recall, then we can find a suitable level of craftsmanship.
 
+![F1 score](<../.gitbook/assets/image (7).png>)
 
+F1 score is the harmonic average of precision and recall.
 
+In sklearn we can easily calculate the F1 score, the procedure is as follows:
 
+```python
+true_table = [1,0,0,0,1,1,1,0,0,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,1]
+pred_table = [0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1]
 
+from sklearn.metrics import f1_score
 
+print( f1_score(true_table, pred_table, average='macro') )
+print( f1_score(true_table, pred_table, average='micro') )
+```
 
+The calculation results are as follows:
 
-
-
-
-
+```python
+0.5714285714285714
+0.5714285714285714
+>>> 
+```
 
 
 
