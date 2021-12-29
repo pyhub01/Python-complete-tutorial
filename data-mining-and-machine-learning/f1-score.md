@@ -53,9 +53,39 @@ For example, if nuclear power plants always release high-risk news but actually 
 
 If a high-intensity infectious disease breaks out, but the patients are not effectively isolated, it will cause the collapse of the social system.
 
-So we need to add a coefficient to the F score to ensure that we take into account both the precision and recall.
+So we need to add a coefficient to the Fβ score to ensure that we take into account both the precision and recall.
 
+When beta is equal to 1, it is the f1 score we talked about earlier.
 
+{% embed url="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.html" %}
+read the document in sklearn
+{% endembed %}
+
+> The `beta` parameter determines the weight of recall in the combined score. `beta < 1` lends more weight to precision, while `beta > 1` favors recall (`beta -> 0` considers only precision, `beta -> +inf` only recall).
+
+fbeta\_score has been implemented in sklearn, it is very simple to call:
+
+```python
+true_table = [1,0,0,0,1,1,1,0,0,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,1]
+pred_table = [0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1]
+
+from sklearn.metrics import fbeta_score
+
+print( fbeta_score(true_table, pred_table, beta=0.5, average='macro') )
+print( fbeta_score(true_table, pred_table, beta=1, average='micro') )
+print( fbeta_score(true_table, pred_table, beta=2, average='micro') )
+```
+
+The results of the operation are as follows (this data is not very good, so the results of f0.5 and f1 and f2 are the same)
+
+```python
+0.5714285714285714
+0.5714285714285714
+0.5714285714285714
+>>> 
+```
+
+In the next chapter, we will explain the ROC curve and the area under the curve.
 
 ## Statistics
 
