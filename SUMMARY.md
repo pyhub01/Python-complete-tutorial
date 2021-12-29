@@ -39,6 +39,7 @@
 * [Multi-class SVM](data-mining-and-machine-learning/multi-class-svm.md)
 * [Accuracy and error rate](data-mining-and-machine-learning/accuracy-and-error-rate.md)
 * [Confusion matrix & Accuracy, Precision, Recall](data-mining-and-machine-learning/confusion-matrix-and-accuracy-precision-recall.md)
+* [F1 score](data-mining-and-machine-learning/f1-score.md)
 
 ## 4⃣ big data and data visualization
 
