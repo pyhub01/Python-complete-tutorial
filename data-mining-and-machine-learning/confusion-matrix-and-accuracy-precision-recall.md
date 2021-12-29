@@ -183,26 +183,32 @@ For example, a sudden outbreak of an infectious disease, this infectious disease
 
 If we isolate more people, there will be no serious consequences other than causing panic among the crowd and increasing the medical burden. But if some patients are not quarantined, the problem is serious because this infectious disease will explode quickly and cause the collapse of this society. The recall rate is a measure of the intensity of quarantining the sick. The higher the recall rate, the better the control of the disease.
 
-Because most of the events in our lives are afraid of defective products leaving the factory, the recall rate is more meaningful than Precision in actual use.
+**Because most of the events in our lives are afraid of defective products leaving the factory, the recall rate is more meaningful than Precision in actual use.**
 {% endhint %}
 
+A simple solution to realize the recall rate is provided in sklearn:
 
+```python
+true_table = [1,0,0,0,1,1,1,0,0,0,1,1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,1]
+pred_table = [0,1,0,1,0,1,1,0,1,0,1,0,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1]
 
+from sklearn.metrics import recall_score
 
+print( recall_score(true_table, pred_table, average='macro') )
+print( recall_score(true_table, pred_table, average='micro') )
+```
 
+The following is the result of the recall rate: (This data set is symmetrical, and the prediction result is also symmetrical, so the precision rate and the recall rate are the same)
 
+```python
+0.5714285714285714
+0.5714285714285714
+>>> 
+```
 
+We introduced several indicators for measuring models today, but these indicators are all aimed at somethin. If we want to comprehensively measure the characteristics of a model, then these indicators are not enough.&#x20;
 
-
-
-
-
-
-
-
-
-
-
+In the next chapter, we will introduce to you the F1 score, which can be used to comprehensively observe the characteristics of the model.
 
 ## Statistics
 
