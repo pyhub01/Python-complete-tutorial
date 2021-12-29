@@ -3,11 +3,13 @@ description: Draw three-dimensional graphics
 coverY: 0
 ---
 
-# 1 The first simple python project
+# The first simple python project
 
 In this chapter, I will talk about how to learn python and teach you how to do a simple small project.
 
-Linux founder Linus once said: Read The Fucking Source Code!
+Linux founder Linus once said:&#x20;
+
+> Read The Fucking Source Code!
 
 ![Linux founder Linus](<../.gitbook/assets/002 linus.jpg>)
 
