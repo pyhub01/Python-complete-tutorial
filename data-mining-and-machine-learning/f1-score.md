@@ -35,7 +35,25 @@ The calculation results are as follows:
 >>> 
 ```
 
+## illustration
 
+In real life, we will receive a lot of emails, but many emails are spam and contain advertisements and fraudulent content.
+
+We can make a language model to detect which emails are spam and which are not spam.
+
+![illustration](<../.gitbook/assets/image (5).png>)
+
+As shown in the figure, we have explained the precision recall rate and F1 score.
+
+![Fβ](<../.gitbook/assets/image (20).png>)
+
+In our real life, there are some events that require a high precision rate, and some events require a high rate of precision.
+
+For example, if nuclear power plants always release high-risk news but actually there is no problem at all, it will cause public panic and not trusted.
+
+If a high-intensity infectious disease breaks out, but the patients are not effectively isolated, it will cause the collapse of the social system.
+
+So we need to add a coefficient to the F score to ensure that we take into account both the precision and recall.
 
 
 

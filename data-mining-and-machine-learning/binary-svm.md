@@ -703,7 +703,7 @@ The above function can draw the function image of the Taylor expansion of the co
 
 For example, when N=2, the first-order Taylor expansion is drawn:
 
-![N = 2](<../.gitbook/assets/image (5).png>)
+![N = 2](<../.gitbook/assets/image (5) (1).png>)
 
 For example, when N=3, the second-order Taylor expansion is drawn:
 
@@ -769,7 +769,7 @@ For example, in the previous example, if I get too few polynomials, the followin
 
 If our polynomial order is right, then we can get as good results as the rbf kernel:
 
-![Correct fit](<../.gitbook/assets/image (4).png>)
+![Correct fit](<../.gitbook/assets/image (4) (1).png>)
 
 In this example, there is no overfitting problem. The overfitting problem needs a larger and more noisy data set.
 

@@ -126,9 +126,9 @@ plt.show()
 
 ![N = 30](<../.gitbook/assets/image (3) (1) (1).png>)
 
-![N = 50](<../.gitbook/assets/image (4) (1).png>)
+![N = 50](<../.gitbook/assets/image (4) (1) (1).png>)
 
-![N = 100](<../.gitbook/assets/image (5) (1).png>)
+![N = 100](<../.gitbook/assets/image (5) (1) (1).png>)
 
 ![N = 1000](<../.gitbook/assets/image (8) (1) (1).png>)
 

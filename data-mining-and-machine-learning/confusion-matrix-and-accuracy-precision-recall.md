@@ -210,6 +210,10 @@ We introduced several indicators for measuring models today, but these indicator
 
 In the next chapter, we will introduce to you the F1 score, which can be used to comprehensively observe the characteristics of the model.
 
+### PR curve
+
+Because the PR curve is rarely used, skip it here for now.
+
 ## Statistics
 
 Start time of this page: December 28, 2021
