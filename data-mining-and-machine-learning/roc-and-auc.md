@@ -7,9 +7,98 @@ coverY: 0
 
 Receiver Operating Characteristic Curve (ROC) originated in World War II.
 
+![radar](<../.gitbook/assets/image (21).png>)
+
+Radar can detect objects. Radar was not very accurate during World War II, so the difference between an eagle and an airplane is not very big.
+
+Whether the object on the radar is an eagle or an airplane can only be judged by the radar soldier.
+
+Some radar soldiers are more sensitive and mistake the eagle for an aircraft.
+
+Some radar soldiers are less sensitive and mistake an aircraft for the eagle.
+
+This is very troublesome, so scientists have developed a method that allows radar soldiers, whether sensitive or not, to correctly identify radar objects.
+
+The method used is Receiver Operating Characteristic Curve.
+
+Let's use sklearn to give an example:
+
+{% embed url="https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html" %}
+sklearn
+{% endembed %}
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sklearn.model_selection import train_test_split
+
+from sklearn import svm, datasets
+from sklearn.metrics import roc_curve, auc
+
+from tensorflow.keras.utils import to_categorical
 
 
 
+# import iris data
+iris = datasets.load_iris()
+x = iris.data
+y = iris.target
+
+# The error rate of the iris data set is too low,
+# add some random numbers to increase the error rate
+n_samples, n_features = x.shape
+x = np.c_[ x, np.random.randn(n_samples, 200 * n_features) ]
+
+# shuffle and split training and test sets
+x_train, x_test, y_train, y_test = train_test_split( x, y, test_size = 0.5 )
+
+
+
+# Learn to predict each class against the other
+clf = svm.SVC( kernel = 'linear', probability = True )
+clf.fit( x_train, y_train )
+
+y_pred = clf.predict_proba( x_test )
+y_real = to_categorical( y_test )
+
+
+
+# Compute ROC curve and ROC area for each class
+fpr = dict()
+tpr = dict()
+roc_auc = dict()
+
+n_classes = len(np.unique(y))
+
+for i in range(n_classes):
+    fpr[i], tpr[i], _ = roc_curve( y_real[:, i], y_pred[:, i] )
+    roc_auc[i] = auc( fpr[i], tpr[i] )
+
+
+
+plt.plot( fpr[0], tpr[0], color = 'darkorange', lw = 2, label = 'ROC curve (area = %0.2f)' % roc_auc[0] )
+plt.plot( [0, 1], [0, 1], color = 'navy', lw = 2, linestyle = '--' )
+plt.xlim( [0.0, 1.0] )
+plt.ylim( [0.0, 1.05] )
+
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('Receiver operating characteristic example')
+
+plt.legend(loc = 'lower right')
+plt.show()
+```
+
+The results obtained are as follows:
+
+![ROC and AUC](<../.gitbook/assets/image (10).png>)
+
+In the ROC curve, the horizontal axis is False positive, and the vertical axis is True positive. It can be seen that the ROC curve is a chart for discussing Positive.
+
+The area under the yellow curve is AUC (area under curve). The larger the area, the better the model.
+
+The blue dotted line refers to: If the model is random (50% correct). So any meaningful model should be above the blue dotted line.
 
 
 

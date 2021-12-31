@@ -707,7 +707,7 @@ For example, when N=2, the first-order Taylor expansion is drawn:
 
 For example, when N=3, the second-order Taylor expansion is drawn:
 
-![N = 3](<../.gitbook/assets/image (10) (1).png>)
+![N = 3](<../.gitbook/assets/image (10) (1) (1).png>)
 
 Then comes the higher-order Taylor expansion:
 

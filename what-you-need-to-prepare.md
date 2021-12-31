@@ -63,7 +63,7 @@ The reason why computing cards are expensive is that computing cards have severa
 
 **Most people use gaming graphics cards:**
 
-![Recommended graphics card](<.gitbook/assets/image (10).png>)
+![Recommended graphics card](<.gitbook/assets/image (10) (1).png>)
 
 I also recommend that you buy and use gaming graphics cards, because if you give up python programming and deep learning, such graphics cards can still play games or sell.
 
