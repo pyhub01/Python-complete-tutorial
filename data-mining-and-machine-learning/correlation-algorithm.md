@@ -119,7 +119,7 @@ plt.grid()
 plt.show()
 ```
 
-![Cosine distance](<../.gitbook/assets/image (11) (1) (1).png>)
+![Cosine distance](<../.gitbook/assets/image (11) (1) (1) (1).png>)
 
 The angle between the two vectors is the cosine distance.
 
@@ -311,7 +311,7 @@ plt.show()
 
 Let's visualize the data first: we found that the data we generated (blue) and the original data (orange) are positively correlated. But the data we generated is a 100-point Gaussian distribution, so the distribution is not uniform.
 
-![data visualization](<../.gitbook/assets/image (11) (1).png>)
+![data visualization](<../.gitbook/assets/image (11) (1) (1).png>)
 
 Now let's try the correlation coefficient:
 

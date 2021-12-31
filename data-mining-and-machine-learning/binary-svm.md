@@ -450,7 +450,7 @@ out = ax.contourf( XX, YY, Z,
 plt.show()
 ```
 
-![Resolution = 10](<../.gitbook/assets/image (11).png>)
+![Resolution = 10](<../.gitbook/assets/image (11) (1).png>)
 
 ![Resolution = 100](<../.gitbook/assets/image (6) (1) (1) (1) (1).png>)
 
