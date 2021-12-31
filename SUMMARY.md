@@ -56,3 +56,8 @@
 ## 6⃣ Classes and design patterns
 
 * [Classes and design patterns](classes-and-design-patterns/classes-and-design-patterns.md)
+
+## 7⃣ Operate the database with python
+
+* [MySQL](operate-the-database-with-python/mysql/README.md)
+  * [Page 2](operate-the-database-with-python/mysql/page-2.md)
