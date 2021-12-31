@@ -142,9 +142,17 @@ In other words, if we believe the prediction results of this model in reverse, w
 
 
 
+Because ROC curve drawing only considers True positive and False positive, so if the number of positive and negative in a sample is different, ROC can still reflect the effect of the model well.
 
+Back to our radar soldier issue:
 
+We prepare 50 radar images, which may contain eagles or airplanes. Then let the radar soldier to distinguish, the radar soldier will give the probability result of the eagle or the aircraft, we use the result given by the radar soldier to compare with the real label to draw the Receiver Operating Characteristic Curve.
 
+In this way, the data of each radar soldier can draw his own Receiver Operating Characteristic Curve. From the curve, we can see the area under curve of each radar soldier. The larger the indicator, the better.
+
+From this curve, we can also have a basic judgment on whether the radar soldier is more sensitive (easy to think of a bird as an airplane) or less sensitive (easy to think of an airplane as a bird).
+
+ROC curve is one of the most widely used model evaluation methods. There are many applications in psychology, genetic biology, product quality, etc.
 
 ## Statistics
 
