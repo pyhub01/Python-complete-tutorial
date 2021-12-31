@@ -100,15 +100,45 @@ The area under the yellow curve is AUC (area under curve). The larger the area, 
 
 The blue dotted line refers to: If the model is random (50% correct). So any meaningful model should be above the blue dotted line.
 
+## How is the ROC curve drawn?
 
+The drawing of ROC curve requires the probability of model prediction. For example:
 
+```python
+pred = [0.2, 0.3, 0.8, 0.4, 0.7, 0.1, 0,  1,  0.5]
+true = [1  , 1  , 1  , 0,   0,   0,   0,  0,  0  ]
+```
 
+pred is the probability of each test set sample predicted by the model, and true is the actual label of this test set sample.
 
+First, we need to arrange the tags of pred according to size:
 
+```python
+pred = [1,  0.8, 0.7, 0.5, 0.4, 0.3, 0.2, 0.1, 0]
+true = [0,  1  , 0  , 0  , 0  , 1  , 1  , 0  , 0]
+```
 
+Then the position of true needs to be changed with pred.
 
+We define a threshold, such as 0.5. We think that if this threshold is exceeded, the record corresponding to pred is 1, and if it is less than the threshold, the corresponding record is 0.
 
+Then the corresponding label of pred should be: (maximum likelihood)
 
+```python
+pred  = [1,  0.8, 0.7, 0.5, 0.4, 0.3, 0.2, 0.1, 0]
+label = [1,  1  , 1  , 1  , 0  , 0  , 0  , 0  , 0]
+true  = [0,  1  , 0  , 0  , 0  , 1  , 1  , 0  , 0]
+```
+
+If label and true are the same, we draw one unit upward, if label and true are different, we draw one unit to the right.
+
+![ROC](<../.gitbook/assets/image (6).png>)
+
+From this we can draw the ROC curve of this model.
+
+We can see that this model is a bad model, because this model has a lower accuracy than random.
+
+In other words, if we believe the prediction results of this model in reverse, we will have better accuracy.😅
 
 
 

@@ -19,7 +19,7 @@ The CPU is responsible for the main calculations of the computer, so the core of
 
 CPUs generally have multiple cores, but python's support for multi-core is not good, so unless you are very good at multi-processes, you should have a single-core CPU with high performance. The specific performance is that the cache of the CPU is larger, and The frequency is very fast.
 
-![Speed and cache size](<.gitbook/assets/image (2).png>)
+![Speed and cache size](<.gitbook/assets/image (2) (1).png>)
 
 The same CPU generates a lot of heat, so you should have a good CPU cooler. CPU radiators are divided into water-cooled and air-cooled. I personally recommend air-cooling, because electronic equipment will short-circuit when exposed to water, and water-cooling has a certain risk of leakage. In addition, water-cooling is much more expensive than air-cooling, but the heat dissipation effect may not be much better. , So air cooling has a high cost performance and safety.
 
@@ -163,7 +163,7 @@ So when you look at today's disks, you will have an illusion, that is: It is obv
 
 #### HDD
 
-![HDD](<.gitbook/assets/image (16).png>)
+![HDD](<.gitbook/assets/image (16) (1).png>)
 
 The abbreviation of Hard drive disk is HDD. HDD is an ancient computer hard disk. This hard disk uses a robotic arm to read and write the contents of the disk. Since it takes time for the robot arm to be in place and to rotate, the HDD speed is very slow. Especially when we try to put a large amount of fragmented data on the HDD, it will take a long time for the robotic arm to find the data and read the data.
 

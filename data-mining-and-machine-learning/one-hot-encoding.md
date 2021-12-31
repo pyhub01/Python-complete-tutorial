@@ -344,7 +344,7 @@ y_train[:5] = [[6]
 
 cifar10 contains a total of ten different types.
 
-![10 kinds](<../.gitbook/assets/image (6) (1).png>)
+![10 kinds](<../.gitbook/assets/image (6) (1) (1).png>)
 
 Each type is represented by a number. They are from 0-9.
 
