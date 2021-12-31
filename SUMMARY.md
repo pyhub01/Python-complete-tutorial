@@ -34,6 +34,7 @@
 * [Harmonic mean](data-mining-and-machine-learning/harmonic-mean.md)
 * [Histogram](data-mining-and-machine-learning/histogram.md)
 * [Correlation algorithm](data-mining-and-machine-learning/correlation-algorithm.md)
+* [projection](data-mining-and-machine-learning/projection.md)
 * [binary SVM](data-mining-and-machine-learning/binary-svm.md)
 * [One Hot Encoding](data-mining-and-machine-learning/one-hot-encoding.md)
 * [Multi-class SVM](data-mining-and-machine-learning/multi-class-svm.md)
