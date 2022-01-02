@@ -5,7 +5,7 @@ coverY: 0
 
 # PCA
 
-
+In the last chapter we explained what projection is, and in this chapter we will explain what PCA is.
 
 
 
