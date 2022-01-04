@@ -32,7 +32,65 @@ plt.grid()
 plt.show()
 ```
 
+![Plot three sigma normal distribution curves.](<../.gitbook/assets/image (16).png>)
 
+If you have taken a course in probability and statistics, then you should know some properties of the normal distribution: for example, we have a class, and the height of the students in the class conforms to the normal distribution. We know that the average height of the students in the class is 170cm, and the standard deviation (sigma) of the students' height in the class is 5cm, then according to the nature of the normal distribution: 68.3% of the students are between 165-175cm in height. 95.5% of students are between 160-180cm tall. 99.7% of the students are between 155-185cm in height.
+
+About the one-dimensional normal distribution, you know these is enough in using.
+
+Let's see the two-dimensional normal distribution:
+
+```python
+import numpy as np
+from scipy.stats import multivariate_normal
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+
+clf = multivariate_normal( mean = [0, 0],
+                           cov = [ [1, 0], [0, 1] ]
+                           )
+
+div = 100
+XX, YY = np.meshgrid(np.linspace(-2, 2, div), np.linspace(-2, 2, div))
+Z = clf.pdf( np.dstack([XX, YY]) ).reshape(div, div)
+
+
+
+fig = plt.figure()
+ax = Axes3D(fig, auto_add_to_figure = False)
+fig.add_axes(ax)
+
+ax.plot_surface( XX, YY, Z,
+                 rstride = 1, cstride = 1,
+                 cmap = 'rainbow',
+                 )
+
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_zlabel('z')
+plt.show()
+```
+
+![Two-dimensional normal distribution](<../.gitbook/assets/image (17).png>)
+
+You will find that the profile of a two-dimensional normal distribution is a one-dimensional normal distribution (we just finished)
+
+The mean represents the position of the image, the front is the x coordinate, and the back is the y coordinate.
+
+If I modify the mean, the following changes will occur: (pay attention to the coordinate axis does not change)
+
+```python
+clf = multivariate_normal( mean = [0.5, 1],
+                           cov = [ [1, 0], [0, 1] ]
+                           )
+```
+
+![Modify mean](<../.gitbook/assets/image (4).png>)
+
+You will find that when I modify the mean, there is no change in the graph itself, only the position of the graph has changed.
 
 
 
@@ -88,7 +146,7 @@ plt.show()
 
 The two independent Gaussian distributions drawn are shown in the figure:
 
-![Two independent two-dimensional Gaussian distributions are marked with different colors](<../.gitbook/assets/image (16).png>)
+![Two independent two-dimensional Gaussian distributions are marked with different colors](<../.gitbook/assets/image (16) (1).png>)
 
 
 

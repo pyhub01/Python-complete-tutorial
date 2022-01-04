@@ -769,7 +769,7 @@ For example, in the previous example, if I get too few polynomials, the followin
 
 If our polynomial order is right, then we can get as good results as the rbf kernel:
 
-![Correct fit](<../.gitbook/assets/image (4) (1).png>)
+![Correct fit](<../.gitbook/assets/image (4) (1) (1).png>)
 
 In this example, there is no overfitting problem. The overfitting problem needs a larger and more noisy data set.
 
