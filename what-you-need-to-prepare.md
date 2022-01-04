@@ -43,7 +43,7 @@ GPU is mainly used in two places, one is graphics rendering, and the other is de
 
 If you are not writing python programs for these two purposes, then a normal notebook core graphics card can meet your needs.
 
-![The most common GPU](<.gitbook/assets/image (15) (1).png>)
+![The most common GPU](<.gitbook/assets/image (15) (1) (1).png>)
 
 GPU has two parameters: memory size and computing power.
 
@@ -163,7 +163,7 @@ So when you look at today's disks, you will have an illusion, that is: It is obv
 
 #### HDD
 
-![HDD](<.gitbook/assets/image (16) (1).png>)
+![HDD](<.gitbook/assets/image (16) (1) (1).png>)
 
 The abbreviation of Hard drive disk is HDD. HDD is an ancient computer hard disk. This hard disk uses a robotic arm to read and write the contents of the disk. Since it takes time for the robot arm to be in place and to rotate, the HDD speed is very slow. Especially when we try to put a large amount of fragmented data on the HDD, it will take a long time for the robotic arm to find the data and read the data.
 
@@ -205,7 +205,7 @@ The simplest uninterruptible power supply is the battery of mobile phones and la
 
 For desktop computers and servers that contain important data, UPS is necessary.
 
-![Home UPS](<.gitbook/assets/image (15).png>)
+![Home UPS](<.gitbook/assets/image (15) (1).png>)
 
 The UPS has large and small, and the small is as large as a power strip, but its internal battery can provide short-term power supply in the event of a power failure. If the power is interrupted, the user needs to back up the data in time and shut down the computer.
 
