@@ -34,6 +34,7 @@
 * [Harmonic mean](data-mining-and-machine-learning/harmonic-mean.md)
 * [Histogram](data-mining-and-machine-learning/histogram.md)
 * [Correlation algorithm](data-mining-and-machine-learning/correlation-algorithm.md)
+* [Gaussian distribution data set](data-mining-and-machine-learning/gaussian-distribution-data-set.md)
 * [projection](data-mining-and-machine-learning/projection.md)
 * [PCA](data-mining-and-machine-learning/pca.md)
 * [binary SVM](data-mining-and-machine-learning/binary-svm.md)
