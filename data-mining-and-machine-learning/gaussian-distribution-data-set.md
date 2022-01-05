@@ -5,7 +5,7 @@ coverY: 0
 
 # Gaussian distribution data set
 
-I introduced some data sets before, but in many cases we need higher-dimensional data or we need lower-dimensional data. Sometimes we need data with a certain degree of relevance, so things like the iris data set cannot Meet our needs.
+I introduced some data sets before, but in many cases we need higher-dimensional data or we need lower-dimensional data. Sometimes we need data with a certain degree of relevance, Sometimes we need a specific sample size, so things like the iris data set cannot Meet our needs.
 
 The Gaussian distribution is also called the normal distribution, and it is the most common distribution in our lives.
 
