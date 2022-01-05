@@ -163,7 +163,7 @@ So when you look at today's disks, you will have an illusion, that is: It is obv
 
 #### HDD
 
-![HDD](<.gitbook/assets/image (16) (1) (1) (1).png>)
+![HDD](<.gitbook/assets/image (16) (1) (1) (1) (1).png>)
 
 The abbreviation of Hard drive disk is HDD. HDD is an ancient computer hard disk. This hard disk uses a robotic arm to read and write the contents of the disk. Since it takes time for the robot arm to be in place and to rotate, the HDD speed is very slow. Especially when we try to put a large amount of fragmented data on the HDD, it will take a long time for the robotic arm to find the data and read the data.
 

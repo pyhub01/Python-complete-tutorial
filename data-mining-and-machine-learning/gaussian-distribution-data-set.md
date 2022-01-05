@@ -32,7 +32,7 @@ plt.grid()
 plt.show()
 ```
 
-![Plot three sigma normal distribution curves.](<../.gitbook/assets/image (16).png>)
+![Plot three sigma normal distribution curves.](<../.gitbook/assets/image (16) (1).png>)
 
 If you have taken a course in probability and statistics, then you should know some properties of the normal distribution: for example, we have a class, and the height of the students in the class conforms to the normal distribution. We know that the average height of the students in the class is 170cm, and the standard deviation (sigma) of the students' height in the class is 5cm, then according to the nature of the normal distribution: 68.3% of the students are between 165-175cm in height. 95.5% of students are between 160-180cm tall. 99.7% of the students are between 155-185cm in height.
 
@@ -226,7 +226,7 @@ plt.show()
 
 The two independent Gaussian distributions drawn are shown in the figure:
 
-![Two independent two-dimensional Gaussian distributions are marked with different colors](<../.gitbook/assets/image (16) (1).png>)
+![Two independent two-dimensional Gaussian distributions are marked with different colors](<../.gitbook/assets/image (16) (1) (1).png>)
 
 In the above figure, we draw a two-dimensional point set of multiple labels, and different labels with different colors.
 

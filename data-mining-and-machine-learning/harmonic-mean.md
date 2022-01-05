@@ -17,7 +17,7 @@ For example, Some students study literature and mathematics. We want to give the
 
 <mark style="color:blue;">But his harmonic average score is: 2/(1/100+1/20)=33.33333333333333</mark>
 
-![binary harmonic mean definition](<../.gitbook/assets/image (19) (1).png>)
+![binary harmonic mean definition](<../.gitbook/assets/image (19) (1) (1).png>)
 
 We can know that the second student's partial subject problem is more serious.
 
