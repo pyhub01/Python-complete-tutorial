@@ -128,7 +128,13 @@ In the covariance matrix, the value of the side diagonal(2 and 3) is the same. I
 **The meaning of the covariance matrix: Element 1 represents the variance of the x-axis, element 4 represents the variance of the y-axis,  and elements 2 and 3 represent the covariance of x and y.**
 
 The larger the variance, the more scattered the data, and the smoother the PDF image should be. The smaller the variance, the more concentrated the data, and the steeper the PDF image should be.
+
+
+
+**Also need to pay attention: the covariance cannot be greater than the variance, because this is impossible.**
 {% endhint %}
+
+
 
 ```python
 clf = multivariate_normal( mean = [0, 0],
@@ -156,7 +162,7 @@ Let's try to modify the subdiagonal of the covariance matrix:
 
 ```python
 clf = multivariate_normal( mean = [0, 0],
-                           cov = [ [1, 3], [3, 1] ]
+                           cov = [ [1, 0.8], [0.8, 1] ]
                            )
 ```
 
