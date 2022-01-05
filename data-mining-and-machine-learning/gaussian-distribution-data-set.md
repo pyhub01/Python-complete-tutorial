@@ -191,9 +191,15 @@ Use this simple code to plot a two-dimensional Gaussian distribution:
 
 ![Two-dimensional Gaussian distribution](<../.gitbook/assets/image (22).png>)
 
+When constructing the data set, we need some sampling points. At this time, we can use Gaussian distribution to generate these points.
 
+The graphs we have drawn before are all PDFs, which are probability distribution graphs. In this graph, a larger value means that the probability of a point in this place is greater, and a smaller value means that the probability of a point in this place is smaller.
 
+So when we draw 1000 points, more points will fall in places with higher probability, and fewer points will fall in places with lower probability.
 
+The above is the method of constructing a two-dimensional Gaussian distribution.
+
+But in most cases, our model requires multiple types of labeled point sets for training, so the following program can generate multiple labeled point sets:
 
 ```python
 import numpy as np
@@ -222,15 +228,11 @@ The two independent Gaussian distributions drawn are shown in the figure:
 
 ![Two independent two-dimensional Gaussian distributions are marked with different colors](<../.gitbook/assets/image (16) (1).png>)
 
+In the above figure, we draw a two-dimensional point set of multiple labels, and different labels with different colors.
 
+In actual machine learning and deep learning, generating a Gaussian point set is a very good method to test the model, so you should be proficient in the method of generating a Gaussian point set.
 
-
-
-
-
-
-
-
+This chapter describes the method of generating a two-dimensional Gaussian point set. In the following chapters, if necessary, I will explain the method of generating a higher-dimensional Gaussian point set.
 
 ## Statistics
 
