@@ -34,7 +34,7 @@ plt.grid()
 plt.show()
 ```
 
-![The relationship between income and outlay](<../.gitbook/assets/image (3) (1) (1) (1).png>)
+![The relationship between income and outlay](<../.gitbook/assets/image (3) (1) (1) (1) (1).png>)
 
 In this graph, we will find that when income increases, expenditures will increase accordingly.
 
@@ -124,7 +124,7 @@ plt.show()
 
 ![N = 20](<../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png>)
 
-![N = 30](<../.gitbook/assets/image (3) (1) (1).png>)
+![N = 30](<../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 ![N = 50](<../.gitbook/assets/image (4) (1) (1) (1).png>)
 

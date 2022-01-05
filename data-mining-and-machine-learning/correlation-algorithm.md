@@ -42,7 +42,7 @@ plt.grid()
 plt.show()
 ```
 
-![Euclidean distance](<../.gitbook/assets/image (3) (1).png>)
+![Euclidean distance](<../.gitbook/assets/image (3) (1) (1).png>)
 
 The length of the line segment in the figure is the Euclidean distance.
 

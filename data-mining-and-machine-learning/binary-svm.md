@@ -765,7 +765,7 @@ When our order is **insufficient**, underfitting will occur, that is, the Taylor
 
 For example, in the previous example, if I get too few polynomials, the following results will appear:
 
-![Underfitting](<../.gitbook/assets/image (3).png>)
+![Underfitting](<../.gitbook/assets/image (3) (1).png>)
 
 If our polynomial order is right, then we can get as good results as the rbf kernel:
 

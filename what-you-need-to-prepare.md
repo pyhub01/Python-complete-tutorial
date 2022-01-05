@@ -231,7 +231,7 @@ Data security is a very important topic. You must adopt certain security strateg
 
 We have already talked about the fragility of hard disks before, so if we combine multiple hard disks and place one data on multiple disks to form a disk array, then we can effectively avoid the problem of data loss due to damage to a single disk. It is possible that the same disk fails, but if 2 or 3 disks fail at the same time, it is a small probability event. If we can make the data redundant, then we can guarantee us with great probability Data integrity.
 
-![RAID 5](<.gitbook/assets/image (18).png>)
+![RAID 5](<.gitbook/assets/image (18) (1).png>)
 
 The picture shows the raid5 scheme that can tolerate any one-disk failure but the data integrity is not destroyed. Here we do not discuss the implementation details of raid5, we will discuss in detail in the database section later.
 
