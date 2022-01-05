@@ -74,7 +74,7 @@ ax.set_zlabel('z')
 plt.show()
 ```
 
-![Two-dimensional normal distribution](<../.gitbook/assets/image (17).png>)
+![Two-dimensional normal distribution](<../.gitbook/assets/image (17) (1).png>)
 
 You will find that the profile of a two-dimensional normal distribution is a one-dimensional normal distribution (we just finished)
 
@@ -91,6 +91,42 @@ clf = multivariate_normal( mean = [0.5, 1],
 ![Modify mean](<../.gitbook/assets/image (4).png>)
 
 You will find that when I modify the mean, there is no change in the graph itself, only the position of the graph has changed.
+
+When I modify the covariance matrix, the changes are more diverse. There are three situations:
+
+```python
+clf = multivariate_normal( mean = [0, 0],
+                           cov = [ [3, 0], [0, 1] ]
+                           )
+```
+
+![Modify the upper left coefficient of the covariance matrix](<../.gitbook/assets/image (13).png>)
+
+When I modify the upper left coefficient of the covariance matrix, you will find that the distribution becomes wider on the x-axis.
+
+```python
+clf = multivariate_normal( mean = [0, 0],
+                           cov = [ [1, 0], [0, 3] ]
+                           )
+```
+
+![Modify the lower right coefficient of the covariance matrix](<../.gitbook/assets/image (17).png>)
+
+When I modify the lower right coefficient of the covariance matrix, you will find that the distribution becomes wider on the y-axis.
+
+{% hint style="danger" %}
+\[ \[1, 2],
+
+&#x20; \[3, 4] ]
+
+The above is a 2\*2 matrix.
+
+Among them, 1 is the upper left corner element, 4 is the lower right corner element, 1 and 4 are the main diagonal of this matrix, and 2 and 3 are the sub-diagonal of this matrix.
+
+In the covariance matrix, the value of the side diagonal(2 and 3) is the same. If the value of the sub-diagonal of your covariance matrix is different, an error will be reported.
+{% endhint %}
+
+
 
 
 

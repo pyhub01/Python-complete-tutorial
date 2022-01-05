@@ -366,7 +366,7 @@ The algorithm of SVM is complicated, but fortunately sklearn includes libsvm, we
 
 Problems like the following that cannot be divided by a straight line are called XOR problems.
 
-![XOR problems](<../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png>)
+![XOR problems](<../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png>)
 
 ```python
 x = [
@@ -456,7 +456,7 @@ plt.show()
 
 ![Resolution = 1000](<../.gitbook/assets/image (2) (1) (1).png>)
 
-![Resolution = 2000](<../.gitbook/assets/image (13) (1) (1) (1) (1).png>)
+![Resolution = 2000](<../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png>)
 
 We can see that linear SVM is racking it brains to solve this classification problem.
 
@@ -564,7 +564,7 @@ plt.grid()
 plt.show()
 ```
 
-![RBF function](<../.gitbook/assets/image (13) (1) (1) (1).png>)
+![RBF function](<../.gitbook/assets/image (13) (1) (1) (1) (1).png>)
 
 The RBF function turns a linear function into a nonlinear result, which is very useful in machine learning. Because the world we live in is also non-linear.
 
@@ -578,7 +578,7 @@ We use other kernels to show you the effect of nonlinear SVM:
 <mark style="color:green;">**sigmoid core**</mark>
 {% endhint %}
 
-![sigmoid](<../.gitbook/assets/image (13) (1).png>)
+![sigmoid](<../.gitbook/assets/image (13) (1) (1).png>)
 
 ```python
 from matplotlib import pyplot as plt
@@ -781,7 +781,7 @@ Reference program
 
 sklearn provides us with a very good program to visualize the effects of different SVM cores.
 
-![SVM different kernel visualization](<../.gitbook/assets/image (13) (1) (1).png>)
+![SVM different kernel visualization](<../.gitbook/assets/image (13) (1) (1) (1).png>)
 
 ```python
 import numpy as np
