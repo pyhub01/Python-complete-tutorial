@@ -151,7 +151,7 @@ These previous parameters will make your program run faster, if you deal with bi
 
 ### Read only memory (ROM)
 
-![UV erasable read-only memory](<.gitbook/assets/image (17) (1) (1) (1).png>)
+![UV erasable read-only memory](<.gitbook/assets/image (17) (1) (1) (1) (1).png>)
 
 The name read-only memory comes from the 1970s, when the disk at that time is shown in the picture above (there are even ertlier read-only memories, The ertlier the ROM, the more unconvent to use.). This chip requires a special programmer to write data into it. When in use, data can only be read but not written. When we need to change the data, we need to use ultraviolet rays into the small quartz window in the middle of the chip. The high-energy ultraviolet light will excite the stored charges and clear the data in the chip.
 
@@ -181,7 +181,7 @@ The use of a chip to store data in a solid-state drive will increase the reliabi
 
 But because electric charge is used to store data, it is easy to damage the SSD if there is static electricity, and static electricity is relatively easy to occur.
 
-![TLC in 2020 and QLC after 2025](<.gitbook/assets/image (17) (1) (1).png>)
+![TLC in 2020 and QLC after 2025](<.gitbook/assets/image (17) (1) (1) (1).png>)
 
 Solid state drives also have a wide range of concerns, that is, life issues. Solid state drives rely on electric charge to store data, and the charge is stored in the MOSFET. The first problem is that the charge will leak slowly, when the leakage reaches a certain level. , The data in the solid state drive will be lost, and the charge leakage rate is proportional to the three-half square of the temperature (thermodynamic formula). That is to say, the problem of charge leakage becomes extremely serious as the temperature rises.
 

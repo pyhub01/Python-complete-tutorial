@@ -74,7 +74,7 @@ ax.set_zlabel('z')
 plt.show()
 ```
 
-![Two-dimensional normal distribution](<../.gitbook/assets/image (17) (1).png>)
+![Two-dimensional normal distribution](<../.gitbook/assets/image (17) (1) (1).png>)
 
 You will find that the profile of a two-dimensional normal distribution is a one-dimensional normal distribution (we just finished)
 
@@ -110,7 +110,7 @@ clf = multivariate_normal( mean = [0, 0],
                            )
 ```
 
-![Modify the lower right coefficient of the covariance matrix](<../.gitbook/assets/image (17).png>)
+![Modify the lower right coefficient of the covariance matrix](<../.gitbook/assets/image (17) (1).png>)
 
 When I modify the lower right coefficient of the covariance matrix, you will find that the distribution becomes wider on the y-axis.
 
@@ -166,15 +166,11 @@ clf = multivariate_normal( mean = [0, 0],
                            )
 ```
 
+![Related variables](<../.gitbook/assets/image (17).png>)
 
+When the subdiagonal of the covariance matrix is 0, the two variables are not correlated, that is to say, when x changes, y is not affected, and the two variables x and y are independent of each other.
 
-
-
-
-
-
-
-
+When the subdiagonal line of the covariance matrix is not 0, the two variables are correlated, which means that when x changes, y will change with x, and there is a correlation between the two variables x and y, which is shown in the graph: the graph is no longer parallel to the x-axis or the y-axis, but has an angle with the x-axis and the y-axis. .
 
 ```python
 import numpy as np
