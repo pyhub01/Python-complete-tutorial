@@ -11,7 +11,7 @@ The Gaussian distribution is also called the normal distribution, and it is the 
 
 So when we encounter a model with an unknown distribution, we can use the normal distribution to fit this model. It can be fitted correctly in most cases.
 
-![Gaussian distribution (normal distribution)](<../.gitbook/assets/image (15).png>)
+![Gaussian distribution (normal distribution)](<../.gitbook/assets/image (15) (1).png>)
 
 The above is the probability distribution function(PDF) of the normal distribution.
 
@@ -74,7 +74,7 @@ ax.set_zlabel('z')
 plt.show()
 ```
 
-![Two-dimensional normal distribution](<../.gitbook/assets/image (17) (1) (1).png>)
+![Two-dimensional normal distribution](<../.gitbook/assets/image (17) (1) (1) (1).png>)
 
 You will find that the profile of a two-dimensional normal distribution is a one-dimensional normal distribution (we just finished)
 
@@ -110,7 +110,7 @@ clf = multivariate_normal( mean = [0, 0],
                            )
 ```
 
-![Modify the lower right coefficient of the covariance matrix](<../.gitbook/assets/image (17) (1).png>)
+![Modify the lower right coefficient of the covariance matrix](<../.gitbook/assets/image (17) (1) (1).png>)
 
 When I modify the lower right coefficient of the covariance matrix, you will find that the distribution becomes wider on the y-axis.
 
@@ -166,7 +166,7 @@ clf = multivariate_normal( mean = [0, 0],
                            )
 ```
 
-![Related variables](<../.gitbook/assets/image (17).png>)
+![Related variables](<../.gitbook/assets/image (17) (1).png>)
 
 When the subdiagonal of the covariance matrix is 0, the two variables are not correlated, that is to say, when x changes, y is not affected, and the two variables x and y are independent of each other.
 

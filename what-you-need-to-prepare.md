@@ -43,7 +43,7 @@ GPU is mainly used in two places, one is graphics rendering, and the other is de
 
 If you are not writing python programs for these two purposes, then a normal notebook core graphics card can meet your needs.
 
-![The most common GPU](<.gitbook/assets/image (15) (1) (1).png>)
+![The most common GPU](<.gitbook/assets/image (15) (1) (1) (1).png>)
 
 GPU has two parameters: memory size and computing power.
 
@@ -151,7 +151,7 @@ These previous parameters will make your program run faster, if you deal with bi
 
 ### Read only memory (ROM)
 
-![UV erasable read-only memory](<.gitbook/assets/image (17) (1) (1) (1) (1).png>)
+![UV erasable read-only memory](<.gitbook/assets/image (17) (1) (1) (1) (1) (1).png>)
 
 The name read-only memory comes from the 1970s, when the disk at that time is shown in the picture above (there are even ertlier read-only memories, The ertlier the ROM, the more unconvent to use.). This chip requires a special programmer to write data into it. When in use, data can only be read but not written. When we need to change the data, we need to use ultraviolet rays into the small quartz window in the middle of the chip. The high-energy ultraviolet light will excite the stored charges and clear the data in the chip.
 
@@ -181,7 +181,7 @@ The use of a chip to store data in a solid-state drive will increase the reliabi
 
 But because electric charge is used to store data, it is easy to damage the SSD if there is static electricity, and static electricity is relatively easy to occur.
 
-![TLC in 2020 and QLC after 2025](<.gitbook/assets/image (17) (1) (1) (1).png>)
+![TLC in 2020 and QLC after 2025](<.gitbook/assets/image (17) (1) (1) (1) (1).png>)
 
 Solid state drives also have a wide range of concerns, that is, life issues. Solid state drives rely on electric charge to store data, and the charge is stored in the MOSFET. The first problem is that the charge will leak slowly, when the leakage reaches a certain level. , The data in the solid state drive will be lost, and the charge leakage rate is proportional to the three-half square of the temperature (thermodynamic formula). That is to say, the problem of charge leakage becomes extremely serious as the temperature rises.
 
@@ -205,7 +205,7 @@ The simplest uninterruptible power supply is the battery of mobile phones and la
 
 For desktop computers and servers that contain important data, UPS is necessary.
 
-![Home UPS](<.gitbook/assets/image (15) (1).png>)
+![Home UPS](<.gitbook/assets/image (15) (1) (1).png>)
 
 The UPS has large and small, and the small is as large as a power strip, but its internal battery can provide short-term power supply in the event of a power failure. If the power is interrupted, the user needs to back up the data in time and shut down the computer.
 

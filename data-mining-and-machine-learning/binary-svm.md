@@ -450,7 +450,7 @@ out = ax.contourf( XX, YY, Z,
 plt.show()
 ```
 
-![Resolution = 10](<../.gitbook/assets/image (11) (1).png>)
+![Resolution = 10](<../.gitbook/assets/image (11) (1) (1).png>)
 
 ![Resolution = 100](<../.gitbook/assets/image (6) (1) (1) (1) (1).png>)
 
@@ -664,7 +664,7 @@ out = ax.contourf( XX, YY, Z,
 plt.show()
 ```
 
-![sigmoid core SVM](<../.gitbook/assets/image (15) (1) (1) (1) (1) (1).png>)
+![sigmoid core SVM](<../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1).png>)
 
 You will find that sigmoid does not work well when dealing with XOR problems.
 
@@ -715,7 +715,7 @@ Then comes the higher-order Taylor expansion:
 
 ![N = 5](<../.gitbook/assets/image (7) (1) (1) (1) (1).png>)
 
-![N = 6](<../.gitbook/assets/image (15) (1) (1) (1).png>)
+![N = 6](<../.gitbook/assets/image (15) (1) (1) (1) (1).png>)
 
 ![N = 7](<../.gitbook/assets/image (6) (1) (1) (1).png>)
 

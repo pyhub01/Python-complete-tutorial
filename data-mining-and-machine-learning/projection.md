@@ -5,7 +5,7 @@ coverY: 0
 
 # projection
 
-![orthogonal projection](<../.gitbook/assets/image (11).png>)
+![orthogonal projection](<../.gitbook/assets/image (11) (1).png>)
 
 ```python
 import numpy as np
