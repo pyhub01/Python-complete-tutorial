@@ -115,16 +115,52 @@ clf = multivariate_normal( mean = [0, 0],
 When I modify the lower right coefficient of the covariance matrix, you will find that the distribution becomes wider on the y-axis.
 
 {% hint style="danger" %}
-\[ \[1, 2],
+**\[ \[1, 2],**
 
-&#x20; \[3, 4] ]
+&#x20; **\[3, 4] ]**
 
 The above is a 2\*2 matrix.
 
 Among them, 1 is the upper left corner element, 4 is the lower right corner element, 1 and 4 are the main diagonal of this matrix, and 2 and 3 are the sub-diagonal of this matrix.
 
 In the covariance matrix, the value of the side diagonal(2 and 3) is the same. If the value of the sub-diagonal of your covariance matrix is different, an error will be reported.
+
+**The meaning of the covariance matrix: Element 1 represents the variance of the x-axis, element 4 represents the variance of the y-axis,  and elements 2 and 3 represent the covariance of x and y.**
+
+The larger the variance, the more scattered the data, and the smoother the PDF image should be. The smaller the variance, the more concentrated the data, and the steeper the PDF image should be.
 {% endhint %}
+
+```python
+clf = multivariate_normal( mean = [0, 0],
+                           cov = [ [1, 2], [3, 1] ]
+                           )
+```
+
+If the subdiagonal values of the covariance matrix are different, then python will report an error.
+
+```python
+Traceback (most recent call last):
+  File "xxx.py", line 9, in <module>
+    clf = multivariate_normal( mean = [0, 0],
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\scipy\stats\_multivariate.py", line 361, in __call__
+    return multivariate_normal_frozen(mean, cov,
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\scipy\stats\_multivariate.py", line 736, in __init__
+    self.cov_info = _PSD(self.cov, allow_singular=allow_singular)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\scipy\stats\_multivariate.py", line 160, in __init__
+    raise ValueError('the input matrix must be positive semidefinite')
+ValueError: the input matrix must be positive semidefinite
+>>> 
+```
+
+Let's try to modify the subdiagonal of the covariance matrix:
+
+```python
+clf = multivariate_normal( mean = [0, 0],
+                           cov = [ [1, 3], [3, 1] ]
+                           )
+```
+
+
 
 
 
