@@ -132,7 +132,7 @@ The larger the variance, the more scattered the data, and the smoother the PDF i
 
 ```python
 clf = multivariate_normal( mean = [0, 0],
-                           cov = [ [1, 2], [3, 1] ]
+                           cov = [ [1, 0.2], [3,0. 1] ]
                            )
 ```
 
