@@ -111,7 +111,7 @@ Set is not used much in python, it is mainly used to remove redundant elements i
 
 ## <mark style="color:purple;">dictionary</mark>
 
-Dictionaries are used more in python. Because the hash table index is used, the dictionary can be looked up quickly.
+Dictionaries are used a lot in python. Because the hash table index is used, the dictionary can be looked up quickly.
 
 ```python
 >>> d = {'name':'tom', 'age':24, 'gender':'male'}
@@ -123,14 +123,85 @@ Dictionaries are used more in python. Because the hash table index is used, the 
 As shown in the code block above, we have created a dictionary.
 
 {% hint style="danger" %}
-<mark style="color:red;">**Please note that the keys in the dictionary are unique, which means you should not operate as follows(**</mark>Repeated assignments will be overwritten, you should be extra careful about this, because it may lead to incorrect program results<mark style="color:red;">**)**</mark>
+<mark style="color:red;">**Please note that the keys in the dictionary are unique, which means you should not operate as follows(Repeated assignments will be overwritten, you should be extra careful about this, because it may lead to incorrect program results)**</mark>
 {% endhint %}
 
+```python
+>>> d = {'name':'tom', 'name':'alice', 'age':24, 'gender':'male'}
+>>> d
+{'name': 'alice', 'age': 24, 'gender': 'male'}
+>>> 
+```
 
+The keys of the dictionary must be hashable. Any non-hashable data structure mentioned before cannot be used as the key of the dictionary:
 
+```python
+>>> d = {[1,2,3]:'test'}
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+    d = {[1,2,3]:'test'}
+TypeError: unhashable type: 'list'
+>>> 
+```
 
+```python
+>>> d = {set([1,2,3]):'test'}
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+    d = {set([1,2,3]):'test'}
+TypeError: unhashable type: 'set'
+>>> 
+```
 
+```python
+>>> d = { {'name':'tom'}:'test' }
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+    d = { {'name':'tom'}:'test' }
+TypeError: unhashable type: 'dict'
+>>> 
+```
 
+The hashable tuple can be used as a dictionary key:
+
+```python
+>>> d = { tuple([1,2,3]):'test' }
+>>> d
+{(1, 2, 3): 'test'}
+>>> 
+```
+
+### <mark style="color:orange;">Modify dictionary</mark>
+
+Modifying the dictionary is very simple, we only need to overwrite the contents of the corresponding key of the dictionary:
+
+```python
+>>> d = {'name':'tom', 'age':24, 'gender':'male'}
+>>> d
+{'name': 'tom', 'age': 24, 'gender': 'male'}
+
+>>> d['name'] = 'ali'
+>>> d
+{'name': 'ali', 'age': 24, 'gender': 'male'}
+>>> 
+```
+
+### <mark style="color:orange;">Create empty dictionary</mark>
+
+```python
+>>> a = dict()
+>>> a
+{}
+>>> type(a)
+<class 'dict'>
+>>> 
+```
+
+Creating an empty dictionary is very simple, just use dict() to create it.
+
+### <mark style="color:orange;">**Query dictionary**</mark>
+
+<mark style="color:orange;">****</mark>
 
 
 
