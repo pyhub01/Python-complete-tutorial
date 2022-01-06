@@ -30,7 +30,7 @@ plt.scatter( point[ :, 0 ], point[ :, 1 ],
 plt.show()
 ```
 
-![Two-dimensional Gaussian distribution of 1000 points](<../.gitbook/assets/image (18).png>)
+![Two-dimensional Gaussian distribution of 1000 points](<../.gitbook/assets/image (18) (1).png>)
 
 We now make a straight line and draw the projection of each point to this straight line:
 
@@ -272,16 +272,38 @@ Principal component analysis can not only extract principal components. In our a
 
 In PCA, we always want to know which dimension is the most important. For example, we have information about wages, consumption, housing loans, car loans, etc. We want to know which information has a greater impact on raising children(positive and negative). We need to analyze the proportion of the original components in the PCA.
 
+```python
+pca_components = abs(pca_clf.components_)
 
+print(pca_components)
+```
 
+Get the following output:
 
+```python
+[[0.69951524 0.71461768]
+ [0.71461768 0.69951524]]
+>>> 
+```
 
+![Raw data](<../.gitbook/assets/image (18).png>)
 
+The data obtained in the first row is the data source ratio of the principal components.
 
+pca obtained 0.69951524 data from the x-axis and 0.71461768 data from the y-axis. From the figure, we can see that the dispersion of the data on the x-axis and y-axis is similar.
 
+The data obtained in the second row is the data source ratio of the second principal component.
+
+## PCA inverse\_transform
+
+In machine learning, PCA inverse\_transform is rarely used, so I won’t introduce it here. If you are interested, please check sklearn.
+
+Principal component analysis analyzes the key information in the data. If you use principal component analysis to reduce dimensionality, you will retain most of the information in the data. Of course, the data can be reconstructed using this information. If you retain enough information, the reconstructed data will be very close to the original data.
+
+If the Mars exploration satellite transmits the complete data of Mars it has collected to the earth, the amount of this data is very large and the transmission will be very difficult. But if we use PCA for dimensionality reduction and retain 80% or 90% or 95% of the information before transmission, a considerable part of the data will be reduced. But the transmitted data is similar to which before it was reduce.
 
 ## Statistics
 
 Start time of this page: January 3, 2022
 
-Completion time of this page: January 5, 2022
+Completion time of this page: January 6, 2022
