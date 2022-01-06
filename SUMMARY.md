@@ -54,6 +54,7 @@
 ## 5⃣ Mathematical algorithm and digital signal processing
 
 * [Mathematical constants and basic operations](mathematical-algorithm-and-digital-signal-processing/mathematical-constants-and-basic-operations.md)
+* [Normal distribution](mathematical-algorithm-and-digital-signal-processing/normal-distribution.md)
 
 ## 6⃣ Classes and design patterns
 
