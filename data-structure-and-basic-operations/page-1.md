@@ -111,6 +111,23 @@ Set is not used much in python, it is mainly used to remove redundant elements i
 
 ## <mark style="color:purple;">dictionary</mark>
 
+Dictionaries are used more in python. Because the hash table index is used, the dictionary can be looked up quickly.
+
+```python
+>>> d = {'name':'tom', 'age':24, 'gender':'male'}
+>>> d
+{'name': 'tom', 'age': 24, 'gender': 'male'}
+>>> 
+```
+
+As shown in the code block above, we have created a dictionary.
+
+{% hint style="danger" %}
+<mark style="color:red;">**Please note that the keys in the dictionary are unique, which means you should not operate as follows(**</mark>Repeated assignments will be overwritten, you should be extra careful about this, because it may lead to incorrect program results<mark style="color:red;">**)**</mark>
+{% endhint %}
+
+
+
 
 
 
