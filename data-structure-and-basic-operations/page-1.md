@@ -84,6 +84,43 @@ We can also convert a list into a collection.
 
 You will find that the repeated elements have been deleted from the set.
 
+
+
+The set uses a hash table index, so the set is unordered, and we cannot index the set:
+
+```python
+>>> test_set = {1,2,3,4,5}
+
+>>> test_set[3]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+    test_set[3]
+TypeError: 'set' object is not subscriptable
+>>> 
+```
+
+Set is not used much in python, it is mainly used to remove redundant elements in the list:
+
+```python
+>>> a = [1, 2, 2, 2, 3, 4, 4, 5, 5, 5]
+>>> a = list(set(a))
+>>> a
+[1, 2, 3, 4, 5]
+>>> 
+```
+
+## <mark style="color:purple;">dictionary</mark>
+
+
+
+
+
+
+
+
+
+
+
 ## Statistics
 
 Start time of this page: December 19, 2021
