@@ -212,9 +212,9 @@ Creating an empty dictionary is very simple, just use dict() to create it.
 
 You only need to enter the key to query the dictionary. The above is the query method.
 
-### Delete a key of the dictionary
+### <mark style="color:orange;">Delete a key of the dictionary</mark>
 
-```
+```python
 >>> d
 {'name': 'ali', 'age': 24, 'gender': 'male'}
 
@@ -224,48 +224,28 @@ You only need to enter the key to query the dictionary. The above is the query m
 >>> 
 ```
 
-<mark style="color:orange;">****</mark>
+The above is how to delete a key in the dictionary.
 
-<mark style="color:orange;">****</mark>
+### <mark style="color:orange;">Delete the entire dictionary</mark>
 
-<mark style="color:orange;">****</mark>
+```python
+>>> d
+{'age': 24, 'gender': 'male'}
 
-<mark style="color:orange;">****</mark>
+>>> del(d)
 
-<mark style="color:orange;">****</mark>
+>>> d
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+    d
+NameError: name 'd' is not defined
+>>> 
+```
 
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-<mark style="color:orange;">****</mark>
-
-
-
-
-
-
+The above code will delete a dictionary. If you have deleted this dictionary, you will get an error when you call this dictionary again.
 
 ## Statistics
 
 Start time of this page: December 19, 2021
 
-Completion time of this page:
+Completion time of this page: January 6, 2022
