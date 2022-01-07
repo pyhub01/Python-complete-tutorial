@@ -59,15 +59,47 @@ The maximum and minimum normalization does not destroy the data, and the data st
 
 ## <mark style="color:purple;">z-score normalization</mark>
 
+```python
+import numpy as np
 
+def minmax_normalization(data):
+    return (data-np.min(data)) / (np.max(data)-np.min(data))
 
+def standardization(data):
+    mu = np.mean(data, axis=0)
+    sigma = np.std(data, axis=0)
+    return (data - mu) / sigma
 
+data = [160,159,168,172,190,186,178]
 
+print('minmax_normalization:')
+print(minmax_normalization(data))
+print()
 
+print('standardization:')
+print(standardization(data))
+```
 
+The above program contains two kinds of normalization, and the running results are as follows:
 
+```python
+minmax_normalization:
+[0.03225806 0.         0.29032258 0.41935484 1.         0.87096774
+ 0.61290323]
 
+standardization:
+[-1.1893789  -1.27890205 -0.47319376 -0.11510118  1.4963154   1.13822282
+  0.42203768]
+>>> 
+```
 
+Most of the data in the world conforms to the normal distribution, so if we encounter a data, we can assume that the data conforms to the normal distribution:
+
+The z-score normalization is to turn this normal distribution that we assume into a standard normal distribution. (The normal distribution with mu=0 and gamma=1 is called the standard normal distribution)
+
+{% hint style="success" %}
+
+{% endhint %}
 
 
 
