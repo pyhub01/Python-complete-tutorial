@@ -98,18 +98,12 @@ Most of the data in the world conforms to the normal distribution, so if we enco
 The z-score normalization is to turn this normal distribution that we assume into a standard normal distribution. (The normal distribution with mu=0 and gamma=1 is called the standard normal distribution)
 
 {% hint style="success" %}
+If your data presents a strong Gaussian distribution, z-score normalization is a good choice. If your data has nothing to do with the Gaussian distribution, then the result of z-score normalization is not very good, you should use the maximum and minimum normalization.
 
+Z-score normalization is not a linear process, and the scale of data is different. So z-score normalization is not very suitable for deep learning.
+
+If your data fits the Gaussian distribution, but this Gaussian distribution is an pressed oblong shape(Like a baguette), then using z-score normalization will speed up the process of deep learning gradient descent and improve the efficiency of gradient descent.
 {% endhint %}
-
-
-
-
-
-
-
-
-
-
 
 ## Statistics
 
