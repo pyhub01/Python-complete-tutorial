@@ -201,6 +201,61 @@ Creating an empty dictionary is very simple, just use dict() to create it.
 
 ### <mark style="color:orange;">**Query dictionary**</mark>
 
+```python
+>>> d
+{'name': 'ali', 'age': 24, 'gender': 'male'}
+
+>>> d['name']
+'ali'
+>>> 
+```
+
+You only need to enter the key to query the dictionary. The above is the query method.
+
+### Delete a key of the dictionary
+
+```
+>>> d
+{'name': 'ali', 'age': 24, 'gender': 'male'}
+
+>>> del(d['name'])
+>>> d
+{'age': 24, 'gender': 'male'}
+>>> 
+```
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
+<mark style="color:orange;">****</mark>
+
 <mark style="color:orange;">****</mark>
 
 
