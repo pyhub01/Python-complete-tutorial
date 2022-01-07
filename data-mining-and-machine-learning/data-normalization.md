@@ -102,7 +102,7 @@ If your data presents a strong Gaussian distribution, z-score normalization is a
 
 Z-score normalization is not a linear process, and the scale of data is different. So z-score normalization is not very suitable for deep learning.
 
-If your data fits the Gaussian distribution, but this Gaussian distribution is an pressed oblong shape(Like a baguette), then using z-score normalization will speed up the process of deep learning gradient descent and improve the efficiency of gradient descent.
+If your data fits the Gaussian distribution, but this Gaussian distribution is an pressed oval shape(Like a baguette), then using z-score normalization will speed up the process of deep learning gradient descent and improve the efficiency of gradient descent.
 {% endhint %}
 
 ## Statistics
