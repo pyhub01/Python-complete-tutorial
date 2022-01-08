@@ -70,4 +70,4 @@
 
 ## 8⃣ Cryptography
 
-* [8⃣ Cryptography](cryptography/cryptography.md)
+* [beginning of Cryptography](cryptography/beginning-of-cryptography.md)
