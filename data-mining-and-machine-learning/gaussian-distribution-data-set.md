@@ -100,7 +100,7 @@ clf = multivariate_normal( mean = [0, 0],
                            )
 ```
 
-![Modify the upper left coefficient of the covariance matrix](<../.gitbook/assets/image (13).png>)
+![Modify the upper left coefficient of the covariance matrix](<../.gitbook/assets/image (13) (1).png>)
 
 When I modify the upper left coefficient of the covariance matrix, you will find that the distribution becomes wider on the x-axis.
 

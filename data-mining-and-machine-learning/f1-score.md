@@ -41,11 +41,11 @@ In real life, we will receive a lot of emails, but many emails are spam and cont
 
 We can make a language model to detect which emails are spam and which are not spam.
 
-![illustration](<../.gitbook/assets/image (5).png>)
+![illustration](<../.gitbook/assets/image (5) (1).png>)
 
 As shown in the figure, we have explained the precision recall rate and F1 score.
 
-![Fβ](<../.gitbook/assets/image (20).png>)
+![Fβ](<../.gitbook/assets/image (20) (1).png>)
 
 In our real life, there are some events that require a high precision rate, and some events require a high rate of precision.
 

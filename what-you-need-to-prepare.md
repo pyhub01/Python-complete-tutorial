@@ -155,7 +155,7 @@ These previous parameters will make your program run faster, if you deal with bi
 
 The name read-only memory comes from the 1970s, when the disk at that time is shown in the picture above (there are even ertlier read-only memories, The ertlier the ROM, the more unconvent to use.). This chip requires a special programmer to write data into it. When in use, data can only be read but not written. When we need to change the data, we need to use ultraviolet rays into the small quartz window in the middle of the chip. The high-energy ultraviolet light will excite the stored charges and clear the data in the chip.
 
-![Mask ROM](<.gitbook/assets/image (13) (1).png>)
+![Mask ROM](<.gitbook/assets/image (13) (1) (1).png>)
 
 Mask ROM is one of the oldest ROMs. This type of ROM writes data when it leaves the factory and cannot modify the data once it leaves the factory. Each transistor as above represents data 1, and blank represents data 0.
 

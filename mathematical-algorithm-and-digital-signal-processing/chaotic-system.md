@@ -19,17 +19,88 @@ In 1987, after interviewing more than 200 scientists, James Gleick, director of 
 
 This phenomenon, which was originally only seen in weather forecasting, was later found to exist in numerous natural and social systems, such as population fluctuations, the onset of mental illness, the rhythm of heart rate, the shape of snowflakes, fluctuations in the stock market, changes in exchange rates And so on, there is chaos. After Lorentz, with the help of computers, humans began to use "chaos theory" to study the irregular, discontinuous and unstable aspects of nature and society, opening the possibility of simplifying complex phenomena.
 
+## Lorenz Chaos
+
+```python
+def Lorenz_Chaos( init, t ):
+    x, y, z = init
+    dx = -10 * (x-y)
+    dy = 28*x - y - x*z
+    dz = -8/3*z + x*y
+    return np.array( [dx, dy, dz] )
 
 
 
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+
+t = np.arange(0, 50, 0.01)
+init = [1, 1, 1]
+ans = odeint( Lorenz_Chaos, init, t )
 
 
 
+plt.figure()
+plt.axes( projection='3d' )
+plt.plot( ans[:, 0], ans[:, 1], ans[:, 2] )
+
+plt.tight_layout()
+plt.show()
+```
+
+The trajectory of the Lorenz system when ρ=28, σ = 10, and β = 8/3 is shown in the following figure:
+
+![front](<../.gitbook/assets/image (19).png>)
+
+![side](<../.gitbook/assets/image (5).png>)
+
+![up](<../.gitbook/assets/image (13).png>)
+
+As you can see, Lorentz Chaos is a very complex graph. To draw this graph, scipy is used to automatically calculate the function of differential equations (I will explain it later)
+
+Lorentzian chaos is very sensitive to the initial state, even if it changes by only 0.1%, the trajectory of motion will be completely different after a few hundred iterations.
+
+```python
+def Lorenz_Chaos( init, t ):
+    x, y, z = init
+    dx = -10 * (x-y)
+    dy = 28*x - y - x*z
+    dz = -8/3*z + x*y
+    return np.array( [dx, dy, dz] )
 
 
 
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+
+t = np.arange(0, 50, 0.01)
+
+init = [1, 1, 1]
+ans = odeint( Lorenz_Chaos, init, t )
+
+init_1 = [0.999, 1, 1]
+ans_1 = odeint( Lorenz_Chaos, init_1, t )
 
 
+
+plt.figure()
+plt.axes( projection='3d' )
+plt.plot( ans[:, 0], ans[:, 1], ans[:, 2] )
+plt.plot( ans_1[:, 0], ans_1[:, 1], ans_1[:, 2] )
+
+plt.tight_layout()
+plt.show()
+```
+
+![The blue line and the orange line are getting farther and farther apart](<../.gitbook/assets/image (20).png>)
+
+The blue line in the figure is the Lorentzian chaotic trajectory with the initial state \[1, 1, 1], and the orange line is the Lorentzian chaotic trajectory with the initial state \[0.999, 1, 1]. You will find that with time t As time goes on, they are farther and farther apart.
+
+
+
+Plotting Lorentzian Chaos can improve your programming skills and improve your proficiency with differential equation calculation libraries.
 
 ## Statistics
 

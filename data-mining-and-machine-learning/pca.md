@@ -104,7 +104,7 @@ plt.ylim(-12, 12)
 plt.show()
 ```
 
-![projection](<../.gitbook/assets/image (19).png>)
+![projection](<../.gitbook/assets/image (19) (1).png>)
 
 We can change the slope of this line, and the result of the projection will change accordingly, for example:
 
