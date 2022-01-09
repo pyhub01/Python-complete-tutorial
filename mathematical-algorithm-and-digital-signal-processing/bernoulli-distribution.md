@@ -94,9 +94,27 @@ In this way, we filter out all the results with three heads and two tails, a tot
 >>> 
 ```
 
-Then the frequency of three heads and two tails in five coin tosses is: 10
+A total of 10 different throws resulted in three heads and two tails.
 
 And the probability of getting \[True, True, True, False, False] result is 0.6\*_0.6\*_0.6\*_0.4\*_0.4=0.03456
+
+So the probability of getting three heads and two tails is the product of the above two results: 10\*0.03456=0.3456
+
+## binomial distribution
+
+The calculation method of the binomial distribution uses permutations and combinations:
+
+![binomial distribution](<../.gitbook/assets/image (21).png>)
+
+
+
+
+
+
+
+
+
+
 
 
 
