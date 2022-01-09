@@ -72,3 +72,7 @@
 ## 8⃣ Cryptography
 
 * [beginning of Cryptography](cryptography/beginning-of-cryptography.md)
+
+## 💔 algorithm
+
+* [Algorithms and Data Structures](algorithm/algorithms-and-data-structures.md)
