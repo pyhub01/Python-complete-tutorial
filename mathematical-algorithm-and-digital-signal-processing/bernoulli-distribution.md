@@ -108,19 +108,7 @@ The calculation method of the binomial distribution uses permutations and combin
 
 If you follow the example just now, then in the binomial distribution formula, p is the probability of heads of the coin, and q is the probability of tails of the coin. The preceding c(n, x) is the frequency of three heads and two tails.
 
-So the probability of three heads and two tails is: c(5,2)\*_(0.6\*\*3)\*_(0.4\*\*2)
-
-
-
-
-
-
-
-
-
-
-
-
+So the probability of three heads and two tails is: **c(5, 2)\***_**(0.6\*\*3)\***_**(0.4\*\*2) or c(5, 3)\***_**(0.6\*\*3)\***_**(0.4\*\*2)** (One is counted according to the head of the coin, the other is counted according to the tail of the coin, and the result is the same)
 
 ## Statistics
 
