@@ -57,17 +57,46 @@ All cases can be printed in full using the above code.
 >>> 
 ```
 
+We can filter out the cases where three of them are positive:
 
+```python
+ans = []
 
+for a in [True, False]:
+    for b in [True, False]:
+        for c in [True, False]:
+            for d in [True, False]:
+                for e in [True, False]:
+                    ans.append([a,b,c,d,e])
 
+# print(len(ans))
+# print(ans)
 
+thrice = []
+for i in ans:
+    if sum(i)==3:
+        thrice.append(i)
 
+print(len(thrice))
+print(thrice)
+```
 
+In this way, we filter out all the results with three heads and two tails, a total of 10:
 
+```python
+10
 
+[[True, True, True, False, False], [True, True, False, True, False], 
+[True, True, False, False, True], [True, False, True, True, False], 
+[True, False, True, False, True], [True, False, False, True, True], 
+[False, True, True, True, False], [False, True, True, False, True], 
+[False, True, False, True, True], [False, False, True, True, True]]
+>>> 
+```
 
+Then the frequency of three heads and two tails in five coin tosses is: 10
 
-
+And the probability of getting \[True, True, True, False, False] result is 0.6\*_0.6\*_0.6\*_0.4\*_0.4=0.03456
 
 
 
