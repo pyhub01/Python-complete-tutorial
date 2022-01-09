@@ -57,6 +57,7 @@
 * [Mathematical constants and basic operations](mathematical-algorithm-and-digital-signal-processing/mathematical-constants-and-basic-operations.md)
 * [Normal distribution](mathematical-algorithm-and-digital-signal-processing/normal-distribution.md)
 * [Permutation and combination](mathematical-algorithm-and-digital-signal-processing/permutation-and-combination.md)
+* [Bernoulli distribution](mathematical-algorithm-and-digital-signal-processing/bernoulli-distribution.md)
 * [Chaotic system](mathematical-algorithm-and-digital-signal-processing/chaotic-system.md)
 
 ## 6⃣ Classes and design patterns
