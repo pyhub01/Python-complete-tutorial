@@ -145,11 +145,23 @@ When writing programs, we should make the function of each code block clear, so 
 
 ## Blank line
 
+Blank lines that you can use in python make your program more legible. Normally blank lines are used between two code blocks, you can blank one or more lines to make the division before the code block clearer.
 
+```python
+def fib(n):
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
 
+# The blank lines above separate the code blocks
+for i in range(1, 10):
+    print(i, fib(i))
+```
 
-
-
+{% hint style="danger" %}
+<mark style="color:red;">**Don't abuse blank lines as it will make your code fragmented!**</mark>
+{% endhint %}
 
 ## python comments
 
@@ -211,6 +223,54 @@ def fib(n):
 You can use the above methods to make your comments more prominent.
 
 ## operator
+
+### arithmetic operators
+
+Python provides operators for various calculations:
+
+```python
+>>> 1 + 2
+3
+# The addition operator can compute addition
+
+>>> 1 - 3
+-2
+# The subtraction operator can compute the subtraction
+
+>>> 1 / 3
+0.3333333333333333
+# The division operator computes division 
+# (unlike C, python can generate decimals automatically)
+
+>>> 7 * 8
+56
+# The multiplication operator calculates multiplication 
+# (python supports large number operations, 
+# you don't need to worry about overflow)
+
+>>> 5 % 2
+1
+# Use percent sign for remainder
+
+>>> 25 // 3
+8
+>>> -25 // 3
+-9
+# 25/3=8.333, // is the round down operator
+
+>>> 2 ** 10
+1024
+
+>>> 
+```
+
+
+
+
+
+
+
+
 
 
 
