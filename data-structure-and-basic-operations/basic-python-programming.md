@@ -260,13 +260,45 @@ Python provides operators for various calculations:
 
 >>> 2 ** 10
 1024
+# The two * are power operators, which can calculate exponentiation.
 
 >>> 
 ```
 
+### comparison operator
 
+Comparison operators are used to compare the size of numeric values.
 
+```python
+>>> i = 5
+# variable equals to 5
 
+>>> i < 3
+False
+# Is the variable less than 3? False
+
+>>> i > 2
+True
+# Is the variable greater than 2? True
+
+>>> i == 5
+True
+# Is the variable equal to 5? Yes
+
+>>> i != 5
+False
+# Is the variable not equal to 5? False
+
+>>> i >= 5
+True
+# Is the variable greater than or equal to 5? Yes
+
+>>> i <= 3
+False
+# Is the variable less than or equal to 3? No
+
+>>> 
+```
 
 
 
