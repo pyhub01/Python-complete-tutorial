@@ -67,7 +67,7 @@
 ## 7⃣ Operate the database with python
 
 * [MySQL](operate-the-database-with-python/mysql/README.md)
-  * [Page 2](operate-the-database-with-python/mysql/page-2.md)
+  * [Install MySQL](operate-the-database-with-python/mysql/install-mysql.md)
 
 ## 8⃣ Cryptography
 
