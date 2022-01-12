@@ -300,6 +300,58 @@ False
 >>> 
 ```
 
+### assignment operator
+
+Like C++, python supports assignment to self-increment operations:
+
+```python
+>>> test = 4
+>>> test = test + 5
+>>> test
+9
+
+>>> test_1 = 4
+>>> test_1 += 5
+>>> test_1
+9
+>>> 
+```
+
+You will find that **i=i+5** and **i+=5** mean the same thing.
+
+
+
+All operations support the increment operator:
+
+```python
+>>> i = 1
+>>> i += 1
+>>> i
+2
+
+>>> i -= 3
+>>> i
+-1
+
+>>> i *= 5
+>>> i
+-5
+
+>>> i /= 2
+>>> i
+-2.5
+
+>>> i **= 9
+>>> i
+-3814.697265625
+
+>>> 
+```
+
+The new version of python also has a walrus operator (:=), but this operator is rarely used in companies and programs for compatibility reasons, so I won't discuss it here.
+
+### bitwise operators
+
 
 
 
