@@ -20,6 +20,7 @@
 * [Data structure with hash table](data-structure-and-basic-operations/page-1.md)
 * [Variability and address](data-structure-and-basic-operations/variability-and-address.md)
 * [basic python programming](data-structure-and-basic-operations/basic-python-programming.md)
+* [basic python programming 2](data-structure-and-basic-operations/basic-python-programming-2.md)
 
 ## 🐍 Practice program
 
