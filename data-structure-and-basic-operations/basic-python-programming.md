@@ -473,17 +473,60 @@ The value of two numbers can be simply exchanged through the XOR operation. In J
 
 Because python stores label pointers, swapping two numbers using python's built-in method is just exchanging the pointers of the two numbers, which is more efficient.
 
+### Logical Operators
 
+```python
+>>> True and False
+False
+>>> True and True
+True
+>>> False and False
+False
+>>> False and True
+False
 
+>>> 0 and 30
+0
+>>> 1 and 30
+30
+>>> 5 and 30
+30
 
+>>> 
+```
 
+Logical operations are Boolean algebra operations. There are only two kinds of values in Boolean algebra, True and False. where False is 0 and True can be any value other than 0.
 
+The above code is the usage of AND.
 
+```
+>>> True or False
+True
 
+>>> not False
+True
+>>> not True
+False
+>>> 
+```
 
+The above is the usage of or and not.
 
+### member operator
 
+```python
+>>> 5 in [1,2,3,4,5]
+True
+>>> 6 in [1,2,3,4,5]
+False
 
+>>> 5 not in [1,2,3,4,5]
+False
+>>> 6 not in [1,2,3,4,5]
+True
+```
+
+The member operators are in and not in, which respectively measure whether one content is in another.
 
 ## Statistics
 
