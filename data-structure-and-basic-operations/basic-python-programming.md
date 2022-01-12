@@ -314,6 +314,7 @@ Like C++, python supports assignment to self-increment operations:
 >>> test_1 += 5
 >>> test_1
 9
+
 >>> 
 ```
 
@@ -351,6 +352,128 @@ All operations support the increment operator:
 The new version of python also has a walrus operator (:=), but this operator is rarely used in companies and programs for compatibility reasons, so I won't discuss it here.
 
 ### bitwise operators
+
+Bit manipulation is very important in computers, but it doesn't seem to be very important in a high level language like python.
+
+Basic bitwise operations include AND, OR, NOT, XOR, left shift, right shift, etc.:
+
+```python
+>>> a = 0b100011101
+>>> b = 0b101101111
+
+>>> a & b
+269
+>>> bin(a & b)
+'0b100001101'
+
+>>> 
+```
+
+Use the 0b keyword to enter a binary number (each digit can only have 0 or 1)
+
+Use the bin function to output numbers in binary form.
+
+Binary AND means that if the corresponding position of the two numbers is 1, then output 1, if not, then output 0.
+
+
+
+Binary or means that if the corresponding positions of the two numbers are not both 0, then output 1, if both are 0, output 0.
+
+```python
+>>> bin(a | b)
+'0b101111111'
+>>> 
+```
+
+
+
+Binary XOR means that if the corresponding positions of the two numbers are the same, the output is 0, and if the corresponding positions of the two numbers are different, the output is 1.
+
+```python
+>>> bin(a ^ b)
+'0b1110010'
+>>> 
+```
+
+
+
+Binary not means that if the original value of this bit is 1, output 0, if the original value of this bit is 0, output 1.
+
+Because the highest bit of a is 1, a will become a negative number after the NOT gate operation.
+
+```python
+>>> bin(~a)
+'-0b100011110'
+>>> 
+```
+
+
+
+Shifting left and right in the computer is to move the number to the left or right in the memory. Because the computer is binary, the whole number is doubled by moving one bit to the left (equivalent to multiplying by 2), and moving one bit to the right. The whole number is reduced by a factor of two (equivalent to dividing by 2)
+
+```python
+>>> a << 4
+4560
+
+>>> a >> 2
+71
+
+>>> a
+285
+
+>>> 
+```
+
+
+
+It is not recommended to use bit operations here, because using bit operations in python is not really bit operations, and does not save time than operations such as addition and subtraction (it does save time in Java)
+
+And bit operations have potential hidden dangers (data overflow problem)
+
+Here are the classic usage of bit manipulation:
+
+```python
+>>> a = 5
+>>> b = 17
+
+>>> a = a ^ b
+>>> b = a ^ b
+>>> a = a ^ b
+
+>>> a
+17
+>>> b
+5
+
+>>> 
+```
+
+The value of two numbers can be simply exchanged through the XOR operation. In Java, you need to pay special attention to the problem of incorrect results caused by negative overflow, but there is no such problem in python.
+
+{% hint style="danger" %}
+<mark style="color:red;">**It's worth noting that using the above code in python is not a good option as native code in python is more efficient.**</mark>
+{% endhint %}
+
+```python
+>>> a
+17
+>>> b
+5
+
+>>> a, b = b, a
+# best efficient of switching 2 number
+
+>>> a
+5
+>>> b
+17
+
+>>> 
+```
+
+Because python stores label pointers, swapping two numbers using python's built-in method is just exchanging the pointers of the two numbers, which is more efficient.
+
+
 
 
 
