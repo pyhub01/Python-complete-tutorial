@@ -45,6 +45,173 @@ The first and second numbers in the Fibonacci sequence are 1, and the third numb
 
 
 
+### recursive method
+
+Obviously this problem can be solved recursively: if we want to know the value of the fourth term of the Fibonacci sequence, we need to know the value of the second and third terms of the Fibonacci sequence, where the second term is 1 , if we want to know the value of the third term of the Fibonacci sequence, we need to know the value of the first and second terms of the Fibonacci sequence, both of which are 1. So the recursive program is written:
+
+```python
+def fib(n):
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+```
+
+I can add an output to the function so we can see exactly what terms are computed by the function:
+
+```python
+def fib(n):
+    print(n, end=' ')
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+```
+
+We can call fib(10) to see exactly how much this function computes:
+
+```python
+10 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 
+2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 
+8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 
+2 1 4 3 2 1 2 
+>>> 
+```
+
+We can call fib(15) to see exactly how much this function computes:
+
+```python
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 
+1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 
+2 1 2 3 2 1 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 
+3 2 1 2 3 2 1 4 3 2 1 2 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 
+2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 
+5 4 3 2 1 2 3 2 1 10 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 
+3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 
+4 3 2 1 2 3 2 1 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6
+ 5 4 3 2 1 2 3 2 1 4 3 2 1 2 11 10 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 
+ 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 
+ 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 
+ 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 9 8 7 6 5 4 3 2 1 2 3 
+ 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 
+ 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 12 11 10 9 8 7 6 5 4 3 2
+  1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2
+   7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 8 7 6 5 4 3 2 1 
+   2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 
+   9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 
+   2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 
+   1 10 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3
+    2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2
+     3 2 1 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 
+     3 2 1 2 3 2 1 4 3 2 1 2 13 12 11 10 9 8 7 6 5 4 3 2 1 2 3 2 1 4 
+     3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 
+     3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 8 7 6 5 4 3 2 1 2 3 2 
+     1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 9 8 
+     7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 
+     3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 
+     1 10 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4
+      3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2
+       1 2 3 2 1 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 
+       6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 11 10 9 8 7 6 5 4 3 2 1 2 3 2 1 
+       4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 
+       5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 8 7 6 5 4 3 2 1 
+       2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 4 3 2 1 2 3 2 1 4 3 2 
+       1 2 9 8 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 3 2 1 2 3 2 1 6 5 
+       4 3 2 1 2 3 2 1 4 3 2 1 2 7 6 5 4 3 2 1 2 3 2 1 4 3 2 1 2 5 4 
+       3 2 1 2 3 2 1 
+>>> 
+```
+
+The complexity of computing the Fibonacci sequence using recursion increases exponentially with N! This is something that computers can't afford! If we want to calculate the 100th term of the Fibonacci sequence, then I am afraid it will take several days and dozens of gigabytes of memory.
+
+
+
+Python provides us with a way to quickly make recursion easy: lru\_cache, which can memorize results that have already been generated, so that Python doesn't need to recompute what has already been computed. Especially useful when generating Fibonacci sequences:
+
+```python
+from functools import lru_cache
+
+@lru_cache
+def fib(n):
+    print(n, end=' ')
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+```
+
+We still run fib(15), and the output is very different from before:
+
+```python
+15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+>>> 
+```
+
+Because of the memory with lru\_cache, the program only calculates 15 times, and the result of each time is saved in a python array.
+
+
+
+We can even calculate the 100th term of the Fibonacci sequence like this, which must be an astronomical number:
+
+```python
+from functools import lru_cache
+
+@lru_cache
+def fib(n):
+    print(n, end=' ')
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+
+
+
+print()
+print()
+print()
+print(fib(100))
+```
+
+The calculation results are as follows:
+
+```python
+100 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 
+82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 
+64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 
+46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 
+28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 
+10 9 8 7 6 5 4 3 2 1 
+
+354224848179261915075
+```
+
+
+
+We can also try subsequent items, such as the 1000th item, but python has a recursion depth limit, and an error will be reported if this limit is exceeded:
+
+```python
+Traceback (most recent call last):
+  File "xxx.py", line 20, in <module>
+    print(fib(1000))
+  File "xxx.py", line 9, in fib
+    return fib(n-1) + fib(n-2)
+  File "xxx.py", line 9, in fib
+    return fib(n-1) + fib(n-2)
+  File "xxx.py", line 9, in fib
+    return fib(n-1) + fib(n-2)
+  [Previous line repeated 509 more times]
+RecursionError: maximum recursion depth exceeded
+>>> 
+```
+
+
+
+
+
+
+
+
+
 
 
 
