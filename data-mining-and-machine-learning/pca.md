@@ -118,7 +118,7 @@ y = -x
 y = x
 ```
 
-![Result 2](<../.gitbook/assets/image (17).png>)
+![Result 2](<../.gitbook/assets/image (17) (1).png>)
 
 We call the result above as result 1, and the result below as result 2.
 
