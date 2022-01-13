@@ -73,25 +73,111 @@ You will find that when the function executes to the return statement, the follo
 
 
 
+### Recursive execution of functions
+
+Nesting yourself inside a function allows the function to run recursively:
+
+```python
+def add(num):
+
+    print(num)
+    
+    if num > 10:
+        # end the func
+        return
+    
+    add(num + 1)
 
 
 
+add(0)
+```
+
+This function calls itself internally, so the execution process of this function will become more complicated. The following is the result of running the above code:
+
+```python
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+>>> 
+```
+
+return is used to end the function, so when the return is reached, the function ends. This function increments the result by 1 each time until the result is greater than 10 and exits the function and ends the program.
 
 
 
+The most classic example of recursion is the Fibonacci sequence.
+
+The first and second numbers in the Fibonacci sequence are 1, and the third number is equal to the sum of the first and second numbers. The fourth number is equal to the sum of the second and third numbers. And so on, each term is equal to the sum of the previous two.
+
+We can write a simple function to calculate the N-th term of the Fibonacci sequence:
+
+```python
+def fib(n):
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
 
 
 
+print(fib(10))
+```
+
+Got the following result:
+
+```python
+55
+>>> 
+```
 
 
 
+Of course, we can also write a loop to calculate the first 10 items of the Fibonacci sequence:
+
+```python
+def fib(n):
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
 
 
 
+for i in range(10):
+    print(fib(i))
+```
 
+The result obtained is as follows (the first row is the result of N=0)
 
+```python
+1
+1
+1
+2
+3
+5
+8
+13
+21
+34
+>>> 
+```
 
+Unfortunately, solving the Fibonacci sequence recursively is the most computationally expensive method, and the most computationally efficient method is the mathematical formula method, followed by the round-robin method.
 
+If you calculate the 100th term of the Fibonacci sequence recursively, you may wait hours without results.
+
+You will find that recursion is complex and error prone, and we will cover it in a separate chapter later.
 
 ## Statistics
 
