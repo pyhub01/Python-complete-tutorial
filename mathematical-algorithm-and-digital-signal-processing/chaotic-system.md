@@ -94,7 +94,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![The blue line and the orange line are getting farther and farther apart](<../.gitbook/assets/image (20).png>)
+![The blue line and the orange line are getting farther and farther apart](<../.gitbook/assets/image (20) (1).png>)
 
 The blue line in the figure is the Lorentzian chaotic trajectory with the initial state \[1, 1, 1], and the orange line is the Lorentzian chaotic trajectory with the initial state \[0.999, 1, 1]. You will find that with time t As time goes on, they are farther and farther apart.
 

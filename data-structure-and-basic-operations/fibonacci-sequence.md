@@ -278,21 +278,46 @@ The above function can calculate the result of the first ten terms of the Fibona
 
 In each calculation, b is equal to the sum of the two items, and a is equal to b, so it is like pulling a zipper(Climb up step by step.) to calculate the Fibonacci sequence.
 
+### Mathematical method
 
+In the previous two methods, if we need to calculate the N-th term of the Fibonacci sequence, we need to calculate all the previous terms, which will take a long time. Mathematical methods are not required these at all. First, the general term formula of the Fibonacci sequence is obtained through mathematical method, and then any term of the Fibonacci sequence can be obtained by only one calculation:
 
+![General term formula](<../.gitbook/assets/image (20).png>)
 
+```python
+def fib(n):
+    sqrt5 = 5 ** 0.5
+    return ( ((1+sqrt5)/2)**n - ((1-sqrt5)/2)**n ) / sqrt5
 
+for i in range(1, 11):
+    print(fib(i))
+```
 
+Got the following result:
 
+```python
+1.0
+1.0
+2.0
+3.0000000000000004
+5.000000000000001
+8.000000000000002
+13.000000000000002
+21.000000000000004
+34.00000000000001
+55.000000000000014
+>>> 
+```
 
+The mathematical method is very fast, but it should be noted that exponentiation is not a basic operation, and exponentiation takes a lot of CPU time, so this method is not as good as expected.
 
+### Summarize
 
+Of the above methods, the slowest is the recursive method, which uses exponential time complexity. If you want to calculate the 100th item, modern computers cannot give the result in 1 minute. That is to say, this method fails.
 
+The recursive method which uses lru\_cache and looping methods are easy to think of and easy to program and not difficult for computer to finish running in time, which are highly recommended here.
 
-
-
-
-
+Mathematical methods are generally the fastest, but also the hardest to come up with, so are not highly recommended here. In general, the built-in functions of python are optimized using mathematical methods, which is why it is difficult for the algorithms you write to outperform the functions that come with python.
 
 ## Statistics
 
