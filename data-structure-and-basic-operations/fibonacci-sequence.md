@@ -204,11 +204,79 @@ RecursionError: maximum recursion depth exceeded
 >>> 
 ```
 
+Use the following statement to set the recursion limit to 10000 so that calculating the 1000th term of the Fibonacci sequence will not exceed the python limit.
+
+```python
+import sys
+sys.setrecursionlimit(10000)
+```
+
+The complete recursive program looks like this:
+
+```python
+import sys
+sys.setrecursionlimit(10000)
+
+from functools import lru_cache
+
+@lru_cache
+def fib(n):
+    # print(n, end=' ')
+    if n <= 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+
+print(fib(1000))
+```
+
+The result is a fairly large number:
+
+```python
+4346655768693745643568852767504062580256466051737178040248172908953655
+5417949051890403879840079255169295922593080322634775209689623239873322
+471161642996440906533187938298969649928516003704476137795166849228875
+>>> 
+```
+
+And you will find that the calculation speed is extremely fast after using lru\_cache, and it basically does not take time.
+
+### loop method
+
+There are three ways to calculate the Fibonacci sequence in python. The circular method ranks in the middle. Whether it is the difficulty of this method or the amount of calculation, the circular method performs well.
+
+```python
+def fib(n):
+    a = 1
+    b = 1
+    for _ in range(n-1):
+        a, b = b, a + b
+
+    return a
 
 
 
+for i in range(1, 11):
+    print(fib(i))
+```
 
+The above function can calculate the result of the first ten terms of the Fibonacci sequence:
 
+```python
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+>>> 
+```
+
+In each calculation, b is equal to the sum of the two items, and a is equal to b, so it is like pulling a zipper(Climb up step by step.) to calculate the Fibonacci sequence.
 
 
 
