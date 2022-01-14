@@ -21,7 +21,7 @@
 * [Variability and address](data-structure-and-basic-operations/variability-and-address.md)
 * [basic python programming](data-structure-and-basic-operations/basic-python-programming.md)
 * [basic python programming 2](data-structure-and-basic-operations/basic-python-programming-2.md)
-* [basic python programming 2](data-structure-and-basic-operations/basic-python-programming-2-1.md)
+* [basic python programming 3](data-structure-and-basic-operations/basic-python-programming-3.md)
 * [Fibonacci sequence](data-structure-and-basic-operations/fibonacci-sequence.md)
 
 ## 🐍 Practice program
