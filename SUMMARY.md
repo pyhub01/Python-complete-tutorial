@@ -23,7 +23,7 @@
 * [basic python programming 2](data-structure-and-basic-operations/basic-python-programming-2.md)
 * [basic python programming 3](data-structure-and-basic-operations/basic-python-programming-3.md)
 * [Fibonacci sequence](data-structure-and-basic-operations/fibonacci-sequence.md)
-* [txt file operation](data-structure-and-basic-operations/txt-file-operation.md)
+* [txt/csv file operation](data-structure-and-basic-operations/txt-csv-file-operation.md)
 
 ## 🐍 Practice program
 

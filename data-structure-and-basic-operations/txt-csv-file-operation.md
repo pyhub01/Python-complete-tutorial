@@ -2,7 +2,7 @@
 coverY: 0
 ---
 
-# txt file operation
+# txt/csv file operation
 
 Manipulating txt documents is a very important lesson. Writing, appending, and reading txt documents is very common in python programming.
 
@@ -43,6 +43,21 @@ After running the above program, you will get a file called test.txt in the fold
 18
 19
 ```
+
+You can also write to a file using the file's own features:
+
+```python
+fw = open('test.txt', 'w')
+
+for i in range(20):
+    fw.write(str(i)+'\n')
+
+fw.close()
+```
+
+You can get the exact same file.
+
+
 
 
 
