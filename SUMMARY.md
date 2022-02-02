@@ -32,6 +32,10 @@
 * [🚩 Remove duplicate elements](practice-program/remove-duplicate-elements.md)
 * [🚩 Palindrome detection](practice-program/palindrome-detection.md)
 
+## 😎 leetcode
+
+* [what is leetcode](leetcode/what-is-leetcode.md)
+
 ## 3⃣ Data mining and machine learning
 
 * [What is data mining](data-mining-and-machine-learning/what-is-data-mining.md)

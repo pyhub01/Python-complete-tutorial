@@ -146,14 +146,44 @@ So when we reverse the logic, we run into the De Morgan formula problem.
 
 A simple example is:
 
-In a computer test, the scores range from 0 to 100. Now the number of people with scores from 60 to 80 is counted. The statistical method is to select the number of people with scores greater than 60 and scores less than 80.
+In a computer test, the scores range from 0 to 100. Now the number of people with scores from 60 to 80 is counted. The statistical method is to select the number of people with scores **greater than** 60 **and** scores **less than** 80.
+
+If we want to count people other than the above scores, we need to count the number of people whose scores are **less than or equal to** 60 **or** whose scores are **greater than or equal to** 80.
+
+When reversing the logic, not only reverse the **and** and **or**, but also **reverse the logical sign** (greater than becomes less than or equal, greater than or equal to less than, less than becomes greater than or equal, less than or equal to greater than) This is De Morgan formula.
+
+This is reflected in the above example of judging leap years in ordinary years.
 {% endhint %}
 
 <mark style="color:red;">****</mark>
 
 If statements can be nested:
 
+```python
+a = 10
 
+if a > 3:
+    print('a > 3')
+    if a > 5:
+        print('a > 5')
+        if a > 7:
+            print('a > 7')
+            if a > 9:
+                print('a > 9')
+                if a > 11:
+                    print('a > 11')
+                else:
+                    print('a < 11')
+```
+
+```python
+a > 3
+a > 5
+a > 7
+a > 9
+a < 11
+>>> 
+```
 
 
 
