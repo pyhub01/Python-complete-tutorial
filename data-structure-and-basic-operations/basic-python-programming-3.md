@@ -3,11 +3,15 @@ description: basic logic
 coverY: 0
 ---
 
-# basic python programming 2
+# basic python programming 3
 
 In today's tutorial I'll cover basic logic and loops:
 
+## Conditional control
 
+
+
+## loops
 
 
 
