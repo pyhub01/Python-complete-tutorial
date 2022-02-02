@@ -191,6 +191,22 @@ It is possible to use multiple levels of if for nesting, but doing so clutters u
 
 There are two kinds of loop statements in python, while and for.
 
+### while loops
+
+For code clarity, the while loop is only used as an infinite loop.
+
+An infinite loop is a loop that does not stop. This loop will continue to run until an error occurs in the program or is terminated manually or a **break** statement is read.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
