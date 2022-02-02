@@ -185,7 +185,7 @@ a < 11
 >>> 
 ```
 
-
+It is possible to use multiple levels of if for nesting, but doing so clutters up the code, so don't do it if it's not necessary.
 
 ## loops
 
