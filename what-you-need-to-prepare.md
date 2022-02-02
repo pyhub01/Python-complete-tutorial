@@ -53,7 +53,7 @@ If you are using python for graphics rendering, then the general game graphics c
 
 If you are doing deep learning, then the best graphics card is NVIDIA’s computing card:
 
-![V100 computing card @ $8000 ](<.gitbook/assets/image (9).png>)
+![V100 computing card @ $8000 ](<.gitbook/assets/image (9) (1).png>)
 
 This kind of graphics card is generally configured on the server and is cooled by a violent fan with huge noise. The general civilian computer rarely has such a computing card. This kind of computing card has only PCIE slot, and does not have any graphics output interface (DVI or HDMI or VGA). So this kind of graphics card can only be used for calculations.
 

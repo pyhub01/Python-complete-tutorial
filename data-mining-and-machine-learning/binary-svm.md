@@ -719,7 +719,7 @@ Then comes the higher-order Taylor expansion:
 
 ![N = 7](<../.gitbook/assets/image (6) (1) (1) (1).png>)
 
-![N = 8](<../.gitbook/assets/image (9) (1).png>)
+![N = 8](<../.gitbook/assets/image (9) (1) (1).png>)
 
 ![N = 9](<../.gitbook/assets/image (8) (1).png>)
 
