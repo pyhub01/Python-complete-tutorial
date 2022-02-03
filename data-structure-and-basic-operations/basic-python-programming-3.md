@@ -308,19 +308,51 @@ This way we can print out the numbers in the range.
 
 
 
+Python is a flexible language, so we can use for to construct arrays:
+
+```python
+>>> [i for i in range(10)]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+```
+
+We can also add calculations to it:
+
+```python
+>>> [i**2 for i in range(10)]
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> 
+```
+
+Similarly we can construct dictionaries using this method:
+
+```python
+>>> {i:i**2 for i in range(10)}
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+>>> 
+```
+
+A basic operation is: if we need to manually write an FFT (fast Fourier transform) program, then a large amount of sin and cos data needs to be calculated, but we can calculate it in advance and call these data later. Because it takes a lot of time to calculate functions like sin, but it takes almost no time to call, we can do the repeated calculation in advance, so that there is no need to repeat the calculation.
+
+```python
+>>> import math
+>>> math.sin(1/2*math.pi)
+1.0
+>>> sin_table = {i/16:math.sin(i/16*math.pi) for i in range(16)}
+>>> sin_table
+{0.0: 0.0, 0.0625: 0.19509032201612825, 0.125: 0.3826834323650898, 0.1875: 0.5555702330196022, 0.25: 0.7071067811865476, 0.3125: 0.8314696123025452, 0.375: 0.9238795325112867, 0.4375: 0.9807852804032304, 0.5: 1.0, 0.5625: 0.9807852804032304, 0.625: 0.9238795325112867, 0.6875: 0.8314696123025453, 0.75: 0.7071067811865476, 0.8125: 0.5555702330196022, 0.875: 0.3826834323650899, 0.9375: 0.1950903220161286}
+>>> 
+```
+
+Note that sin and cos in the math library in python use radians, so your data should also be in radians.
+
+The cos table can also be calculated using a similar method.
 
 
 
-
-
-
-
-
-
-
-
-
-
+{% hint style="success" %}
+<mark style="color:green;">**After these chapters, you have mastered the Turing-complete python language, and you can start practicing programming!**</mark>
+{% endhint %}
 
 ## Statistics
 
