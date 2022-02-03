@@ -272,12 +272,45 @@ for each in ['a', 'c', 'f', 'k']:
 ```
 
 ```python
-// Some codea
+a
 c
 f
 k
 >>> 
 ```
+
+You will see that the **for** loop prints each item in the list.
+
+
+
+Loops can be controlled more easily with ranges:
+
+```python
+for num in range(10):
+    print(num)
+```
+
+```python
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> 
+```
+
+This way we can print out the numbers in the range.
+
+
+
+
+
+
 
 
 
