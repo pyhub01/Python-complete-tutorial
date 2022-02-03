@@ -22,6 +22,7 @@
 * [basic python programming](data-structure-and-basic-operations/basic-python-programming.md)
 * [basic python programming 2](data-structure-and-basic-operations/basic-python-programming-2.md)
 * [basic python programming 3](data-structure-and-basic-operations/basic-python-programming-3.md)
+* [some additions](data-structure-and-basic-operations/some-additions.md)
 * [Fibonacci sequence](data-structure-and-basic-operations/fibonacci-sequence.md)
 * [Judging prime numbers](data-structure-and-basic-operations/judging-prime-numbers.md)
 * [txt/csv file operation](data-structure-and-basic-operations/txt-csv-file-operation.md)
