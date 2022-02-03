@@ -38,6 +38,7 @@ All operators support auto-increment:
 >>> a /= 4
 >>> a
 -0.5
+
 >>> a *= 10
 >>> a
 -5.0
