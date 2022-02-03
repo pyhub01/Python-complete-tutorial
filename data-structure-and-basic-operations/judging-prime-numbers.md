@@ -156,7 +156,7 @@ def prime_detect_v3(num):
         return 'prime number'
     if num % 2 == 0:
         return 'composite number'
-    for i in range( 2, int(math.sqrt(num))+1 ):
+    for i in range( 3, int(math.sqrt(num))+1, 2 ):
         if num % i == 0:
             return 'composite number'
     return 'prime number'
