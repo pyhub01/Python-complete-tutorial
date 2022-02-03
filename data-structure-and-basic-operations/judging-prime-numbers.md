@@ -200,7 +200,7 @@ for i in range(2, 30):
 >>> 
 ```
 
-But since 2 is also the first number to be tested if you follow the normal process, this method does not change much.
+But since 2 is also the first number to be tested if you follow the normal process, this method does not change that much. Using this method reduces the amount of computation by about half.
 
 
 
