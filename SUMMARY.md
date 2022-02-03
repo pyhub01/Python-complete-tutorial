@@ -84,6 +84,10 @@
 
 * [beginning of Cryptography](cryptography/beginning-of-cryptography.md)
 
+## 9⃣ deep learning
+
+* [What is Deep Learning](deep-learning/what-is-deep-learning.md)
+
 ## 💔 algorithm
 
 * [Algorithms and Data Structures](algorithm/algorithms-and-data-structures.md)
