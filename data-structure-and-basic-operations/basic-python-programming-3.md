@@ -197,19 +197,87 @@ For code clarity, the while loop is only used as an infinite loop.
 
 An infinite loop is a loop that does not stop. This loop will continue to run until an error occurs in the program or is terminated manually or a **break** statement is read.
 
+In a computer program, if a program is terminated, the program will return to the operating system, but if there is no operating system in an embedded device or a microcontroller, the program must be written as an infinite loop, otherwise the program in the microcontroller will run away ( go where it shouldn't).
 
+```python
+i = 0
 
+while True:
+    i += 1
+    print(i)
+    if i > 10:
+        break
+```
 
+This is a complete while program. In most cases, while is an infinite loop, and there will be no **break** out of the process.
 
+```python
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+>>> 
+```
 
+### break
 
+break can terminate the loop. There is usually a judgment condition before the break (otherwise, the loop will be terminated as soon as it reaches the break, and the loop will be meaningless)
 
+Check the program just now, break is executed when i is greater than 10, so when i is equal to 11, that is, when i is greater than 10, the loop is aborted.
 
+### continue
 
+Continue is another loop control condition other than break.
 
+If the program executes to continue, the current round of the loop is terminated and the loop will enter the next round.
 
+```python
+for i in range(10):
 
+    if i == 4:
+        continue
 
+    print(i)
+```
+
+When the program runs to 4, the program enters the continue state, then this round of 4 is skipped, as in the following output.
+
+```python
+0
+1
+2
+3
+5
+6
+7
+8
+9
+>>> 
+```
+
+### for loops
+
+In order to make the program look simple, in general, the while loop is only used as an infinite loop, and the for loop assumes other loop tasks.
+
+```python
+for each in ['a', 'c', 'f', 'k']:
+    print(each)
+```
+
+```python
+// Some codea
+c
+f
+k
+>>> 
+```
 
 
 
