@@ -69,15 +69,70 @@ We simply run it and the program is correct.
 
 In the first attempt we only considered correctness, this version we consider efficiency:
 
+The most time-consuming thing in determining prime function is the loop. If we can reduce the number of loops, then the efficiency of our program can increase.
 
+If there is a number 29, and we want to determine whether it is a prime number or not, do we need to try from 2 all the way to 28? No, because if numbers up to (square 29)+1 are not divisible by 29, then neither can numbers over (square 29)+1.
 
+```python
+def prime_detect_v1(num):
+    for i in range(2, num):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+import math
 
+def prime_detect_v2(num):
+    for i in range( 2, int(math.sqrt(num))+1 ):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+for i in range(2, 30):
+    print(i, end='\t')
+    # print(prime_detect_v1(i))
+    print(prime_detect_v2(i))
+```
 
+```python
+2	prime number
+3	prime number
+4	composite number
+5	prime number
+6	composite number
+7	prime number
+8	composite number
+9	composite number
+10	composite number
+11	prime number
+12	composite number
+13	prime number
+14	composite number
+15	composite number
+16	composite number
+17	prime number
+18	composite number
+19	prime number
+20	composite number
+21	composite number
+22	composite number
+23	prime number
+24	composite number
+25	composite number
+26	composite number
+27	composite number
+28	composite number
+29	prime number
+>>> 
+```
 
+Such a method reduces a considerable amount of computation.
 
+## third attempt
 
+The second attempt reduced the computational load by a considerable amount, so can we go further?
+
+YES!
 
 
 
