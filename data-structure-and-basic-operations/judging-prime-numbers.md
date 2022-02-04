@@ -312,13 +312,15 @@ This approach has reached the limit of artificial optimization, so we will not u
 
 The previous algorithm has reached the limit of optimization, so if we want to continue to optimize the program, we can only change the algorithm.
 
-There are three different measures of **Labor complexity** and **space complexity** and **time complexity** in the program.
+There are three different measures of <mark style="color:blue;">**Labor complexity**</mark> and <mark style="color:orange;">**space complexity**</mark> and <mark style="color:green;">**time complexity**</mark> in the program.
 
-**Labor complexity** refers to the labor cost of writing a program. The simpler the program, the lower the labor complexity, and vice versa.
+<mark style="color:blue;">**Labor complexity**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">refers to the labor cost of writing a program. The simpler the program, the lower the labor complexity, and vice versa.</mark>
 
+<mark style="color:blue;">We use python because the</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**Labor complexity**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">of python is very low, so many python programs do not care so much about the time complexity or space complexity, because in scientific research, most programs do not run many times, and the length of time to write code is long. Much larger than the running time, and writing the program quickly is the most important.</mark>
 
+<mark style="color:orange;">**Space complexity**</mark> <mark style="color:orange;"></mark><mark style="color:orange;">refers to the memory and disk size occupied by a program. The larger the space complexity, the larger the disk and memory size occupied by the program.</mark>
 
-
+<mark style="color:green;">**Time complexity**</mark> <mark style="color:green;"></mark><mark style="color:green;">refers to the length of the running time of the program. In theory, we can calculate the time complexity of the program running (check algorithm books for details, and mathematics is not explained here). However, due to the multi-level cache mechanism of the computer and the connection mechanism of the memory, the time complexity is complicated. It is difficult to predict correctly (we are only predicting a trend), so the time complexity of a program is often calculated by running the program thousands of times (most programs run for a very short time, and the measured results are inaccurate) and measure the actual time divided by number of times the programming runs.</mark>
 
 
 
