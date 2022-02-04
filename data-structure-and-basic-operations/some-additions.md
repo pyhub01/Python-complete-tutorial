@@ -14,9 +14,9 @@ coverY: 0
 >>> 
 ```
 
-a += 3 and a = a + 3 have the same meaning. This is an auto-increment operation.
+**a += 3** and **a = a + 3** have the same meaning. This is an auto-increment operation.
 
-Unlike C++ or Java, there is no such way as a++ in python, if you want a to increment by 1, then you need a += 1
+Unlike C++ or Java, there is no such way as a++ in python, if you want a to increment by 1, then you need **a += 1**
 
 All operators support auto-increment:
 
