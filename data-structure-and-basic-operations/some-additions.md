@@ -61,7 +61,7 @@ In Python, a <mark style="color:red;">**.py**</mark> file is a module. In genera
 
 **\_\_name\_\_** holds the current module name. When the module is run directly, the module name is **\_\_main\_\_**.
 
-So, **if \_\_name\_\_ = '\_\_ main\_\_':** means: when the module is run directly, the code block below this line will be run; when the module is imported (import), the code block will not be run.
+So, **if \_\_name\_\_ == '\_\_ main\_\_':** means: when the module is run directly, the code block below this line will be run; when the module is imported (import), the code block will not be run.
 
 
 
