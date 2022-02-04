@@ -210,19 +210,111 @@ Any natural number can always be expressed in one of the following six forms: 6n
 
 We can find that, apart from 2 and 3, only numbers of the form 6n+1 and 6n+5 can be prime numbers. And if numbers of the form 6n+1 and 6n+5 are not prime numbers, their factors will also contain numbers of the form 6n+1 or 6n+5, so the following algorithm can be obtained:
 
+```python
+def prime_detect_v1(num):
+    for i in range(2, num):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+import math
 
+def prime_detect_v2(num):
+    for i in range( 2, int(math.sqrt(num))+1 ):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+def prime_detect_v3(num):
+    if num == 2:
+        return 'prime number'
+    if num % 2 == 0:
+        return 'composite number'
+    for i in range( 3, int(math.sqrt(num))+1, 2 ):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+def prime_detect_v4(num):
+    if num == 2 or num == 3:
+        return 'prime number'
+    if num % 6 != 1 and num % 6 != 5:
+        return 'composite number'
+    for i in range( 5, int(math.sqrt(num))+1, 6 ):
+        if num % i == 0 or num % (i + 2) == 0:
+            return 'composite number'
+    return 'prime number'
 
+for i in range(2, 50):
+    print(i, end='\t')
+    # print(prime_detect_v1(i))
+    # print(prime_detect_v2(i))
+    # print(prime_detect_v3(i))
+    print(prime_detect_v4(i))
 
+```
 
+```python
+2	prime number
+3	prime number
+4	composite number
+5	prime number
+6	composite number
+7	prime number
+8	composite number
+9	composite number
+10	composite number
+11	prime number
+12	composite number
+13	prime number
+14	composite number
+15	composite number
+16	composite number
+17	prime number
+18	composite number
+19	prime number
+20	composite number
+21	composite number
+22	composite number
+23	prime number
+24	composite number
+25	composite number
+26	composite number
+27	composite number
+28	composite number
+29	prime number
+30	composite number
+31	prime number
+32	composite number
+33	composite number
+34	composite number
+35	composite number
+36	composite number
+37	prime number
+38	composite number
+39	composite number
+40	composite number
+41	prime number
+42	composite number
+43	prime number
+44	composite number
+45	composite number
+46	composite number
+47	prime number
+48	composite number
+49	composite number
+>>> 
+```
 
+This approach has reached the limit of artificial optimization, so we will not use the same method to optimize this program (you can add 5 or 7 optimization algorithms, but these optimizations decrease marginally as the number increases, and the code changes It is too complicated, so I will not continue to use this method to optimize)
 
+## fifth attempt
 
+The previous algorithm has reached the limit of optimization, so if we want to continue to optimize the program, we can only change the algorithm.
 
+There are three different measures of **Labor complexity** and **space complexity** and **time complexity** in the program.
 
-
+**Labor complexity** refers to the labor cost of writing a program. The simpler the program, the lower the labor complexity, and vice versa.
 
 
 
