@@ -251,7 +251,6 @@ for i in range(2, 50):
     # print(prime_detect_v2(i))
     # print(prime_detect_v3(i))
     print(prime_detect_v4(i))
-
 ```
 
 ```python
@@ -306,7 +305,9 @@ for i in range(2, 50):
 >>> 
 ```
 
-This approach has reached the limit of artificial optimization, so we will not use the same method to optimize this program (you can add 5 or 7 optimization algorithms, but these optimizations decrease marginally as the number increases, and the code changes It is too complicated, so I will not continue to use this method to optimize)
+This approach has reached the limit of artificial optimization, so we will not use the same method to optimize this program (you can add 5 or 7 optimization algorithms, but these optimizations decrease marginally as the number increases, and the code changes is too complicated, so I will not continue to use this method to optimize)
+
+We'll improve this method in our final attempt, and you'll see the tremendous power of using mathematical algorithms.
 
 ## fifth attempt
 
@@ -322,15 +323,183 @@ There are three different measures of <mark style="color:blue;">**Labor complexi
 
 <mark style="color:green;">**Time complexity**</mark> <mark style="color:green;"></mark><mark style="color:green;">refers to the length of the running time of the program. In theory, we can calculate the time complexity of the program running (check algorithm books for details, and mathematics is not explained here). However, due to the multi-level cache mechanism of the computer and the connection mechanism of the memory, the time complexity is complicated. It is difficult to predict correctly (we are only predicting a trend), so the time complexity of a program is often calculated by running the program thousands of times (most programs run for a very short time, and the measured results are inaccurate) and measure the actual time divided by number of times the programming runs.</mark>
 
+For a series of algorithms that are not stupid, the weighted product of Labor complexity and space complexity and time complexity is generally similar. That is to say, if the Labor complexity of an algorithm is relatively high, then the space complexity and time complexity of the algorithm will be relatively low.
 
+In the previous program, the program became more and more complex, which is our Labor complexity has been increasing, but the corresponding time complexity has been decreasing.
 
+Now our time complexity can't seem to be reduced, so we can convert some time complexity and  Labor complexity <mark style="color:blue;">****</mark> into space complexity to reduce time complexity and Labor complexity.
 
+Today's computers are more resourceful (not always running out of memory as in 1990) and many programs can mediate between these three complexities.
 
+```python
+def prime_detect_v1(num):
+    for i in range(2, num):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+import math
 
+def prime_detect_v2(num):
+    for i in range( 2, int(math.sqrt(num))+1 ):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+def prime_detect_v3(num):
+    if num == 2:
+        return 'prime number'
+    if num % 2 == 0:
+        return 'composite number'
+    for i in range( 3, int(math.sqrt(num))+1, 2 ):
+        if num % i == 0:
+            return 'composite number'
+    return 'prime number'
 
+def prime_detect_v4(num):
+    if num == 2 or num == 3:
+        return 'prime number'
+    if num % 6 != 1 and num % 6 != 5:
+        return 'composite number'
+    for i in range( 5, int(math.sqrt(num))+1, 6 ):
+        if num % i == 0 or num % (i + 2) == 0:
+            return 'composite number'
+    return 'prime number'
 
+import numpy as np
+prime_list = np.array([2]) # init
+
+def prime_detect_v5(num):
+    global prime_list # passed to the function
+    for i in prime_list[ prime_list < int(math.sqrt(num))+1 ]:
+        if num % i == 0:
+            return 'composite number'
+    
+    prime_list = np.append(prime_list, num)
+    return 'prime number'
+
+for i in range(2, 100):
+    print(i, end='\t')
+    # print(prime_detect_v1(i))
+    # print(prime_detect_v2(i))
+    # print(prime_detect_v3(i))
+    # print(prime_detect_v4(i))
+    print(prime_detect_v5(i))
+```
+
+In this method we build an array in which we keep all the prime numbers that have been tested.
+
+Then we only need to divide the detected number by all the values in the array that are less than the square root of the detected number when we perform the detection.
+
+This method has the same time complexity as the previous method, and the space complexity is much larger, but it is very easy to think of.
+
+If a number is even, then the first number 2 in the array can rule out that the number is prime, and if a number is a multiple of 3, then the second number 3 in the array can rule out the number being prime.
+
+The disadvantage of this method is that the continuous sequence must be detected, and in reality we generally only need to detect whether a certain number is a prime number. Which this method doesnot work.
+
+```python
+2	prime number
+3	prime number
+4	composite number
+5	prime number
+6	composite number
+7	prime number
+8	composite number
+9	composite number
+10	composite number
+11	prime number
+12	composite number
+13	prime number
+14	composite number
+15	composite number
+16	composite number
+17	prime number
+18	composite number
+19	prime number
+20	composite number
+21	composite number
+22	composite number
+23	prime number
+24	composite number
+25	composite number
+26	composite number
+27	composite number
+28	composite number
+29	prime number
+30	composite number
+31	prime number
+32	composite number
+33	composite number
+34	composite number
+35	composite number
+36	composite number
+37	prime number
+38	composite number
+39	composite number
+40	composite number
+41	prime number
+42	composite number
+43	prime number
+44	composite number
+45	composite number
+46	composite number
+47	prime number
+48	composite number
+49	composite number
+50	composite number
+51	composite number
+52	composite number
+53	prime number
+54	composite number
+55	composite number
+56	composite number
+57	composite number
+58	composite number
+59	prime number
+60	composite number
+61	prime number
+62	composite number
+63	composite number
+64	composite number
+65	composite number
+66	composite number
+67	prime number
+68	composite number
+69	composite number
+70	composite number
+71	prime number
+72	composite number
+73	prime number
+74	composite number
+75	composite number
+76	composite number
+77	composite number
+78	composite number
+79	prime number
+80	composite number
+81	composite number
+82	composite number
+83	prime number
+84	composite number
+85	composite number
+86	composite number
+87	composite number
+88	composite number
+89	prime number
+90	composite number
+91	composite number
+92	composite number
+93	composite number
+94	composite number
+95	composite number
+96	composite number
+97	prime number
+98	composite number
+99	composite number
+>>> 
+```
+
+## Final Attempt (Mathematical Method)
 
 
 
