@@ -202,6 +202,60 @@ for i in range(2, 30):
 
 But since 2 is also the first number to be tested if you follow the normal process, this method does not change that much. Using this method reduces the amount of computation by about half.
 
+## fourth attempt
+
+In the third attempt, we ruled out all multiples of 2, so can we do the same for multiples of 3? Of course it is possible.
+
+Any natural number can always be expressed in one of the following six forms: 6n, 6n+1, 6n+2, 6n+3, 6n+4, 6n+5 (n=0,1,2...)
+
+We can find that, apart from 2 and 3, only numbers of the form 6n+1 and 6n+5 can be prime numbers. And if numbers of the form 6n+1 and 6n+5 are not prime numbers, their factors will also contain numbers of the form 6n+1 or 6n+5, so the following algorithm can be obtained:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
