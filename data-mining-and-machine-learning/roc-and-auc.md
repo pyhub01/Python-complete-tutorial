@@ -7,7 +7,7 @@ coverY: 0
 
 Receiver Operating Characteristic Curve (ROC) originated in World War II.
 
-![radar](<../.gitbook/assets/image (21) (1).png>)
+![radar](<../.gitbook/assets/image (21) (1) (1).png>)
 
 Radar can detect objects. Radar was not very accurate during World War II, so the difference between an eagle and an airplane is not very big.
 
