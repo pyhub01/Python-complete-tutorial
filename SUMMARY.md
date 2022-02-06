@@ -49,6 +49,7 @@
 * [projection](data-mining-and-machine-learning/projection.md)
 * [PCA](data-mining-and-machine-learning/pca.md)
 * [MDS](data-mining-and-machine-learning/mds.md)
+* [Bayesian and Frequentist](data-mining-and-machine-learning/bayesian-and-frequentist.md)
 * [Data normalization](data-mining-and-machine-learning/data-normalization.md)
 * [binary SVM](data-mining-and-machine-learning/binary-svm.md)
 * [One Hot Encoding](data-mining-and-machine-learning/one-hot-encoding.md)
