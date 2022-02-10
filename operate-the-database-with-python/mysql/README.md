@@ -15,10 +15,8 @@ But MySQL and sql statements are still very important.
 
 In this chapter, I will introduce how to install sql database and use MySQL database in python.
 
-
-
 ## Statistics
 
 Start time of this page: January 4, 2021
 
-Completion time of this page: Janu 10, 2021
+Completion time of this page: January 10, 2021
