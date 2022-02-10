@@ -81,6 +81,7 @@
 
 * [MySQL](operate-the-database-with-python/mysql/README.md)
   * [Install MySQL](operate-the-database-with-python/mysql/install-mysql.md)
+  * [First try MySQL](operate-the-database-with-python/mysql/first-try-mysql.md)
 
 ## 8⃣ Cryptography
 
