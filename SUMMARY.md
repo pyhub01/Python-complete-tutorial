@@ -93,7 +93,7 @@
 ## 9⃣ deep learning
 
 * [What is Deep Learning](deep-learning/what-is-deep-learning.md)
-* [Page 1](deep-learning/page-1.md)
+* [basic](deep-learning/basic.md)
 
 ## 💔 algorithm
 
