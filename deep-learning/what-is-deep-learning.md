@@ -10,9 +10,7 @@ In the models we mentioned before, similar to SVM or random forest or Bayesian o
 
 
 
-![](<../.gitbook/assets/image (21).png>)
-
-
+![Gradient Descent Algorithm](../.gitbook/assets/saddle\_point\_evaluation\_optimizers.gif)
 
 
 
