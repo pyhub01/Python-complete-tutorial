@@ -92,7 +92,7 @@ plt.show()
 
 The results obtained are as follows:
 
-![ROC and AUC](<../.gitbook/assets/image (10).png>)
+![ROC and AUC](<../.gitbook/assets/image (10) (1).png>)
 
 In the ROC curve, the horizontal axis is False positive, and the vertical axis is True positive. It can be seen that the ROC curve is a chart for discussing Positive.
 
