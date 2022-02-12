@@ -30,7 +30,7 @@ plt.scatter( point[ :, 0 ], point[ :, 1 ],
 plt.show()
 ```
 
-![Two-dimensional Gaussian distribution of 1000 points](<../.gitbook/assets/image (18) (1).png>)
+![Two-dimensional Gaussian distribution of 1000 points](<../.gitbook/assets/image (18) (1) (1).png>)
 
 We now make a straight line and draw the projection of each point to this straight line:
 
@@ -104,7 +104,7 @@ plt.ylim(-12, 12)
 plt.show()
 ```
 
-![projection](<../.gitbook/assets/image (19) (1).png>)
+![projection](<../.gitbook/assets/image (19) (1) (1).png>)
 
 We can change the slope of this line, and the result of the projection will change accordingly, for example:
 
@@ -286,7 +286,7 @@ Get the following output:
 >>> 
 ```
 
-![Raw data](<../.gitbook/assets/image (18).png>)
+![Raw data](<../.gitbook/assets/image (18) (1).png>)
 
 The data obtained in the first row is the data source ratio of the principal components.
 

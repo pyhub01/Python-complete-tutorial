@@ -51,7 +51,7 @@ plt.show()
 
 The trajectory of the Lorenz system when ρ=28, σ = 10, and β = 8/3 is shown in the following figure:
 
-![front](<../.gitbook/assets/image (19).png>)
+![front](<../.gitbook/assets/image (19) (1).png>)
 
 ![side](<../.gitbook/assets/image (5).png>)
 
