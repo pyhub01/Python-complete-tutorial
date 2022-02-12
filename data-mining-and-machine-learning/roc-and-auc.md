@@ -132,7 +132,7 @@ true  = [0,  1  , 0  , 0  , 0  , 1  , 1  , 0  , 0]
 
 If label and true are the same, we draw one unit upward, if label and true are different, we draw one unit to the right.
 
-![ROC](<../.gitbook/assets/image (6).png>)
+![ROC](<../.gitbook/assets/image (6) (1).png>)
 
 From this we can draw the ROC curve of this model.
 

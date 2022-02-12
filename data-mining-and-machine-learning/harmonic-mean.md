@@ -23,7 +23,7 @@ We can know that the second student's partial subject problem is more serious.
 
 
 
-![Lymphoma](<../.gitbook/assets/image (6) (1).png>)
+![Lymphoma](<../.gitbook/assets/image (6) (1) (1).png>)
 
 Lymphoma is a cancer that occurs on the lymphatics.
 

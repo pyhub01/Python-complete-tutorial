@@ -38,13 +38,11 @@ Last but not least, deep learning requires a lot of computation during the train
 
 In addition to that, between 2012 and 2016 people have been going after bigger models, but after 2016 it was found that bigger models don't necessarily give better results, so people started checking at smaller models (of course loss some of the accuracy), but as technology improves, many small computational models now achieve better results than the large models of 2012-2016.
 
+![NVIDIA Jetson Nano](<../.gitbook/assets/image (6).png>)
 
+This allows many small boards or embedded devices to be loaded with deep learning. These deep learning models are more efficient, require less computation and are easy to optimize. More small embedded devices now even have deep learning cores to accelerate deep learning.
 
-
-
-
-
-
+In later chapters I will introduce the basic neuron model and the backpropagation algorithm.
 
 ## Statistics
 
