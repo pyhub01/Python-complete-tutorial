@@ -104,7 +104,7 @@ So the probability of getting three heads and two tails is the product of the ab
 
 The calculation method of the binomial distribution uses permutations and combinations:
 
-![binomial distribution](<../.gitbook/assets/image (21) (1).png>)
+![binomial distribution](<../.gitbook/assets/image (21) (1) (1).png>)
 
 If you follow the example just now, then in the binomial distribution formula, **p** is the probability of heads of the coin, and **q** is the probability of tails of the coin. The preceding **c(n, x)** is the frequency of three heads and two tails.
 

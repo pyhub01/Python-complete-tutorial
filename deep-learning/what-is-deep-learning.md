@@ -6,11 +6,11 @@ coverY: 0
 
 Deep learning is a very popular concept recently. Such a concept is always hyped up by the media, but in fact deep learning or big data or blockchain or internet of things is something that already exists but has been newly packaged in the 21st century.
 
+In the models we mentioned before, similar to SVM or random forest or Bayesian or Gaussian maximum likelihood Bayesian, the parameters in a model are generally less than 1000, but deep learning generally starts from 1000000 parameters.
 
 
 
-
-
+![](<../.gitbook/assets/image (21).png>)
 
 
 

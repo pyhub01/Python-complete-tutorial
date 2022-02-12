@@ -22,7 +22,7 @@ A simple question: If I toss a coin five times in a row and it gets heads, what 
 
 <mark style="color:orange;">**The Bayesian formula can reverse the cause and effect. For example, we know the probability that the car alarm sounded because it was smashed by a thief (this probability indicates the accuracy of the car alarm), and the Bayesian formula can turn this probability into: The Probability of a thief smashing a car causing the car alarm to alarm. In conclusion, the Bayesian formula can flip the cause and effect (prior and posterior), which is very useful.**</mark>
 
-![A very classic Bayesian problem](<../.gitbook/assets/image (21).png>)
+![A very classic Bayesian problem](<../.gitbook/assets/image (21) (1).png>)
 
 A very well-known example of Bayesian algorithms is the probability of rain, whether the ground is wet, and whether the sprinkler is working.
 
